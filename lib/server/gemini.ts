@@ -11,6 +11,7 @@ export async function generateStructured<T>(options: {
   pdf?: Uint8Array;
   db: SupabaseClient;
   businessId: string;
+  userId?: string;
   validate?: (value: T) => void;
 }) {
   const { schema, instruction, input, pdf, db, businessId, validate } = options;
@@ -21,7 +22,8 @@ export async function generateStructured<T>(options: {
     );
   const key = createHash("sha256")
     .update(
-      GEMINI_MODEL +
+      (options.userId || "test") +
+        GEMINI_MODEL +
         instruction +
         input +
         JSON.stringify(z.toJSONSchema(schema)),
@@ -97,7 +99,12 @@ export async function generateStructured<T>(options: {
       validate?.(result);
       await db
         .from("ai_cache")
-        .upsert({ business_id: businessId, cache_key: key, payload: result });
+        .upsert({
+          business_id: businessId,
+          cache_key: key,
+          payload: result,
+          created_at: new Date().toISOString(),
+        });
       return { result, cached: false };
     } catch (e) {
       const status =

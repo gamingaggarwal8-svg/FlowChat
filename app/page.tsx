@@ -1,4 +1,4 @@
-import Demo from "./Demo";
+import AppEntry from "./AppEntry";
 import { loadData, loadChat } from "../lib/data";
 export default async function Page() {
   const data = await loadData();
@@ -8,5 +8,5 @@ export default async function Page() {
       text: await loadChat("suppliers", s.name),
     })),
   );
-  return <Demo initialOperations={{ ...data, supplierChats }} />;
+  return <AppEntry initialOperations={{ ...data, supplierChats }} />;
 }

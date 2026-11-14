@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { IntegrationAccount } from "./IntegrationAccount";
 import { AppIcon } from "./ui";
+import Copilot from "./Copilot";
 import {
   apiRequest,
   postJSON,
@@ -26,7 +27,7 @@ import {
 import { plans, type PlanId } from "../lib/integrations/plans";
 import chatCache from "../demo/chat-cache.json";
 import demoSeed from "../demo/seed.json";
-import { answerQuestion, metrics, money, type Dataset } from "../lib/business";
+import { type Dataset } from "../lib/business";
 export type FeaturePage =
   | "Import Chats"
   | "Accounting & Documents"
@@ -110,11 +111,7 @@ export default function FeatureWorkspace({
     [demoHistory, setDemoHistory] = useState<
       { plan: string; date: string; status: string }[]
     >([]);
-  const [question, setQuestion] = useState(""),
-    [aiTask, setAiTask] = useState("ask"),
-    [aiResult, setAiResult] = useState<unknown>(null),
-    [aiDraft, setAiDraft] = useState(""),
-    [memberEmail, setMemberEmail] = useState(""),
+  const [memberEmail, setMemberEmail] = useState(""),
     [memberRole, setMemberRole] = useState("viewer"),
     [members, setMembers] = useState<{ user_id: string; role: string }[]>([]),
     [voiceMessages, setVoiceMessages] = useState<unknown[]>([]);
@@ -185,8 +182,7 @@ export default function FeatureWorkspace({
     setExtraction(null);
     setPreview("");
     setSelectedDoc(null);
-    setAiResult(null);
-    setAiDraft("");
+
     setChatHistory([]);
     setMembers([]);
     setVoiceMessages([]);
@@ -1321,112 +1317,11 @@ export default function FeatureWorkspace({
         </>
       )}
       {page === "AI Copilot" && (
-        <section className="panel integration-panel">
-          <h2>Ask about recorded business facts</h2>
-          <p>
-            Gemini selects an analytics view and explains its results.
-            TypeScript calculates every balance. Reminder drafts need your
-            review and are never sent automatically.
-          </p>
-          <label>
-            Task
-            <select value={aiTask} onChange={(e) => setAiTask(e.target.value)}>
-              <option value="ask">Ask a business question</option>
-              <option value="reminder">Draft a customer reminder</option>
-            </select>
-          </label>
-          <label>
-            {aiTask === "ask" ? "Your question" : "Exact customer name"}
-            <textarea
-              rows={3}
-              value={question}
-              onChange={(e) => setQuestion(e.target.value)}
-              placeholder={
-                aiTask === "ask"
-                  ? "Kis customer ka payment overdue hai?"
-                  : "Sharma Textiles"
-              }
-            />
-          </label>
-          <button
-            className="primary"
-            disabled={busy || !question.trim()}
-            onClick={() =>
-              run(async () => {
-                if (!connected) {
-                  const source = demoData || (demoSeed as Dataset);
-                  if (aiTask === "ask") {
-                    setAiResult({
-                      source: "Offline deterministic demo — no Gemini call",
-                      ...answerQuestion(question, source),
-                    });
-                    setAiDraft("");
-                  } else {
-                    const row = metrics(source).ledger.find(
-                      (r) =>
-                        r.customer.toLowerCase() ===
-                        question.trim().toLowerCase(),
-                    );
-                    if (!row || row.outstanding <= 0)
-                      throw new Error(
-                        "Enter a customer with an outstanding recorded balance.",
-                      );
-                    const text = `${row.customer} ji, aapke ledger mein ${money(row.outstanding)} outstanding hai. Payment ki date confirm kar denge? Dhanyavaad.`;
-                    setAiResult({
-                      source: "Offline template — no Gemini call",
-                      result: { text },
-                      facts: {
-                        outstanding: row.outstanding,
-                        overdue: row.overdue,
-                      },
-                      approvalRequired: true,
-                    });
-                    setAiDraft(text);
-                  }
-                  return;
-                }
-                const response = await postJSON(
-                  "/api/ai",
-                  aiTask === "ask"
-                    ? { task: "ask", question }
-                    : { task: "reminder", party: question },
-                );
-                setAiResult(response);
-                setAiDraft(aiTask === "reminder" ? response.result.text : "");
-              })
-            }
-          >
-            Generate {aiTask === "ask" ? "answer" : "draft"}
-          </button>
-          {aiDraft && (
-            <div className="integration-draft">
-              <label>
-                Review reminder draft
-                <textarea
-                  rows={5}
-                  value={aiDraft}
-                  onChange={(e) => setAiDraft(e.target.value)}
-                />
-              </label>
-              <button
-                className="primary"
-                disabled={busy || !aiDraft.trim()}
-                onClick={() => onReminder?.(question, aiDraft)}
-              >
-                Add to approval queue
-              </button>
-              <p>
-                Approval prepares the text for copying; no WhatsApp message is
-                sent.
-              </p>
-            </div>
-          )}
-          {aiResult !== null && (
-            <pre className="integration-json">
-              {JSON.stringify(aiResult, null, 2)}
-            </pre>
-          )}
-        </section>
+        <Copilot
+          connected={connected}
+          data={demoData || (demoSeed as Dataset)}
+          onReminder={onReminder}
+        />
       )}
       {page === "Workspace Settings" && (
         <>

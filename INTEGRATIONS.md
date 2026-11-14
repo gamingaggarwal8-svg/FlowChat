@@ -1,5 +1,7 @@
 # FlowChat integrations: setup and operating guide
 
+For the new login, persistent chat recall and cache cleanup, start with [GEMINI_SUPABASE_SETUP.md](GEMINI_SUPABASE_SETUP.md).
+
 The original synthetic dashboard, analytics, charts, customer/supplier/inventory screens, voice-transcript workflow, bargains and approvals are retained. New workflows are available in navigation and at `/import-chats`, `/accounting`, `/sync`, `/pricing`, `/copilot` and `/settings`.
 
 ## Run locally
@@ -51,7 +53,7 @@ The official `@google/genai` SDK runs only on the server. The default Flash mode
 - AI Copilot: Gemini classifies a question into a supported analytics view; TypeScript calculates facts; Gemini explains those facts. Numeric evidence is returned separately so the owner can check it. Reminder drafts use recorded outstanding balances and are never auto-sent.
 - Documents: Gemini reads an authorised PDF and extracts supported invoice fields; missing fields remain null. Format/tax consistency checks and owner review are required. The model's evidence is a candidate quote and is not independently OCR-verified.
 
-The cache is isolated by business and keyed by model, schema, instructions and input content (including PDF bytes). It expires after 24 hours. A shared database quota allows 10 AI requests/minute and 100/day per business, independently of provisional plans. Provider 429/temporary/validation failures get one bounded retry and a safe error. No fallback switches to a paid model. Outputs and extracted amounts remain untrusted until reviewed.
+The cache is isolated by business and user and keyed by user, model, schema, instructions and input content (including PDF bytes). It expires after 24 hours. A shared database quota allows 10 AI requests/minute and 100/day per business, independently of provisional plans. Provider 429/temporary/validation failures get one bounded retry and a safe error. No fallback switches to a paid model. Outputs and extracted amounts remain untrusted until reviewed.
 
 Google free-tier processing may be used to improve its products under the applicable terms. Review those terms before submitting real customer conversations or accounting PDFs; this is separate from private Supabase storage.
 

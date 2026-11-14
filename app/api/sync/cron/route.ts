@@ -13,6 +13,8 @@ export const GET = api(async (request) => {
   )
     throw new HttpError(401, "Invalid scheduled sync authorization.");
   const db = adminDB();
+  const cleanup = await db.rpc("cleanup_ai_cache");
+  checkDB(cleanup.error);
   const { data, error } = await db
     .from("excel_connections")
     .select("business_id")
@@ -23,6 +25,7 @@ export const GET = api(async (request) => {
     (data || []).map((c) => syncCloudWorkbook(db, c.business_id)),
   );
   return Response.json({
+    cacheCleanup: cleanup.data,
     processed: results.length,
     succeeded: results.filter((r) => r.status === "fulfilled").length,
     failed: results.filter((r) => r.status === "rejected").length,

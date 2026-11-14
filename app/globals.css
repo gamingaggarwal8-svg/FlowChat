@@ -3837,3 +3837,1052 @@ details p {
     grid-template-columns: 1fr;
   }
 }
+
+/* A visual opening before the working ledger. */
+.account-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 8px;
+}
+.account-entry:hover {
+  color: var(--blue);
+}
+.overview-welcome {
+  min-height: calc(100svh - 135px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 26px;
+  padding: 24px 0 28px;
+}
+.welcome-story {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: end;
+}
+.welcome-story h2 {
+  font-size: 52px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 650;
+  margin: 0 0 18px;
+}
+.welcome-story h2 span {
+  color: var(--blue);
+}
+.welcome-story p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 50ch;
+  margin: 0;
+}
+.welcome-actions {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  padding-bottom: 4px;
+}
+.welcome-actions .primary,
+.welcome-text-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 44px;
+}
+.welcome-text-action {
+  color: var(--ink);
+  padding: 8px 10px;
+}
+.welcome-text-action:hover {
+  color: var(--blue);
+}
+.welcome-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+  padding: 16px 0 0;
+}
+.welcome-scroll:hover {
+  color: var(--blue);
+}
+.dashboard-details {
+  display: grid;
+  gap: 26px;
+  scroll-margin-top: 90px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.workflow-map {
+  position: relative;
+  margin: 0;
+  min-height: 340px;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  column-gap: 11%;
+  align-items: center;
+  padding: 24px 22px 42px;
+}
+.workflow-connections {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 30px);
+  inset: 0 0 auto;
+  z-index: 0;
+  pointer-events: none;
+}
+.workflow-connections path {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 2;
+}
+.workflow-connections .workflow-route {
+  stroke: var(--blue);
+  stroke-dasharray: 5 18;
+  stroke-linecap: round;
+  animation: workflow-travel 16s linear infinite;
+}
+@keyframes workflow-travel {
+  to {
+    stroke-dashoffset: -184;
+  }
+}
+.workflow-source {
+  position: relative;
+  z-index: 1;
+  padding: 28px 26px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--blue-soft);
+  color: var(--ink);
+}
+.workflow-source-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: var(--blue);
+  color: white;
+  border-radius: 14px;
+}
+.workflow-source p {
+  font-size: 23px;
+  line-height: 1.4;
+  margin: 18px 0 22px;
+}
+.workflow-source small {
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+  color: var(--muted);
+}
+.workflow-message {
+  width: 100%;
+  display: grid;
+  gap: 7px;
+}
+.workflow-message span {
+  display: block;
+  width: 85%;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--line);
+}
+.workflow-message span:nth-child(2) {
+  width: 65%;
+}
+.workflow-message span:nth-child(3) {
+  width: 43%;
+  background: var(--blue);
+}
+.workflow-destinations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  z-index: 1;
+}
+.workflow-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  min-width: 0;
+  min-height: 145px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  text-align: left;
+}
+button.workflow-node:hover {
+  border-color: var(--blue);
+  background: var(--blue-soft);
+}
+.workflow-node > strong {
+  font-size: 15px;
+}
+.workflow-node > span:not(.workflow-node-icon) {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 20ch;
+}
+.workflow-node > svg {
+  position: absolute;
+  right: 16px;
+  top: 22px;
+  color: var(--muted);
+}
+.workflow-node-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  margin-bottom: 3px;
+}
+.workflow-node-icon.conversation {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+.workflow-node-icon.stock {
+  background: var(--teal-soft);
+  color: var(--teal);
+}
+.workflow-node-icon.supplier {
+  background: var(--purple-soft);
+  color: var(--purple);
+}
+.workflow-node-icon.document {
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+.workflow-map figcaption {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+.login-page {
+  display: grid;
+  grid-template-columns: 1.12fr 1fr;
+  min-height: 100svh;
+  background: var(--surface);
+}
+.login-story {
+  display: flex;
+  flex-direction: column;
+  background: var(--nav);
+  color: var(--nav-ink);
+  padding: 40px 46px 28px;
+  min-width: 0;
+}
+.login-brand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 11px;
+  font-weight: 650;
+  color: white;
+  font-size: 27px;
+  text-decoration: none;
+  letter-spacing: -0.025em;
+}
+.login-brand > span {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--nav-muted);
+  margin-left: auto;
+}
+.login-story-copy {
+  margin: auto 0 0;
+  padding: 58px 0 20px;
+}
+.login-story h1 {
+  margin: 0 0 24px;
+  font-size: 43px;
+  line-height: 1.17;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+.login-story-copy p {
+  color: var(--nav-muted);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 48ch;
+  margin: 0;
+}
+.login-story .workflow-map {
+  margin: 20px -16px auto;
+  min-height: 340px;
+  padding: 24px 4px 36px;
+  column-gap: 8%;
+}
+.login-story .workflow-source {
+  background: var(--nav);
+  border-color: var(--nav-muted);
+  padding: 22px 16px;
+  color: var(--nav-ink);
+}
+.login-story .workflow-source p {
+  font-size: 18px;
+}
+.login-story .workflow-source small {
+  color: var(--nav-muted);
+  font-size: 12px;
+}
+.login-story .workflow-connections path {
+  stroke: var(--nav-muted);
+}
+.login-story .workflow-connections .workflow-route {
+  stroke: var(--nav-ink);
+}
+.login-story .workflow-node {
+  padding: 15px 13px;
+  min-height: 135px;
+}
+.login-story .workflow-node strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+.login-story .workflow-node > span:not(.workflow-node-icon) {
+  font-size: 12px;
+}
+.login-story .workflow-destinations {
+  gap: 18px;
+}
+.login-story .workflow-map figcaption,
+.login-story-footer {
+  color: var(--nav-muted);
+  font-size: 12px;
+}
+.login-story-footer {
+  margin: 26px 0 0;
+}
+.login-form-side {
+  min-width: 0;
+  padding: 38px 38px 26px;
+  display: flex;
+  flex-direction: column;
+}
+.login-demo-top {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  align-self: end;
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--muted);
+}
+.login-demo-top:hover {
+  color: var(--blue);
+}
+.login-form-content {
+  width: min(100%, 390px);
+  margin: auto;
+  padding: 65px 0 56px;
+}
+.login-emblem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  border-radius: 14px;
+  margin-bottom: 26px;
+}
+.login-form-content h2 {
+  margin: 0 0 13px;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+.login-description {
+  color: var(--muted);
+  margin: 0 0 32px;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.login-form,
+.login-session {
+  display: grid;
+  gap: 19px;
+}
+.login-form label,
+.login-session label {
+  display: grid;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 550;
+}
+.login-form input,
+.login-session select {
+  width: 100%;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  min-height: 48px;
+  padding: 12px 14px;
+  color: var(--ink);
+}
+.login-form input::placeholder {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+.login-form input:disabled {
+  background: var(--canvas);
+  color: var(--muted);
+}
+.login-password {
+  position: relative;
+}
+.login-password input {
+  padding-right: 48px;
+}
+.login-password button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  width: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+.login-forgot {
+  justify-self: end;
+  font-size: 12px;
+  color: var(--blue);
+  margin: -3px 0 1px;
+}
+.login-submit {
+  min-height: 48px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+}
+.login-switch {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin: 26px 0 0;
+}
+.login-switch .text-btn {
+  color: var(--blue);
+}
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 28px 0 20px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  height: 1px;
+  background: var(--line);
+  flex: 1;
+}
+.login-explore {
+  width: 100%;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.login-privacy {
+  margin: 21px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.login-form-footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+.login-error,
+.login-message,
+.login-offline {
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 13px 15px;
+  border-radius: 7px;
+  margin: 20px 0 0;
+  background: var(--blue-soft);
+  color: var(--ink);
+}
+.login-error {
+  background: var(--red-soft);
+  color: var(--red);
+}
+.login-offline {
+  background: var(--canvas);
+  color: var(--muted);
+}
+.login-loading {
+  color: var(--muted);
+  padding: 24px 0;
+}
+@media (min-width: 1600px) {
+  .login-story {
+    padding: 48px 70px 36px;
+  }
+  .login-story h1 {
+    font-size: 52px;
+  }
+  .login-story .workflow-map {
+    min-height: 410px;
+  }
+}
+@media (max-width: 1250px) {
+  .login-story {
+    padding: 36px 28px 28px;
+  }
+  .login-story h1 {
+    font-size: 34px;
+  }
+  .login-brand > span {
+    flex-basis: 100%;
+    margin-left: 44px;
+    margin-top: -10px;
+  }
+  .login-story .workflow-node > span:not(.workflow-node-icon) {
+    display: none;
+  }
+  .login-story .workflow-node {
+    min-height: 105px;
+  }
+  .login-story .workflow-map {
+    min-height: 300px;
+  }
+  .welcome-story h2 {
+    font-size: 43px;
+  }
+}
+@media (max-width: 900px) {
+  .login-page {
+    grid-template-columns: 0.9fr 1fr;
+  }
+  .login-story .workflow-map {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 10px 0 30px;
+  }
+  .login-story .workflow-source {
+    display: none;
+  }
+  .login-story .workflow-connections {
+    display: none;
+  }
+  .login-story-copy {
+    padding-top: 55px;
+  }
+  .login-story h1 {
+    font-size: 30px;
+  }
+  .login-form-side {
+    padding: 30px 26px 24px;
+  }
+  .welcome-story {
+    align-items: start;
+  }
+  .workflow-map {
+    column-gap: 5%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .workflow-node {
+    padding: 16px;
+  }
+}
+@media (max-width: 760px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+  .login-story {
+    padding: 26px 24px 30px;
+  }
+  .login-brand > span {
+    flex-basis: auto;
+    margin: 0 0 0 auto;
+  }
+  .login-story-copy {
+    padding: 34px 0 0;
+  }
+  .login-story h1 {
+    font-size: 31px;
+    line-height: 1.2;
+    margin-bottom: 17px;
+  }
+  .login-story-copy p {
+    font-size: 13px;
+  }
+  .login-story .workflow-map,
+  .login-story-footer {
+    display: none;
+  }
+  .login-form-side {
+    padding: 22px 24px;
+  }
+  .login-demo-top {
+    display: none;
+  }
+  .login-form-content {
+    padding: 18px 0 35px;
+  }
+  .login-emblem {
+    display: none;
+  }
+  .login-form-content h2 {
+    font-size: 28px;
+  }
+  .login-description {
+    margin-bottom: 26px;
+  }
+  .login-form-footer {
+    margin-top: 10px;
+  }
+  .overview-welcome {
+    min-height: calc(100svh - 100px);
+    gap: 28px;
+    padding-top: 15px;
+  }
+  .welcome-story {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .welcome-story h2 {
+    font-size: 42px;
+  }
+  .welcome-story p {
+    font-size: 14px;
+  }
+  .welcome-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .welcome-actions .primary,
+  .welcome-text-action {
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+  .workflow-map {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 35px;
+  }
+  .workflow-connections {
+    display: none;
+  }
+  .workflow-source {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    align-items: center;
+  }
+  .workflow-source p {
+    font-size: 19px;
+    margin: 0;
+  }
+  .workflow-source .workflow-message,
+  .workflow-source small {
+    display: none;
+  }
+  .workflow-destinations {
+    gap: 14px;
+  }
+  .workflow-node {
+    min-height: 130px;
+  }
+  .workflow-node > svg {
+    top: 19px;
+    right: 12px;
+  }
+  .welcome-scroll {
+    font-size: 12px;
+    text-align: center;
+  }
+  .account-entry > span {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workflow-connections .workflow-route {
+    animation: none;
+  }
+}
+
+/* Saved conversations stay separate from immutable business records. */
+.copilot-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+  min-height: 660px;
+}
+.copilot-history {
+  background: var(--canvas);
+  border-right: 1px solid var(--line);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.copilot-history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 23px;
+}
+.copilot-history-heading h2 {
+  font-size: 16px;
+  margin: 0;
+}
+.copilot-history-heading button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+.copilot-search {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 17px;
+}
+.copilot-search input {
+  background: var(--surface);
+  font-size: 12px;
+}
+.copilot-history nav {
+  max-height: 500px;
+  overflow: auto;
+  margin: 0 -5px;
+}
+.copilot-history nav button {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 7px;
+  align-items: start;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 4px 0;
+}
+.copilot-history nav button:hover {
+  background: var(--line-soft);
+}
+.copilot-history nav button.selected {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+.copilot-history nav button > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.copilot-history nav button > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.copilot-history nav small {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 5px;
+  display: block;
+}
+.copilot-history-empty {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.copilot-memory-label {
+  font-size: 12px;
+  color: var(--muted);
+  padding-top: 25px;
+  margin: auto 0 0;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.copilot-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  gap: 20px;
+}
+.copilot-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.copilot-header h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+.copilot-header p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 65ch;
+}
+.copilot-header > .text-btn {
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.copilot-messages {
+  display: grid;
+  align-content: start;
+  gap: 25px;
+  min-height: 240px;
+  max-height: 650px;
+  overflow: auto;
+  padding: 4px 3px 14px;
+}
+.copilot-message {
+  min-width: 0;
+  padding: 0 0 22px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.copilot-message:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.copilot-message-author {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 12px;
+}
+.copilot-message-author svg {
+  color: var(--blue);
+}
+.copilot-message-author time {
+  font-size: 11px;
+  color: var(--muted);
+  margin-left: auto;
+}
+.copilot-message p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 12px 0;
+  max-width: 74ch;
+}
+.copilot-message.user p {
+  background: var(--blue-soft);
+  padding: 14px 17px;
+  border-radius: 7px;
+}
+.copilot-message details {
+  color: var(--muted);
+  font-size: 12px;
+}
+.copilot-message details small {
+  display: block;
+  line-height: 1.6;
+}
+.copilot-empty {
+  padding: 24px 0;
+  text-align: center;
+  margin: auto;
+  max-width: 550px;
+}
+.copilot-empty > span {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-soft);
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+.copilot-empty h3 {
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+.copilot-empty p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 50ch;
+}
+.copilot-starters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 23px;
+}
+.copilot-starters button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+.copilot-composer {
+  display: grid;
+  gap: 15px;
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.copilot-composer label {
+  font-size: 12px;
+}
+.copilot-composer select {
+  max-width: 300px;
+}
+.copilot-composer-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.copilot-composer-actions > span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 45ch;
+}
+.copilot-composer-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 43px;
+  flex-shrink: 0;
+}
+.copilot-notice {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.copilot-delete-confirm {
+  border: 1px solid var(--line);
+  padding: 15px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+.copilot-delete-confirm p {
+  margin: 0 0 12px;
+}
+.copilot-delete-confirm button {
+  margin-right: 10px;
+}
+.copilot-draft {
+  display: grid;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.copilot-draft h3,
+.copilot-draft p {
+  margin: 0;
+}
+.copilot-draft p {
+  color: var(--muted);
+  font-size: 12px;
+}
+@media (max-width: 1250px) {
+  .copilot-layout {
+    grid-template-columns: 210px minmax(0, 1fr);
+  }
+  .copilot-main {
+    padding: 20px;
+  }
+  .copilot-header {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .copilot-layout {
+    grid-template-columns: 1fr;
+  }
+  .copilot-history {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .copilot-history-heading {
+    margin-bottom: 12px;
+  }
+  .copilot-history nav {
+    max-height: 155px;
+  }
+  .copilot-memory-label {
+    padding-top: 10px;
+  }
+  .copilot-composer-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .copilot-composer-actions button {
+    justify-content: center;
+  }
+  .copilot-main {
+    padding: 18px;
+  }
+  .copilot-header h2 {
+    font-size: 20px;
+  }
+  .copilot-messages {
+    max-height: 560px;
+  }
+}
+.login-story .workflow-source p {
+  color: var(--nav-ink);
+}
+.login-form-footer {
+  display: block;
+  padding: 0;
+}

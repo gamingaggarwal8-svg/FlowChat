@@ -22,7 +22,7 @@ Mode: Operate. Scope: all existing frontend screens. The user confirmed inventor
 THESIS: A distributor decides what stock needs attention, checks its supplier, and sees the cash constraint before committing. Inventory leads; collection remains one connected workflow.
 OWN-WORLD: Production-label clarity: Public Sans, ink-blue navigation, cool off-white work area, crisp white tables. Cobalt is customer context, violet supplier context, emerald stock context, amber/coral only commitment/risk. One coherent border system and larger type replace accumulated tinted card treatments.
 STORY: The first move is receiving the delayed 600m P01 order, not duplicating it. Source records remain one click away. A second surface can be dense without losing the same hierarchy.
-FIRST VIEWPORT: Full-height navigation rail; slim toolbar; plain page title. A two-column operating brief leads with a stock-position diagram and next-14-day cash constraint. A quiet four-value strip follows; chart comparisons and sheets continue below. Mobile uses a named menu with a real open/close state and content at full width.
+FIRST VIEWPORT: Updated by the user on 14 November 2026: a graphical workflow and Ask/Import actions lead, with numerical inventory, cash metrics and sheets after scrolling. The full original analytics remain under the business-details anchor. The login extension and memory work are specified in app-login-tsx.md.
 FORM: Grounded candidate 7, user-delegated implementation. seed:43c47e3cc6c34a73. Code-led Operate build. No approved image comp; no claim that the user selected a generated picture.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 

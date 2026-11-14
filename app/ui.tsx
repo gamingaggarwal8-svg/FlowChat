@@ -1,4 +1,7 @@
 const paths: Record<string, string> = {
+  eye: "M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12 M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6",
+  "eye-off":
+    "M3 3l18 18 M9 5a12 12 0 0 1 3 0c6 0 10 7 10 7a20 20 0 0 1-4 4 M6 6a22 22 0 0 0-4 6s4 7 10 7a12 12 0 0 0 5-1 M10 10a3 3 0 0 0 4 4",
   "Import Chats": "M12 15V3 M7 8l5-5 5 5 M3 15v6h18v-6",
   "Accounting & Documents": "M14 2H5v20h14V7z M14 2v5h5 M8 12h8 M8 16h8",
   "Excel Sync": "M4 4h16v16H4z M4 10h16 M10 4v16 M15 13l2 2-2 2",

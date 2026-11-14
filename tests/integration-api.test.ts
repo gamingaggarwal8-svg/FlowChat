@@ -5,6 +5,11 @@ import { POST as billing } from "../app/api/billing/route";
 import { POST as billingWebhook } from "../app/api/billing/webhook/route";
 import { POST as whatsapp } from "../app/api/whatsapp/route";
 import { GET as cron } from "../app/api/sync/cron/route";
+import {
+  GET as conversations,
+  DELETE as deleteConversation,
+} from "../app/api/conversations/route";
+import { recallInput } from "../lib/server/memory";
 import { seal, unseal } from "../lib/server/excel";
 const request = () =>
   new Request("http://localhost/api/test", {
@@ -43,5 +48,25 @@ describe("API boundaries", () => {
     const altered = Buffer.from(value, "base64url");
     altered[15] ^= 1;
     expect(() => unseal(altered.toString("base64url"))).toThrow("invalid");
+  });
+});
+
+describe("conversation API safety", () => {
+  it("requires a session to read or delete remembered conversations", async () => {
+    expect(
+      (await conversations(new Request("http://localhost/api/conversations")))
+        .status,
+    ).toBe(401);
+    expect((await deleteConversation(request())).status).toBe(401);
+  });
+  it("labels past messages as historical context rather than fresh financial evidence", () => {
+    const input = JSON.parse(
+      recallInput("And Gupta?", [
+        { role: "assistant", content: "Earlier balance was 100." },
+      ]),
+    );
+    expect(input.previousMessages[0].content).toContain("100");
+    expect(input.rule).toContain("historical");
+    expect(input.rule).toContain("fresh analytics");
   });
 });

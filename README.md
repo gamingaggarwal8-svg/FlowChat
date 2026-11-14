@@ -15,6 +15,14 @@ npm run dev
 
 Open http://localhost:3000. No database, account connection or `.env` file is required for the dashboard.
 
+## Login, visual opening and remembered conversations
+
+Guests now see a dedicated sign-in page with account creation, password reset and an explicit synthetic-demo entrance. The dashboard opens with a clickable graphical workflow; the existing numbers, stock analysis and financial tables follow after scrolling.
+
+AI Copilot saves personal business conversations in Supabase and resumes recent context on a return visit. Current financial facts are recalculated, while past answer evidence remains historical. Disposable caches have a separate cleanup function; saved chats and financial records do not expire automatically. Offline demo history stays in the browser.
+
+Use [GEMINI_SUPABASE_SETUP.md](GEMINI_SUPABASE_SETUP.md) for the shortest end-to-end configuration instructions. Existing installations need the new `202611140003_conversation_memory.sql` migration.
+
 ## New integration workflows
 
 - **Import Chats** (`/import-chats`): WhatsApp TXT/ZIP parsing, Gemini structured extraction, exact evidence checks and prepared synthetic cache fallback.
@@ -42,7 +50,7 @@ Start with [INTEGRATIONS.md](INTEGRATIONS.md) for exact setup, workbook fields, 
 ## Verification
 
 ```bash
-npm test                 # 63 Vitest tests
+npm test                 # 69 Vitest tests
 npm run test:legacy      # 13 earlier regression tests
 npm run lint
 npm run typecheck
@@ -158,7 +166,7 @@ calculations, evidence, transcript review and owner approvals are preserved.
 See [PRODUCT.md](PRODUCT.md) and [DESIGN.md](DESIGN.md) for the product and design
 contracts.
 
-Type checking, lint, all 63 Vitest tests, the Next.js production build and static
+Type checking, lint, all 69 Vitest tests, the Next.js production build and static
 demo build pass. Automated design findings remain advisory; rendered approval is pending. Desktop/mobile
 rendered review, keyboard interaction and microphone operation remain unverified
 because the permitted browser tooling was unavailable; the finish review requests

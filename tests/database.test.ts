@@ -189,3 +189,129 @@ describe("real PostgreSQL RLS and immutable history", () => {
     );
   });
 });
+let savedThread: string;
+describe("persistent private assistant memory", () => {
+  it("stores complete exchanges atomically and appends a follow-up without changing the ledger", async () => {
+    await identity(owner);
+    const before = (await db.query("select * from record_versions")).rows
+      .length;
+    const result = await db.query<{ store_ai_exchange: string }>(
+      "select store_ai_exchange($1,null,$2,$3,$4::jsonb,$5)",
+      [
+        business,
+        "Sharma ka outstanding?",
+        "Review the recorded balance.",
+        JSON.stringify({ outstanding: 400 }),
+        "receivables",
+      ],
+    );
+    savedThread = result.rows[0].store_ai_exchange;
+    await db.query("select store_ai_exchange($1,$2,$3,$4,$5::jsonb,$6)", [
+      business,
+      savedThread,
+      "Aur Gupta ka?",
+      "Here is the freshly checked ledger.",
+      JSON.stringify({ party: "Gupta" }),
+      "receivables",
+    ]);
+    const turns = await db.query<{ role: string; sequence: number }>(
+      "select role,sequence from ai_turns order by sequence",
+    );
+    expect(turns.rows.map((r) => r.sequence)).toEqual([1, 2, 3, 4]);
+    expect(turns.rows.map((r) => r.role)).toEqual([
+      "user",
+      "assistant",
+      "user",
+      "assistant",
+    ]);
+    await db.exec("update ai_turns set content='tampered'");
+    expect(
+      (await db.query("select * from ai_turns where content='tampered'")).rows,
+    ).toHaveLength(0);
+    expect((await db.query("select * from record_versions")).rows).toHaveLength(
+      before,
+    );
+  });
+  it("isolates saved conversations and personal caches even between coworkers in the same business", async () => {
+    await identity(owner);
+    await db.query(
+      "insert into ai_cache(business_id,cache_key,payload) values($1,'private-answer',$2::jsonb)",
+      [business, JSON.stringify({ text: "Personal conversation answer" })],
+    );
+    await db.query(
+      "select add_business_member($1,'other@example.test','accountant')",
+      [business],
+    );
+    await identity(outsider);
+    expect((await db.query("select * from ai_threads")).rows).toHaveLength(0);
+    expect((await db.query("select * from ai_turns")).rows).toHaveLength(0);
+    expect((await db.query("select * from ai_cache")).rows).toHaveLength(0);
+    await expect(
+      db.query("select store_ai_exchange($1,$2,$3,$4,$5::jsonb,$6)", [
+        business,
+        savedThread,
+        "Read their history",
+        "no",
+        "{}",
+        "overview",
+      ]),
+    ).rejects.toThrow("Conversation not found");
+    await identity(viewer);
+    await expect(
+      db.query("select store_ai_exchange($1,null,$2,$3,$4::jsonb,$5)", [
+        business,
+        "question",
+        "answer",
+        "{}",
+        "overview",
+      ]),
+    ).rejects.toThrow("Writer role required");
+  });
+  it("cleans expired caches and counters while retaining conversations, documents and financial history", async () => {
+    await identity(owner);
+    await db.query(
+      "insert into ai_cache(business_id,cache_key,payload,created_at) values($1,'expired','{}',now()-interval '25 hours')",
+      [business],
+    );
+    await identity("", "service_role");
+    await db.query(
+      "insert into ai_usage values($1,now()-interval '49 hours',1)",
+      [business],
+    );
+    await identity(owner);
+    await expect(db.query("select cleanup_ai_cache()")).rejects.toThrow();
+    await identity("", "service_role");
+    const result = await db.query<{
+      cleanup_ai_cache: { expired_caches: number; old_quota_counters: number };
+    }>("select cleanup_ai_cache()");
+    expect(result.rows[0].cleanup_ai_cache).toEqual({
+      expired_caches: 1,
+      old_quota_counters: 1,
+    });
+    expect((await db.query("select * from ai_turns")).rows).toHaveLength(4);
+    expect((await db.query("select * from record_versions")).rows).toHaveLength(
+      2,
+    );
+    expect((await db.query("select * from storage.objects")).rows).toHaveLength(
+      1,
+    );
+    expect(
+      (
+        await db.query(
+          "select * from ai_cache where cache_key='private-answer'",
+        )
+      ).rows,
+    ).toHaveLength(1);
+  });
+  it("only deletes conversation history after its owner explicitly deletes that thread", async () => {
+    await identity(outsider);
+    await db.query("delete from ai_threads where id=$1", [savedThread]);
+    await identity(owner);
+    expect((await db.query("select * from ai_turns")).rows).toHaveLength(4);
+    await db.query("delete from ai_threads where id=$1", [savedThread]);
+    expect((await db.query("select * from ai_turns")).rows).toHaveLength(0);
+    expect((await db.query("select * from record_versions")).rows).toHaveLength(
+      2,
+    );
+  });
+});

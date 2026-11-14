@@ -7,6 +7,7 @@ import {
   requireBusiness,
 } from "../../../lib/server/http";
 import { generateStructured } from "../../../lib/server/gemini";
+import { conversationHistory, recallInput } from "../../../lib/server/memory";
 import { workspaceAnalytics } from "../../../lib/server/workspace";
 import {
   cashAnalytics,
@@ -34,6 +35,7 @@ export const POST = api(async (request) => {
       z.object({
         task: z.literal("ask"),
         question: z.string().min(1).max(1000),
+        conversationId: z.uuid().nullable().optional(),
       }),
       z.object({
         task: z.literal("reminder"),
@@ -69,12 +71,21 @@ export const POST = api(async (request) => {
     });
     return Response.json({ ...generated, facts, approvalRequired: true });
   }
+  const prior = input.conversationId
+    ? await conversationHistory(
+        context.db,
+        context.businessId,
+        context.user.id,
+        input.conversationId,
+      )
+    : null;
+  const conversation = recallInput(input.question, prior?.messages || []);
   const routed = await generateStructured({
     ...context,
     schema: router,
     instruction:
-      "Classify the question into one supported analytics view and optional exact party name. Do not calculate or answer. Use conversations for chat orders, promises, commitments and quoted evidence. Use overview if unclear.",
-    input: input.question,
+      "Use the current question and previous messages to resolve follow-ups, then classify into one supported analytics view and optional exact party name. Do not calculate or answer. Use conversations for chat orders, promises, commitments and quoted evidence. Use overview if unclear.",
+    input: conversation,
   });
   const route = routed.result;
   const conversationRows =
@@ -115,7 +126,10 @@ export const POST = api(async (request) => {
                   r.party.toLowerCase().includes(route.party.toLowerCase()),
               )
             : cashAnalytics(analytics);
-  const explanationInput = JSON.stringify({ question: input.question, facts });
+  const explanationInput = JSON.stringify({
+    context: JSON.parse(conversation),
+    facts,
+  });
   if (explanationInput.length > 100000)
     throw new HttpError(
       413,
@@ -125,10 +139,21 @@ export const POST = api(async (request) => {
     ...context,
     schema: textSchema,
     instruction:
-      "Explain the supplied deterministic analytics in plain language. Do not perform calculations, invent numbers or forecast. Reference the facts; uncertain promises are not confirmed payments. No automatic actions.",
+      "Explain the supplied deterministic analytics in plain language. Do not perform calculations, invent numbers or forecast. Use earlier messages only as conversational context, never as a current ledger. Reference the freshly supplied facts; uncertain promises are not confirmed payments. No automatic actions.",
     input: explanationInput,
   });
+  const saved = await context.db.rpc("store_ai_exchange", {
+    p_business: context.businessId,
+    p_thread: input.conversationId || null,
+    p_question: input.question,
+    p_answer: explained.result.text,
+    p_facts: facts,
+    p_intent: route.intent,
+  });
+  checkDB(saved.error);
   return Response.json({
+    conversationId: saved.data,
+    historySaved: true,
     answer: explained.result.text,
     facts,
     intent: route.intent,

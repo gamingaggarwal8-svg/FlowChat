@@ -58,6 +58,7 @@ export async function requireBusiness(
   return {
     db,
     user,
+    userId: user.id,
     businessId: businessId.data,
     role: member.role as "owner" | "accountant" | "viewer",
   };

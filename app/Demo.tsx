@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import seed from "../demo/seed.json";
 import VoiceNotes from "./VoiceNotes";
+import OverviewWelcome from "./OverviewWelcome";
 import FeatureWorkspace, {
   isFeaturePage,
   type FeaturePage,
@@ -681,6 +682,14 @@ export default function Demo({
             </span>
           </div>
           <div className="header-right">
+            <a
+              className="account-entry"
+              href="/login"
+              aria-label="Open account sign-in"
+            >
+              <Icon name="lock" size={16} />
+              <span>Account</span>
+            </a>
             <span className="sample-label">
               <span className="demo-dot" /> {workspace.label}
             </span>
@@ -764,276 +773,288 @@ export default function Demo({
           )}
           {page === "Overview" && (
             <>
-              <OperationsOverview data={operations} onOpen={navigate} />
-              <div className="stats">
-                {[
-                  {
-                    label: "Customer receivables",
-                    value: m.outstanding,
-                    note: `Across ${m.ledger.filter((c) => c.outstanding > 0).length} customers`,
-                    icon: "Customers",
-                  },
-                  {
-                    label: "Supplier payables",
-                    value: cash.payables,
-                    note: "Inspect invoices and supplier terms",
-                    icon: "Suppliers",
-                  },
-                  {
-                    label: "Stock value at cost",
-                    value: stock.valueAtCost,
-                    note: `${stock.lowStock.length} low-stock · ${stock.overstock.length} overstock SKUs`,
-                    icon: "Inventory & growth",
-                  },
-                  {
-                    label: "Quoted, not confirmed",
-                    value: m.openQuotes,
-                    note: `${data.quotes.filter((q) => q.status === "open").length} open quotes · excluding GST`,
-                    icon: "file",
-                  },
-                ].map((s, i) => (
-                  <button
-                    className="stat"
-                    key={s.label}
-                    onClick={() => {
-                      if (i === 2) {
-                        navigate("Inventory & growth");
-                      } else if (i === 1) {
-                        navigate("Suppliers");
-                      } else if (i === 3) {
-                        ask("Show open quotations");
-                      } else {
-                        navigate("Customers");
-                        setCustomerFilter(i === 1 ? "Overdue" : "All");
-                      }
-                    }}
-                  >
-                    <div className="stat-top">
-                      {s.label}
-                      <Icon name={s.icon} size={16} />
-                    </div>
-                    <div className="amount">{money(s.value)}</div>
-                    <small className={i === 2 ? "emphasis" : ""}>
-                      {s.note}
-                    </small>
-                  </button>
-                ))}
-              </div>
-              <OverviewVisuals
-                data={operations}
-                onCustomer={(name) => setModal({ type: "customer", name })}
-                onSuppliers={() => navigate("Suppliers")}
-              />
-              <div className="ask">
-                <div className="ask-title">
-                  <Icon name="Chat review" size={19} />
-                  Ask your business
-                  <span className="tiny-pill">Calculated answers</span>
-                </div>
-                <p>
-                  Ask in English or Hinglish. Get an answer you can trace back
-                  to the ledger.
-                </p>
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    ask(question);
-                  }}
-                >
-                  <Icon name="Chat review" size={17} />
-                  <input
-                    aria-label="Ask your business"
-                    value={question}
-                    onChange={(e) => setQuestion(e.target.value)}
-                    placeholder="Kis customer ka sabse zyada paisa atka hai?"
-                  />
-                  <button className="primary" type="submit">
-                    Ask FlowChat <Icon name="arrow" size={15} />
-                  </button>
-                </form>
-                <div className="chips">
+              <OverviewWelcome onOpen={navigate} />
+              <section
+                id="business-details"
+                className="dashboard-details"
+                aria-label="Detailed business analytics"
+              >
+                <OperationsOverview data={operations} onOpen={navigate} />
+                <div className="stats">
                   {[
-                    "Kis customer ka sabse zyada paisa atka hai?",
-                    "Show overdue payments",
-                    "Which promises were missed?",
-                  ].map((q) => (
-                    <button key={q} onClick={() => ask(q)}>
-                      {q} <Icon name="external" size={14} />
+                    {
+                      label: "Customer receivables",
+                      value: m.outstanding,
+                      note: `Across ${m.ledger.filter((c) => c.outstanding > 0).length} customers`,
+                      icon: "Customers",
+                    },
+                    {
+                      label: "Supplier payables",
+                      value: cash.payables,
+                      note: "Inspect invoices and supplier terms",
+                      icon: "Suppliers",
+                    },
+                    {
+                      label: "Stock value at cost",
+                      value: stock.valueAtCost,
+                      note: `${stock.lowStock.length} low-stock · ${stock.overstock.length} overstock SKUs`,
+                      icon: "Inventory & growth",
+                    },
+                    {
+                      label: "Quoted, not confirmed",
+                      value: m.openQuotes,
+                      note: `${data.quotes.filter((q) => q.status === "open").length} open quotes · excluding GST`,
+                      icon: "file",
+                    },
+                  ].map((s, i) => (
+                    <button
+                      className="stat"
+                      key={s.label}
+                      onClick={() => {
+                        if (i === 2) {
+                          navigate("Inventory & growth");
+                        } else if (i === 1) {
+                          navigate("Suppliers");
+                        } else if (i === 3) {
+                          ask("Show open quotations");
+                        } else {
+                          navigate("Customers");
+                          setCustomerFilter(i === 1 ? "Overdue" : "All");
+                        }
+                      }}
+                    >
+                      <div className="stat-top">
+                        {s.label}
+                        <Icon name={s.icon} size={16} />
+                      </div>
+                      <div className="amount">{money(s.value)}</div>
+                      <small className={i === 2 ? "emphasis" : ""}>
+                        {s.note}
+                      </small>
                     </button>
                   ))}
                 </div>
-                <div className="demo-note">
-                  Predefined analysis functions · use AI Copilot for connected
-                  Gemini answers
-                </div>
-                {answer && (
-                  <div className="answer">
-                    <div className="section-head">
-                      <h2>{answer.title}</h2>
-                      <button
-                        aria-label="Close answer"
-                        onClick={() => setAnswer(null)}
-                      >
-                        <Icon name="close" size={18} />
-                      </button>
-                    </div>
-                    <p>{answer.explanation}</p>
-                    {answer.columns.length > 0 && (
-                      <DataTable columns={answer.columns} rows={answer.rows} />
-                    )}
-                    <div className="methodology">{answer.methodology}</div>
-                  </div>
-                )}
-              </div>
-              <div className="panel">
-                <div className="section-head">
-                  <div>
-                    <h2>
-                      Receivables that need your attention{" "}
-                      <span className="count-pill">
-                        {m.ledger.filter((c) => c.outstanding > 0).length}
-                      </span>
-                    </h2>
-                    <p>
-                      Review the balance, then inspect its invoices or prepare a
-                      follow-up.
-                    </p>
-                  </div>
-                  <button
-                    className="inline-link"
-                    onClick={() => navigate("Customers")}
-                  >
-                    View all customers <Icon name="chevron" size={13} />
-                  </button>
-                </div>
-                <DataTable
-                  columns={[
-                    "CUSTOMER",
-                    "OUTSTANDING",
-                    "OVERDUE",
-                    "LATEST PROMISE",
-                    "NEXT STEP",
-                  ]}
-                  rows={m.ledger
-                    .filter((c) => c.outstanding > 0)
-                    .slice(0, 5)
-                    .map((c) => {
-                      const last = m.promises
-                        .filter((p) => p.customer === c.customer)
-                        .sort((a, b) => b.made_on.localeCompare(a.made_on))[0];
-                      return [
-                        customerButton(c.customer),
-                        <span className="money" key="m">
-                          {money(c.outstanding)}
-                        </span>,
-                        <span
-                          key="o"
-                          className={c.overdue ? "overdue-money" : "muted"}
-                        >
-                          {money(c.overdue)}
-                        </span>,
-                        last ? (
-                          <div key="p">
-                            <Badge status={last.status} />
-                            <small>{last.promised_date}</small>
-                          </div>
-                        ) : (
-                          <span key="p" className="muted">
-                            No promise yet
-                          </span>
-                        ),
-                        <button
-                          key="b"
-                          className="text-btn"
-                          onClick={() => reminder(c.customer)}
-                        >
-                          Draft reminder <Icon name="external" size={14} />
-                        </button>,
-                      ];
-                    })}
+                <OverviewVisuals
+                  data={operations}
+                  onCustomer={(name) => setModal({ type: "customer", name })}
+                  onSuppliers={() => navigate("Suppliers")}
                 />
-                <div className="table-foot">
-                  <span>
-                    <span className="demo-dot" /> Reconciled from{" "}
-                    {data.invoices.length} invoices and {data.payments.length}{" "}
-                    payments
-                  </span>
-                  <span>Customer-wise FIFO allocation</span>
-                </div>
-              </div>
-              <div className="bottom-grid">
-                <div className="panel">
-                  <div className="section-head">
-                    <h2>Follow-ups to review</h2>
-                    <Icon name="Payment promises" size={17} />
+                <div className="ask">
+                  <div className="ask-title">
+                    <Icon name="Chat review" size={19} />
+                    Ask your business
+                    <span className="tiny-pill">Calculated answers</span>
                   </div>
-                  {m.promises
-                    .filter(
-                      (p) => p.status === "Missed" || p.status === "Partial",
-                    )
-                    .slice(0, 3)
-                    .map((p, i) => (
-                      <div className="activity" key={i}>
-                        <span className="dot">
-                          <Icon name="Chat review" size={13} />
-                        </span>
-                        <div>
-                          <strong>{p.customer}</strong>
-                          <p>“{p.quote}”</p>
-                          <span className="subtle">
-                            {p.promised_date} · {p.status} · {money(p.paid)}{" "}
-                            received in window
-                          </span>
-                        </div>
+                  <p>
+                    Ask in English or Hinglish. Get an answer you can trace back
+                    to the ledger.
+                  </p>
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      ask(question);
+                    }}
+                  >
+                    <Icon name="Chat review" size={17} />
+                    <input
+                      aria-label="Ask your business"
+                      value={question}
+                      onChange={(e) => setQuestion(e.target.value)}
+                      placeholder="Kis customer ka sabse zyada paisa atka hai?"
+                    />
+                    <button className="primary" type="submit">
+                      Ask FlowChat <Icon name="arrow" size={15} />
+                    </button>
+                  </form>
+                  <div className="chips">
+                    {[
+                      "Kis customer ka sabse zyada paisa atka hai?",
+                      "Show overdue payments",
+                      "Which promises were missed?",
+                    ].map((q) => (
+                      <button key={q} onClick={() => ask(q)}>
+                        {q} <Icon name="external" size={14} />
+                      </button>
+                    ))}
+                  </div>
+                  <div className="demo-note">
+                    Predefined analysis functions · use AI Copilot for connected
+                    Gemini answers
+                  </div>
+                  {answer && (
+                    <div className="answer">
+                      <div className="section-head">
+                        <h2>{answer.title}</h2>
                         <button
-                          className="activity-action"
-                          aria-label={`Review ${p.customer} promise`}
-                          onClick={() => {
-                            setChatName(p.customer);
-                            navigate("Chat review");
-                          }}
+                          aria-label="Close answer"
+                          onClick={() => setAnswer(null)}
                         >
-                          <Icon name="chevron" size={15} />
+                          <Icon name="close" size={18} />
                         </button>
                       </div>
-                    ))}
-                </div>
-                {workspace.businessId ? (
-                  <div className="panel hint-card">
-                    <h3>Your connected ledger</h3>
-                    <p>
-                      Import saved Excel records to update balances and stock.
-                      Conversation extractions remain review material until
-                      recorded in the ledger.
-                    </p>
-                    <button
-                      className="text-btn"
-                      onClick={() => navigate("Excel Sync")}
-                    >
-                      Open Excel Sync <Icon name="arrow" size={15} />
-                    </button>
-                  </div>
-                ) : (
-                  <div className="panel hint-card">
-                    <div className="hint-orbit">
-                      <Icon name="check" size={21} />
+                      <p>{answer.explanation}</p>
+                      {answer.columns.length > 0 && (
+                        <DataTable
+                          columns={answer.columns}
+                          rows={answer.rows}
+                        />
+                      )}
+                      <div className="methodology">{answer.methodology}</div>
                     </div>
-                    <h3>A balance cleared.</h3>
-                    <p>
-                      Open Verma Garments’ ledger to check the invoices and
-                      payments behind the current balance.
-                    </p>
+                  )}
+                </div>
+                <div className="panel">
+                  <div className="section-head">
+                    <div>
+                      <h2>
+                        Receivables that need your attention{" "}
+                        <span className="count-pill">
+                          {m.ledger.filter((c) => c.outstanding > 0).length}
+                        </span>
+                      </h2>
+                      <p>
+                        Review the balance, then inspect its invoices or prepare
+                        a follow-up.
+                      </p>
+                    </div>
                     <button
-                      className="text-btn"
-                      onClick={() =>
-                        setModal({ type: "customer", name: "Verma Garments" })
-                      }
+                      className="inline-link"
+                      onClick={() => navigate("Customers")}
                     >
-                      View Verma’s ledger <Icon name="arrow" size={15} />
+                      View all customers <Icon name="chevron" size={13} />
                     </button>
                   </div>
-                )}
-              </div>
+                  <DataTable
+                    columns={[
+                      "CUSTOMER",
+                      "OUTSTANDING",
+                      "OVERDUE",
+                      "LATEST PROMISE",
+                      "NEXT STEP",
+                    ]}
+                    rows={m.ledger
+                      .filter((c) => c.outstanding > 0)
+                      .slice(0, 5)
+                      .map((c) => {
+                        const last = m.promises
+                          .filter((p) => p.customer === c.customer)
+                          .sort((a, b) =>
+                            b.made_on.localeCompare(a.made_on),
+                          )[0];
+                        return [
+                          customerButton(c.customer),
+                          <span className="money" key="m">
+                            {money(c.outstanding)}
+                          </span>,
+                          <span
+                            key="o"
+                            className={c.overdue ? "overdue-money" : "muted"}
+                          >
+                            {money(c.overdue)}
+                          </span>,
+                          last ? (
+                            <div key="p">
+                              <Badge status={last.status} />
+                              <small>{last.promised_date}</small>
+                            </div>
+                          ) : (
+                            <span key="p" className="muted">
+                              No promise yet
+                            </span>
+                          ),
+                          <button
+                            key="b"
+                            className="text-btn"
+                            onClick={() => reminder(c.customer)}
+                          >
+                            Draft reminder <Icon name="external" size={14} />
+                          </button>,
+                        ];
+                      })}
+                  />
+                  <div className="table-foot">
+                    <span>
+                      <span className="demo-dot" /> Reconciled from{" "}
+                      {data.invoices.length} invoices and {data.payments.length}{" "}
+                      payments
+                    </span>
+                    <span>Customer-wise FIFO allocation</span>
+                  </div>
+                </div>
+                <div className="bottom-grid">
+                  <div className="panel">
+                    <div className="section-head">
+                      <h2>Follow-ups to review</h2>
+                      <Icon name="Payment promises" size={17} />
+                    </div>
+                    {m.promises
+                      .filter(
+                        (p) => p.status === "Missed" || p.status === "Partial",
+                      )
+                      .slice(0, 3)
+                      .map((p, i) => (
+                        <div className="activity" key={i}>
+                          <span className="dot">
+                            <Icon name="Chat review" size={13} />
+                          </span>
+                          <div>
+                            <strong>{p.customer}</strong>
+                            <p>“{p.quote}”</p>
+                            <span className="subtle">
+                              {p.promised_date} · {p.status} · {money(p.paid)}{" "}
+                              received in window
+                            </span>
+                          </div>
+                          <button
+                            className="activity-action"
+                            aria-label={`Review ${p.customer} promise`}
+                            onClick={() => {
+                              setChatName(p.customer);
+                              navigate("Chat review");
+                            }}
+                          >
+                            <Icon name="chevron" size={15} />
+                          </button>
+                        </div>
+                      ))}
+                  </div>
+                  {workspace.businessId ? (
+                    <div className="panel hint-card">
+                      <h3>Your connected ledger</h3>
+                      <p>
+                        Import saved Excel records to update balances and stock.
+                        Conversation extractions remain review material until
+                        recorded in the ledger.
+                      </p>
+                      <button
+                        className="text-btn"
+                        onClick={() => navigate("Excel Sync")}
+                      >
+                        Open Excel Sync <Icon name="arrow" size={15} />
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="panel hint-card">
+                      <div className="hint-orbit">
+                        <Icon name="check" size={21} />
+                      </div>
+                      <h3>A balance cleared.</h3>
+                      <p>
+                        Open Verma Garments’ ledger to check the invoices and
+                        payments behind the current balance.
+                      </p>
+                      <button
+                        className="text-btn"
+                        onClick={() =>
+                          setModal({ type: "customer", name: "Verma Garments" })
+                        }
+                      >
+                        View Verma’s ledger <Icon name="arrow" size={15} />
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </section>
             </>
           )}
           {page === "Voice transcripts" && (
