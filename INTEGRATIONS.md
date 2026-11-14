@@ -26,7 +26,7 @@ The static Sites publication supports these local workflows only. Live APIs requ
 
 ## Supabase authentication and isolation
 
-1. Create a Supabase project; apply `supabase/migrations/202611140001_flowchat.sql` in its SQL editor or through your migration workflow.
+1. Create a Supabase project; apply all SQL files in `supabase/migrations/` in filename order in its SQL editor or through your migration workflow.
 2. Set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. These two are intentionally public identifiers; all data access is protected by RLS and authentication.
 3. Set `SUPABASE_SERVICE_ROLE_KEY` **server-side only** for signed billing/Meta webhooks and scheduled Excel sync. Never name it `NEXT_PUBLIC_*`.
 4. Configure Supabase Auth email confirmation and your deployment's allowed redirect URLs. Create/confirm an account through a new page, sign in, and create a business workspace. Select it in the account panel.
@@ -57,7 +57,7 @@ Google free-tier processing may be used to improve its products under the applic
 
 ## Accounting and GST documents
 
-The migration creates a private `accounting` bucket. The upload route checks the PDF signature and a 4 MB file-size limit; signed preview/download links expire after 60 seconds. Search covers filename, category, extracted party and invoice number. PDF text-content search, virus scanning, OCR verification and GST filing are not implemented.
+The migrations create a private `accounting` bucket and enforce privacy if a bucket with that name already existed. Existing objects are retained. Restrictive policies prevent older permissive storage policies from bypassing business isolation. Legacy objects outside business-prefixed folders need an administrator to assign them to the appropriate business before app access. The upload route checks the PDF signature and a 4 MB file-size limit; signed preview/download links expire after 60 seconds. Search covers filename, category, extracted party and invoice number. PDF text-content search, virus scanning, OCR verification and GST filing are not implemented.
 
 Sales invoices and purchase bills require an invoice number, party, date, total and confirmed INR currency for GST-summary review. Non-INR files can be stored and exported for review but are never converted or added to INR totals. Where taxable value and all tax components are present, integer-paise arithmetic checks their sum against the stated total. GSTIN format is checked, not government registration or checksum verification. Receipts/GST documents can omit invoice-only fields. Reviewing does not insert a financial ledger transaction.
 

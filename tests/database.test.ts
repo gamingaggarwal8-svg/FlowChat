@@ -1,7 +1,7 @@
 import { beforeAll, afterAll, describe, it, expect } from "vitest";
 import { PGlite } from "@electric-sql/pglite";
 import { pgcrypto } from "@electric-sql/pglite/contrib/pgcrypto";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { validateBatch } from "../lib/integrations/records";
 const owner = "11111111-1111-4111-8111-111111111111",
   outsider = "22222222-2222-4222-8222-222222222222",
@@ -34,7 +34,7 @@ async function sync(rows = row()) {
 beforeAll(async () => {
   db = new PGlite({ extensions: { pgcrypto } });
   await db.exec(
-    `create role authenticated; create role service_role bypassrls;create schema auth;create schema storage;create table auth.users(id uuid primary key,email text);create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;create function auth.role() returns text language sql stable as $$select current_setting('request.jwt.claim.role',true)$$;create table storage.buckets(id text primary key,name text,public boolean,file_size_limit bigint,allowed_mime_types text[]);create table storage.objects(id uuid default gen_random_uuid(),bucket_id text,name text);alter table storage.objects enable row level security;create function storage.foldername(text) returns text[] language sql immutable as $$select string_to_array($1,'/')$$;`,
+    `create role authenticated;create role anon; create role service_role bypassrls;create schema auth;create schema storage;create table auth.users(id uuid primary key,email text);create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;create function auth.role() returns text language sql stable as $$select current_setting('request.jwt.claim.role',true)$$;create table storage.buckets(id text primary key,name text,public boolean,file_size_limit bigint,allowed_mime_types text[]);create table storage.objects(id uuid default gen_random_uuid(),bucket_id text,name text);alter table storage.objects enable row level security;create function storage.foldername(text) returns text[] language sql immutable as $$select string_to_array($1,'/')$$;`,
   );
   await db.query("insert into auth.users values($1,$2),($3,$4),($5,$6)", [
     owner,
@@ -45,8 +45,15 @@ beforeAll(async () => {
     "viewer@example.test",
   ]);
   await db.exec(
-    await readFile("supabase/migrations/202611140001_flowchat.sql", "utf8"),
+    "create policy legacy_public_read on storage.objects for select to public using(true);grant usage on schema storage to anon;grant select on storage.objects to anon;",
   );
+  await db.exec(
+    "insert into storage.buckets(id,name,public) values('accounting','accounting',true)",
+  );
+  for (const migration of (await readdir("supabase/migrations"))
+    .filter((f) => f.endsWith(".sql"))
+    .sort())
+    await db.exec(await readFile(`supabase/migrations/${migration}`, "utf8"));
   await db.exec(
     "grant usage on schema public,auth,storage to authenticated,service_role;grant all on all tables in schema public,storage to authenticated,service_role;",
   );
@@ -111,6 +118,13 @@ describe("real PostgreSQL RLS and immutable history", () => {
   });
   it("scopes private storage reads to the business folder", async () => {
     await identity(owner);
+    expect(
+      (
+        await db.query<{ public: boolean }>(
+          "select public from storage.buckets where id='accounting'",
+        )
+      ).rows[0].public,
+    ).toBe(false);
     await db.query(
       "insert into storage.objects(bucket_id,name) values('accounting',$1)",
       [`${business}/invoice.pdf`],
@@ -125,6 +139,10 @@ describe("real PostgreSQL RLS and immutable history", () => {
         [`${business}/attack.pdf`],
       ),
     ).rejects.toThrow("row-level security");
+    await identity("", "anon");
+    expect((await db.query("select * from storage.objects")).rows).toHaveLength(
+      0,
+    );
   });
   it("rejects a whole invalid batch without committing earlier rows", async () => {
     await identity(owner);
