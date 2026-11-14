@@ -111,3 +111,27 @@ This creates `dist/`, including its sample-data download. Serve it with any stat
 Installed dependencies (`node_modules/`), `.next/`, generated `dist/`, private hosting identity (`.openai/`), Git history/credentials, real `.env` files and temporary work files. Everything needed to regenerate builds is included, with `package-lock.json` for reproducible installation.
 
 See [DEMO.md](DEMO.md) for the three-minute demo flow. Forecasting, automatic WhatsApp sends, an autonomous Collections Agent tab and a separate Business Case tab are not implemented in this checkout.
+
+
+## Impeccable frontend skills
+
+Impeccable 4.9.1 is installed for Codex in `.agents/skills/impeccable/`.
+This is the official project-local Codex skill bundle, pinned to the upstream
+revision in `UPSTREAM.json`, with its license and attribution included.
+`AGENTS.md` points frontend work to the installed skill.
+
+Open this repository in Codex and reload/start a new session so it discovers
+the skill. Example prompts:
+
+- `$impeccable audit` — review accessibility, responsiveness and frontend quality.
+- `$impeccable critique` — review usability and visual hierarchy.
+- `$impeccable polish` — refine the existing interface.
+- `$impeccable layout` — improve spacing and structure.
+- `$impeccable colorize` — improve meaningful use of colour.
+
+Skill installation does not redesign or rebuild the app. This install includes
+the skill and its bundled references/scripts; automatic design hooks are not
+installed. To add the optional integrations later, use the upstream installer:
+`npx impeccable install --providers=codex --scope=project`.
+
+Upstream: https://github.com/pbakaus/impeccable

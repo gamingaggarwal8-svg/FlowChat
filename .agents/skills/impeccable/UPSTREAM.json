@@ -1,0 +1,8 @@
+{
+  "project": "Impeccable",
+  "version": "4.9.1",
+  "source": "https://github.com/pbakaus/impeccable",
+  "revision": "61e73eebd34a845df0bfef463eb0d31ed4eab581",
+  "install": "Official Codex project-local skill bundle (manual installation)",
+  "license": "Apache-2.0; see LICENSE and NOTICE.md"
+}
