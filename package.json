@@ -10,7 +10,7 @@
     "test": "vitest run",
     "build:demo": "node scripts/build-demo.mjs",
     "test:legacy": "tsx --test tests/business.test.ts tests/evaluate.test.ts tests/extract.test.ts tests/route.test.ts",
-    "lint": "eslint lib/analytics.ts lib/data.ts lib/csv.ts scripts/seed-cache.ts scripts/check-analytics.ts tests/analytics.test.ts vitest.config.mts app/Operations.tsx app/Charts.tsx app/Demo.tsx app/page.tsx scripts/prepare-operations.ts lib/catalog.ts lib/voice.ts app/CatalogControls.tsx app/VoiceNotes.tsx tests/inventory-voice.test.ts",
+    "lint": "eslint lib/analytics.ts lib/data.ts lib/csv.ts scripts/seed-cache.ts scripts/check-analytics.ts tests/analytics.test.ts vitest.config.mts app/Operations.tsx app/Charts.tsx app/Demo.tsx app/page.tsx scripts/prepare-operations.ts lib/catalog.ts lib/voice.ts app/CatalogControls.tsx app/VoiceNotes.tsx tests/inventory-voice.test.ts app/ui.tsx",
     "seed:cache": "tsx scripts/seed-cache.ts",
     "prepare:operations": "tsx scripts/prepare-operations.ts",
     "start": "next start"

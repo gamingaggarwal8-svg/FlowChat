@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T09:38:47.447090+00:00",
+  "title": "Design System: FlowChat",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0057 264.5)",
+          "oklch(26% 0.0057 264.5)",
+          "oklch(38% 0.0057 264.5)",
+          "oklch(50% 0.0057 264.5)",
+          "oklch(62% 0.0057 264.5)",
+          "oklch(74% 0.0057 264.5)",
+          "oklch(86% 0.0057 264.5)",
+          "oklch(95% 0.0057 264.5)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(50% 0.0000 0.0)",
+          "oklch(62% 0.0000 0.0)",
+          "oklch(74% 0.0000 0.0)",
+          "oklch(86% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0180 256.2)",
+          "oklch(26% 0.0350 256.2)",
+          "oklch(38% 0.0481 256.2)",
+          "oklch(50% 0.0481 256.2)",
+          "oklch(62% 0.0481 256.2)",
+          "oklch(74% 0.0481 256.2)",
+          "oklch(86% 0.0350 256.2)",
+          "oklch(95% 0.0120 256.2)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0180 255.3)",
+          "oklch(26% 0.0350 255.3)",
+          "oklch(38% 0.0386 255.3)",
+          "oklch(50% 0.0386 255.3)",
+          "oklch(62% 0.0386 255.3)",
+          "oklch(74% 0.0386 255.3)",
+          "oklch(86% 0.0350 255.3)",
+          "oklch(95% 0.0120 255.3)"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Faint",
+        "tonalRamp": [
+          "oklch(15% 0.0180 256.8)",
+          "oklch(26% 0.0350 256.8)",
+          "oklch(38% 0.0370 256.8)",
+          "oklch(50% 0.0370 256.8)",
+          "oklch(62% 0.0370 256.8)",
+          "oklch(74% 0.0370 256.8)",
+          "oklch(86% 0.0350 256.8)",
+          "oklch(95% 0.0120 256.8)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0138 258.3)",
+          "oklch(26% 0.0138 258.3)",
+          "oklch(38% 0.0138 258.3)",
+          "oklch(50% 0.0138 258.3)",
+          "oklch(62% 0.0138 258.3)",
+          "oklch(74% 0.0138 258.3)",
+          "oklch(86% 0.0138 258.3)",
+          "oklch(95% 0.0120 258.3)"
+        ]
+      },
+      "line-soft": {
+        "role": "neutral",
+        "displayName": "Line Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0074 260.7)",
+          "oklch(26% 0.0074 260.7)",
+          "oklch(38% 0.0074 260.7)",
+          "oklch(50% 0.0074 260.7)",
+          "oklch(62% 0.0074 260.7)",
+          "oklch(74% 0.0074 260.7)",
+          "oklch(86% 0.0074 260.7)",
+          "oklch(95% 0.0074 260.7)"
+        ]
+      },
+      "nav": {
+        "role": "neutral",
+        "displayName": "Nav",
+        "tonalRamp": [
+          "oklch(15% 0.0180 258.0)",
+          "oklch(26% 0.0350 258.0)",
+          "oklch(38% 0.0550 258.0)",
+          "oklch(50% 0.0575 258.0)",
+          "oklch(62% 0.0575 258.0)",
+          "oklch(74% 0.0575 258.0)",
+          "oklch(86% 0.0350 258.0)",
+          "oklch(95% 0.0120 258.0)"
+        ]
+      },
+      "nav-ink": {
+        "role": "neutral",
+        "displayName": "Nav Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0120 259.8)",
+          "oklch(26% 0.0120 259.8)",
+          "oklch(38% 0.0120 259.8)",
+          "oklch(50% 0.0120 259.8)",
+          "oklch(62% 0.0120 259.8)",
+          "oklch(74% 0.0120 259.8)",
+          "oklch(86% 0.0120 259.8)",
+          "oklch(95% 0.0120 259.8)"
+        ]
+      },
+      "nav-muted": {
+        "role": "neutral",
+        "displayName": "Nav Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0180 255.6)",
+          "oklch(26% 0.0326 255.6)",
+          "oklch(38% 0.0326 255.6)",
+          "oklch(50% 0.0326 255.6)",
+          "oklch(62% 0.0326 255.6)",
+          "oklch(74% 0.0326 255.6)",
+          "oklch(86% 0.0326 255.6)",
+          "oklch(95% 0.0120 255.6)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Blue",
+        "tonalRamp": [
+          "oklch(15% 0.0180 265.3)",
+          "oklch(26% 0.0350 265.3)",
+          "oklch(38% 0.0550 265.3)",
+          "oklch(50% 0.0750 265.3)",
+          "oklch(62% 0.0750 265.3)",
+          "oklch(74% 0.0600 265.3)",
+          "oklch(86% 0.0350 265.3)",
+          "oklch(95% 0.0120 265.3)"
+        ]
+      },
+      "blue-soft": {
+        "role": "primary",
+        "displayName": "Blue Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0180 269.1)",
+          "oklch(26% 0.0182 269.1)",
+          "oklch(38% 0.0182 269.1)",
+          "oklch(50% 0.0182 269.1)",
+          "oklch(62% 0.0182 269.1)",
+          "oklch(74% 0.0182 269.1)",
+          "oklch(86% 0.0182 269.1)",
+          "oklch(95% 0.0120 269.1)"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Teal",
+        "tonalRamp": [
+          "oklch(15% 0.0180 172.2)",
+          "oklch(26% 0.0350 172.2)",
+          "oklch(38% 0.0550 172.2)",
+          "oklch(50% 0.0750 172.2)",
+          "oklch(62% 0.0750 172.2)",
+          "oklch(74% 0.0600 172.2)",
+          "oklch(86% 0.0350 172.2)",
+          "oklch(95% 0.0120 172.2)"
+        ]
+      },
+      "teal-soft": {
+        "role": "secondary",
+        "displayName": "Teal Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0149 164.7)",
+          "oklch(26% 0.0149 164.7)",
+          "oklch(38% 0.0149 164.7)",
+          "oklch(50% 0.0149 164.7)",
+          "oklch(62% 0.0149 164.7)",
+          "oklch(74% 0.0149 164.7)",
+          "oklch(86% 0.0149 164.7)",
+          "oklch(95% 0.0120 164.7)"
+        ]
+      },
+      "purple": {
+        "role": "secondary",
+        "displayName": "Purple",
+        "tonalRamp": [
+          "oklch(15% 0.0180 297.7)",
+          "oklch(26% 0.0350 297.7)",
+          "oklch(38% 0.0550 297.7)",
+          "oklch(50% 0.0750 297.7)",
+          "oklch(62% 0.0750 297.7)",
+          "oklch(74% 0.0600 297.7)",
+          "oklch(86% 0.0350 297.7)",
+          "oklch(95% 0.0120 297.7)"
+        ]
+      },
+      "purple-soft": {
+        "role": "secondary",
+        "displayName": "Purple Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0180 303.4)",
+          "oklch(26% 0.0181 303.4)",
+          "oklch(38% 0.0181 303.4)",
+          "oklch(50% 0.0181 303.4)",
+          "oklch(62% 0.0181 303.4)",
+          "oklch(74% 0.0181 303.4)",
+          "oklch(86% 0.0181 303.4)",
+          "oklch(95% 0.0120 303.4)"
+        ]
+      },
+      "amber": {
+        "role": "tertiary",
+        "displayName": "Amber",
+        "tonalRamp": [
+          "oklch(15% 0.0180 71.0)",
+          "oklch(26% 0.0350 71.0)",
+          "oklch(38% 0.0550 71.0)",
+          "oklch(50% 0.0750 71.0)",
+          "oklch(62% 0.0750 71.0)",
+          "oklch(74% 0.0600 71.0)",
+          "oklch(86% 0.0350 71.0)",
+          "oklch(95% 0.0120 71.0)"
+        ]
+      },
+      "amber-soft": {
+        "role": "tertiary",
+        "displayName": "Amber Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0180 86.5)",
+          "oklch(26% 0.0308 86.5)",
+          "oklch(38% 0.0308 86.5)",
+          "oklch(50% 0.0308 86.5)",
+          "oklch(62% 0.0308 86.5)",
+          "oklch(74% 0.0308 86.5)",
+          "oklch(86% 0.0308 86.5)",
+          "oklch(95% 0.0120 86.5)"
+        ]
+      },
+      "red": {
+        "role": "tertiary",
+        "displayName": "Red",
+        "tonalRamp": [
+          "oklch(15% 0.0180 22.8)",
+          "oklch(26% 0.0350 22.8)",
+          "oklch(38% 0.0550 22.8)",
+          "oklch(50% 0.0750 22.8)",
+          "oklch(62% 0.0750 22.8)",
+          "oklch(74% 0.0600 22.8)",
+          "oklch(86% 0.0350 22.8)",
+          "oklch(95% 0.0120 22.8)"
+        ]
+      },
+      "red-soft": {
+        "role": "tertiary",
+        "displayName": "Red Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0165 26.6)",
+          "oklch(26% 0.0165 26.6)",
+          "oklch(38% 0.0165 26.6)",
+          "oklch(50% 0.0165 26.6)",
+          "oklch(62% 0.0165 26.6)",
+          "oklch(74% 0.0165 26.6)",
+          "oklch(86% 0.0165 26.6)",
+          "oklch(95% 0.0120 26.6)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Primary Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0180 265.4)",
+          "oklch(26% 0.0350 265.4)",
+          "oklch(38% 0.0550 265.4)",
+          "oklch(50% 0.0750 265.4)",
+          "oklch(62% 0.0750 265.4)",
+          "oklch(74% 0.0600 265.4)",
+          "oklch(86% 0.0350 265.4)",
+          "oklch(95% 0.0120 265.4)"
+        ]
+      },
+      "primary-active": {
+        "role": "primary",
+        "displayName": "Primary Active",
+        "tonalRamp": [
+          "oklch(15% 0.0180 265.8)",
+          "oklch(26% 0.0350 265.8)",
+          "oklch(38% 0.0550 265.8)",
+          "oklch(50% 0.0750 265.8)",
+          "oklch(62% 0.0750 265.8)",
+          "oklch(74% 0.0600 265.8)",
+          "oklch(86% 0.0350 265.8)",
+          "oklch(95% 0.0120 265.8)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.0180 268.3)",
+          "oklch(26% 0.0350 268.3)",
+          "oklch(38% 0.0550 268.3)",
+          "oklch(50% 0.0750 268.3)",
+          "oklch(62% 0.0750 268.3)",
+          "oklch(74% 0.0600 268.3)",
+          "oklch(86% 0.0350 268.3)",
+          "oklch(95% 0.0120 268.3)"
+        ]
+      },
+      "chart-blue": {
+        "role": "tertiary",
+        "displayName": "Chart Blue",
+        "tonalRamp": [
+          "oklch(15% 0.0180 266.6)",
+          "oklch(26% 0.0350 266.6)",
+          "oklch(38% 0.0550 266.6)",
+          "oklch(50% 0.0750 266.6)",
+          "oklch(62% 0.0750 266.6)",
+          "oklch(74% 0.0600 266.6)",
+          "oklch(86% 0.0350 266.6)",
+          "oklch(95% 0.0120 266.6)"
+        ]
+      },
+      "chart-violet": {
+        "role": "tertiary",
+        "displayName": "Chart Violet",
+        "tonalRamp": [
+          "oklch(15% 0.0180 299.8)",
+          "oklch(26% 0.0350 299.8)",
+          "oklch(38% 0.0550 299.8)",
+          "oklch(50% 0.0750 299.8)",
+          "oklch(62% 0.0750 299.8)",
+          "oklch(74% 0.0600 299.8)",
+          "oklch(86% 0.0350 299.8)",
+          "oklch(95% 0.0120 299.8)"
+        ]
+      },
+      "chart-teal": {
+        "role": "tertiary",
+        "displayName": "Chart Teal",
+        "tonalRamp": [
+          "oklch(15% 0.0180 170.3)",
+          "oklch(26% 0.0350 170.3)",
+          "oklch(38% 0.0550 170.3)",
+          "oklch(50% 0.0750 170.3)",
+          "oklch(62% 0.0750 170.3)",
+          "oklch(74% 0.0600 170.3)",
+          "oklch(86% 0.0350 170.3)",
+          "oklch(95% 0.0120 170.3)"
+        ]
+      },
+      "chart-coral": {
+        "role": "tertiary",
+        "displayName": "Chart Coral",
+        "tonalRamp": [
+          "oklch(15% 0.0180 30.7)",
+          "oklch(26% 0.0350 30.7)",
+          "oklch(38% 0.0550 30.7)",
+          "oklch(50% 0.0750 30.7)",
+          "oklch(62% 0.0750 30.7)",
+          "oklch(74% 0.0600 30.7)",
+          "oklch(86% 0.0350 30.7)",
+          "oklch(95% 0.0120 30.7)"
+        ]
+      },
+      "chart-amber": {
+        "role": "tertiary",
+        "displayName": "Chart Amber",
+        "tonalRamp": [
+          "oklch(15% 0.0180 76.0)",
+          "oklch(26% 0.0350 76.0)",
+          "oklch(38% 0.0550 76.0)",
+          "oklch(50% 0.0750 76.0)",
+          "oklch(62% 0.0750 76.0)",
+          "oklch(74% 0.0600 76.0)",
+          "oklch(86% 0.0350 76.0)",
+          "oklch(95% 0.0120 76.0)"
+        ]
+      },
+      "chart-slate": {
+        "role": "tertiary",
+        "displayName": "Chart Slate",
+        "tonalRamp": [
+          "oklch(15% 0.0180 255.6)",
+          "oklch(26% 0.0336 255.6)",
+          "oklch(38% 0.0336 255.6)",
+          "oklch(50% 0.0336 255.6)",
+          "oklch(62% 0.0336 255.6)",
+          "oklch(74% 0.0336 255.6)",
+          "oklch(86% 0.0336 255.6)",
+          "oklch(95% 0.0120 255.6)"
+        ]
+      },
+      "stock-on-hand": {
+        "role": "tertiary",
+        "displayName": "Stock On Hand",
+        "tonalRamp": [
+          "oklch(15% 0.0180 66.8)",
+          "oklch(26% 0.0350 66.8)",
+          "oklch(38% 0.0550 66.8)",
+          "oklch(50% 0.0750 66.8)",
+          "oklch(62% 0.0750 66.8)",
+          "oklch(74% 0.0600 66.8)",
+          "oklch(86% 0.0350 66.8)",
+          "oklch(95% 0.0120 66.8)"
+        ]
+      },
+      "stock-inbound": {
+        "role": "tertiary",
+        "displayName": "Stock Inbound",
+        "tonalRamp": [
+          "oklch(15% 0.0180 269.1)",
+          "oklch(26% 0.0350 269.1)",
+          "oklch(38% 0.0550 269.1)",
+          "oklch(50% 0.0716 269.1)",
+          "oklch(62% 0.0716 269.1)",
+          "oklch(74% 0.0600 269.1)",
+          "oklch(86% 0.0350 269.1)",
+          "oklch(95% 0.0120 269.1)"
+        ]
+      },
+      "stock-target": {
+        "role": "tertiary",
+        "displayName": "Stock Target",
+        "tonalRamp": [
+          "oklch(15% 0.0180 258.9)",
+          "oklch(26% 0.0350 258.9)",
+          "oklch(38% 0.0550 258.9)",
+          "oklch(50% 0.0750 258.9)",
+          "oklch(62% 0.0750 258.9)",
+          "oklch(74% 0.0600 258.9)",
+          "oklch(86% 0.0350 258.9)",
+          "oklch(95% 0.0120 258.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles; mobile source overrides to 26px/1.3."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings."
+      },
+      "subheading": {
+        "displayName": "Subheading",
+        "purpose": "Subsection headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Baseline reading text, generally capped at 72ch."
+      },
+      "support": {
+        "displayName": "Support",
+        "purpose": "Supporting text; components have local variants."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Compact labelled actions."
+      },
+      "metric": {
+        "displayName": "Metric",
+        "purpose": "Summary strip figures with tabular numerals."
+      },
+      "table-label": {
+        "displayName": "Table Label",
+        "purpose": "Dense table column headings."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "action-state",
+        "value": "background-color 0.16s ease-out",
+        "purpose": "Primary action colour transition."
+      },
+      {
+        "name": "rail-state",
+        "value": "background-color 0.16s ease-out, color 0.16s ease-out",
+        "purpose": "Rail item hover and active feedback."
+      },
+      {
+        "name": "stat-state",
+        "value": "background-color 0.15s ease-out",
+        "purpose": "Summary strip hover."
+      },
+      {
+        "name": "contribution-width",
+        "value": "width 0.2s ease-out",
+        "purpose": "Contribution track updates."
+      },
+      {
+        "name": "mobile-drawer",
+        "value": "transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Mobile rail open and close; reduced motion sets duration to zero."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1550px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1250px"
+      },
+      {
+        "name": "stacked-content",
+        "value": "1050px"
+      },
+      {
+        "name": "mobile-drawer",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main labelled action; source-derived hover, pressed and focus treatments.",
+      "html": "<button class=\"ds-primary ds-focus\">Review evidence <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14 M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-primary{font-family:\"Public Sans\",system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:550;line-height:1.4;cursor:pointer;border:0;background:var(--blue);color:var(--surface);border-radius:7px;min-height:40px;padding:11px 17px;transition:background-color .16s ease-out}.ds-primary:hover{background:#254dca}.ds-primary:active{background:#203fa0}.ds-primary:disabled{opacity:.45;cursor:not-allowed}.ds-focus:focus-visible{outline:3px solid var(--focus,#688af3);outline-offset:4px;border-radius:4px}@media(prefers-reduced-motion:reduce){.ds-primary{transition-duration:0s}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet bordered alternative.",
+      "html": "<button class=\"ds-secondary ds-focus\">Download stock plan</button>",
+      "css": ".ds-secondary{font-family:\"Public Sans\",system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:550;line-height:1.4;cursor:pointer;min-height:35px;padding:8px 11px;border:1px solid #dbe3ef;border-radius:6px;color:#466185;background:var(--surface);white-space:nowrap}.ds-secondary:hover{background:#f4f7ff;border-color:#b3c5e6;color:#244b86}.ds-focus:focus-visible{outline:3px solid var(--focus,#688af3);outline-offset:4px;border-radius:4px}"
+    },
+    {
+      "name": "Inline Action",
+      "kind": "button",
+      "refersTo": "button-inline",
+      "description": "Low-emphasis evidence action.",
+      "html": "<button class=\"ds-inline ds-focus\">See source records</button>",
+      "css": ".ds-inline{font-family:\"Public Sans\",system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:550;line-height:1.4;cursor:pointer;border:0;background:none;color:#3a5f9f;padding:7px 0}.ds-inline:hover{text-decoration:underline}.ds-focus:focus-visible{outline:3px solid var(--focus,#688af3);outline-offset:4px;border-radius:4px}"
+    },
+    {
+      "name": "Labelled Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Full-width field with source focus treatment.",
+      "html": "<label class=\"ds-field\">Customer<input placeholder=\"Customer name\" /></label>",
+      "css": ".ds-field{font-family:\"Public Sans\",system-ui,sans-serif;display:block;font-size:12px;font-weight:500;color:#4d6584}.ds-field input{font-family:\"Public Sans\",system-ui,sans-serif;display:block;width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:11px 12px;margin-top:8px;color:#304b6e;font-size:13px}.ds-field input::placeholder{color:#6a7890;opacity:1}.ds-field input:focus-visible{outline:2px solid #688af3;outline-offset:2px}"
+    },
+    {
+      "name": "Workspace Navigation",
+      "kind": "nav",
+      "refersTo": "nav-active",
+      "description": "Excerpt of the ink-blue rail; state styling only, no simulated app navigation.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Workspace navigation\"><button class=\"ds-nav-item ds-focus\" aria-current=\"page\">Inventory &amp; growth</button><button class=\"ds-nav-item ds-focus\">Suppliers</button></nav>",
+      "css": ".ds-nav{font-family:\"Public Sans\",system-ui,sans-serif;background:var(--nav);padding:18px;width:236px}.ds-nav-item{font-family:\"Public Sans\",system-ui,sans-serif;display:flex;align-items:center;width:100%;min-height:43px;margin-bottom:3px;padding:10px 13px;border:0;border-radius:7px;background:none;text-align:left;font-size:13px;color:#d0dcee;cursor:pointer;transition:background-color .16s ease-out,color .16s ease-out}.ds-nav-item:hover{background:#233c5d;color:white}.ds-nav-item[aria-current=page]{background:var(--blue);color:white}.ds-focus:focus-visible{outline:3px solid var(--focus,#688af3);outline-offset:4px;border-radius:4px}@media(prefers-reduced-motion:reduce){.ds-nav-item{transition-duration:0s}}"
+    },
+    {
+      "name": "Quantity Status",
+      "kind": "chip",
+      "refersTo": "status",
+      "description": "Static text labels with semantic colour; no invented hover state.",
+      "html": "<div class=\"ds-tags\"><span class=\"ds-status ds-low\">Low</span><span class=\"ds-status ds-adequate\">Adequate</span><span class=\"ds-status ds-critical\">Critical</span></div>",
+      "css": ".ds-tags{display:flex;gap:8px;flex-wrap:wrap}.ds-status{font-family:\"Public Sans\",system-ui,sans-serif;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;padding:5px 8px;border-radius:5px;font-size:10px;line-height:1.5;font-weight:500}.ds-low{background:var(--amber-soft);color:#865d1d}.ds-adequate{background:#e8f4ed;color:#246b49}.ds-critical{background:var(--red-soft);color:#9b4646}"
+    },
+    {
+      "name": "Working Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Shared flat container for operations and charts.",
+      "html": "<section class=\"ds-panel\"><h2>Inventory planning sheet</h2><p>Review stock cover and incoming orders before committing.</p></section>",
+      "css": ".ds-panel{font-family:\"Public Sans\",system-ui,sans-serif;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius);padding:24px;min-width:0}.ds-panel h2{margin:0;font-size:18px;line-height:1.4;letter-spacing:-.015em;font-weight:650}.ds-panel p{margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--muted);max-width:72ch}@media(max-width:760px){.ds-panel{padding:20px 16px;border-radius:12px}}"
+    },
+    {
+      "name": "Evidence Table",
+      "kind": "custom",
+      "refersTo": "panel",
+      "description": "Source-grounded row and header styles with horizontal overflow.",
+      "html": "<div class=\"ds-table-wrap\"><table class=\"ds-table\"><thead><tr><th scope=\"col\">PRODUCT</th><th scope=\"col\">ON HAND</th><th scope=\"col\">INCOMING</th></tr></thead><tbody><tr><td>P01 · Sample product</td><td>120 mtr</td><td>600 mtr</td></tr></tbody></table></div>",
+      "css": ".ds-table-wrap{overflow-x:auto;overscroll-behavior-x:contain}.ds-table{font-family:\"Public Sans\",system-ui,sans-serif;border-collapse:collapse;width:100%;text-align:left;white-space:nowrap;font-size:12px;font-variant-numeric:tabular-nums}.ds-table th{font-weight:550;font-size:11px;line-height:1.4;letter-spacing:.015em;padding:13px 12px;color:#5f7190;background:#f6f8fc;border-bottom:1px solid var(--line)}.ds-table td{padding:17px 12px;border-bottom:1px solid var(--line-soft);color:#33465f}.ds-table tr:last-child td{border-bottom:0}.ds-table tbody tr:hover{background:#f8faff}"
+    },
+    {
+      "name": "Stock Position",
+      "kind": "custom",
+      "refersTo": "panel",
+      "description": "Illustrative preview of separate on-hand, incoming and target encodings.",
+      "html": "<div class=\"ds-stock\"><div class=\"ds-stock-labels\"><span>On hand <strong>120 mtr</strong></span><span>Incoming <strong>600 mtr</strong></span><span>Target <strong>600 mtr</strong></span></div><div class=\"ds-track\" role=\"img\" aria-label=\"Illustration: 120 metres on hand, 600 incoming, target 600\"><span class=\"ds-hand\" style=\"width:15%\"></span><span class=\"ds-inbound\" style=\"width:75%\"></span><span class=\"ds-target\" style=\"left:75%\"></span></div></div>",
+      "css": ".ds-stock{font-family:\"Public Sans\",system-ui,sans-serif;font-size:12px;color:#4d635a}.ds-stock-labels{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.ds-stock-labels strong{color:#273e37;font-weight:650;font-variant-numeric:tabular-nums}.ds-track{display:flex;height:16px;background:#eef1f6;margin-top:13px;position:relative;border-radius:4px}.ds-hand{background:#c78332;border-radius:4px 0 0 4px}.ds-inbound{background:#b7c9fa;border-radius:0 4px 4px 0}.ds-target{position:absolute;height:26px;width:1px;background:#324d77;top:-5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Production-label clarity",
+    "overview": "Production-label clarity gives FlowChat a professional, colourful working interface for a busy textile distributor. Public Sans, an ink-blue navigation rail, a cool off-white work area and crisp white sheets carry the system. Colour identifies customer, supplier and stock contexts while numbers, source evidence and next actions supply the emphasis.\n\nThe material is flat and precise: thin borders, tonal insets, modest corners and tabular figures. The source implements responsive grids, labelled controls, visible focus styles and reduced-motion overrides. This record describes implemented source, not rendered approval: current desktop/mobile captures are absent, and rendered contrast, keyboard interaction and microphone operation remain unverified.",
+    "keyCharacteristics": [
+      "One sans family with tabular business figures.",
+      "Ink-blue shell with white working sheets.",
+      "Cobalt customer, violet supplier and emerald stock context.",
+      "Evidence links and explicit status text alongside colour.",
+      "Border-led depth and brief state transitions."
+    ],
+    "rules": [
+      {
+        "name": "The Context Colour Rule",
+        "body": "Keep customer, supplier and inventory colour assignments consistent; pair commitment and risk colours with explicit state text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numeric Alignment Rule",
+        "body": "Use tabular figures for money, table cells and operational metrics; retain Indian-format currency labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Border-Led Depth Rule",
+        "body": "Use thin dividers and tonal insets to separate working regions. Resting panels do not carry box shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use Public Sans and the established headline, body and supporting hierarchy.",
+      "Do retain labelled controls, visible focus treatments and reduced-motion overrides.",
+      "Do keep on-hand, incoming and target quantities separately labelled in stock diagrams.",
+      "Do use horizontally scrolling table wrappers and source evidence actions for dense records."
+    ],
+    "donts": [
+      "Don't replace semantic status text with colour alone.",
+      "Don't add resting panel shadows to this flat working system.",
+      "Don't promote a one-off accent, caption or uppercase metadata treatment into a global display style.",
+      "Don't describe current screenshots, contrast, keyboard flows or microphone operation as verified without rendered evidence."
+    ]
+  }
+}

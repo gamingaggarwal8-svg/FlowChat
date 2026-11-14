@@ -129,9 +129,28 @@ the skill. Example prompts:
 - `$impeccable layout` — improve spacing and structure.
 - `$impeccable colorize` — improve meaningful use of colour.
 
-Skill installation does not redesign or rebuild the app. This install includes
-the skill and its bundled references/scripts; automatic design hooks are not
-installed. To add the optional integrations later, use the upstream installer:
+The frontend now uses the Impeccable redesign documented in `DESIGN.md`.
+The skill and its bundled references/scripts are included; automatic design hooks
+are not installed. To add the optional integrations later, use the upstream installer:
 `npx impeccable install --providers=codex --scope=project`.
 
 Upstream: https://github.com/pbakaus/impeccable
+
+## Frontend redesign and integration plan
+
+The daily operations view leads with stock availability, delayed incoming orders
+and the next-14-day cash constraint. Public Sans, navy navigation and clear
+customer/supplier/inventory colours replace the earlier warm dashboard. Existing
+calculations, evidence, transcript review and owner approvals are preserved.
+See [PRODUCT.md](PRODUCT.md) and [DESIGN.md](DESIGN.md) for the product and design
+contracts.
+
+Type checking, lint, all 38 Vitest tests, the Next.js production build and static
+demo build pass. The Impeccable mechanical scan reports no findings. Desktop/mobile
+rendered review, keyboard interaction and microphone operation remain unverified
+because the permitted browser tooling was unavailable; the finish review requests
+those captures and does not grant visual approval.
+
+[ARCHITECTURE.md](ARCHITECTURE.md) describes the proposed WhatsApp ingestion,
+Excel in OneDrive/SharePoint → Supabase sync, workbook tables and production stack.
+These connections are planned; the demo still reads synthetic files.
