@@ -1,0 +1,59 @@
+{
+ "as_of": "2026-11-14",
+ "receivables_outstanding": 631417,
+ "payables_outstanding": 416265,
+ "net_position": 215152,
+ "payables_overdue": 253394,
+ "payables_due_next_14_days": 162871,
+ "customer_pending_promises_expected_inflow": 96243,
+ "payables_by_supplier": {
+  "Panipat Garments Unit": 101415,
+  "Surat Weave Mills": 93516,
+  "Ahmedabad Linen Co": 71958,
+  "Jaipur Print House": 49770,
+  "Delhi Lining and Trims": 43212,
+  "Silk Route Sarees": 36654,
+  "Ludhiana Denim Works": 19740
+ },
+ "low_stock_skus": [
+  "P01",
+  "P03",
+  "P05",
+  "P07"
+ ],
+ "overstock_skus": [
+  "P08",
+  "P09"
+ ],
+ "delayed_pos": [
+  "PO-S01-4"
+ ],
+ "open_pos": [
+  "PO-S03-4",
+  "PO-S04-4",
+  "PO-S05-4"
+ ],
+ "late_deliveries": [
+  "PO-S01-2",
+  "PO-S03-2",
+  "PO-S05-3"
+ ],
+ "inventory_value_at_cost": 374395,
+ "owner_payment_promise_statuses": {
+  "Surat Weave Mills": [
+   "missed"
+  ],
+  "Ludhiana Denim Works": [
+   "pending"
+  ],
+  "Silk Route Sarees": [
+   "partial"
+  ],
+  "Panipat Garments Unit": [
+   "kept"
+  ],
+  "Ahmedabad Linen Co": [
+   "partial"
+  ]
+ }
+}

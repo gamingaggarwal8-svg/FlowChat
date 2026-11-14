@@ -1,0 +1,77 @@
+{
+  "purchase_orders": [
+    {
+      "po_id": "PO-S03-1",
+      "order_date": "2026-07-24",
+      "items": [
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 853,
+          "final_rate": 100
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-07-29",
+        "actual_delivery": "2026-07-29",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S03-2",
+      "order_date": "2026-09-03",
+      "items": [
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 568,
+          "final_rate": 100
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-09-08",
+        "actual_delivery": "2026-09-09",
+        "revised_promised_date": null,
+        "expected_status": "late"
+      }
+    },
+    {
+      "po_id": "PO-S03-3",
+      "order_date": "2026-10-07",
+      "items": [
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 474,
+          "final_rate": 100
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-10-12",
+        "actual_delivery": "2026-10-12",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S03-4",
+      "order_date": "2026-11-10",
+      "items": [
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 1020,
+          "final_rate": 100
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-11-17",
+        "actual_delivery": null,
+        "revised_promised_date": null,
+        "expected_status": "pending"
+      }
+    }
+  ],
+  "owner_payment_promises": []
+}

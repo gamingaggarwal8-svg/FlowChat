@@ -1,0 +1,38 @@
+{
+  "name": "flowchat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "eval": "tsx --env-file-if-exists=.env.local scripts/eval.ts",
+    "test": "vitest run",
+    "build:demo": "node scripts/build-demo.mjs",
+    "test:legacy": "tsx --test tests/business.test.ts tests/evaluate.test.ts tests/extract.test.ts tests/route.test.ts",
+    "lint": "eslint lib/analytics.ts lib/data.ts lib/csv.ts scripts/seed-cache.ts scripts/check-analytics.ts tests/analytics.test.ts vitest.config.mts app/Operations.tsx app/Charts.tsx app/Demo.tsx app/page.tsx scripts/prepare-operations.ts lib/catalog.ts lib/voice.ts app/CatalogControls.tsx app/VoiceNotes.tsx tests/inventory-voice.test.ts",
+    "seed:cache": "tsx scripts/seed-cache.ts",
+    "prepare:operations": "tsx scripts/prepare-operations.ts",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.0",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.10.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.15.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
+  }
+}

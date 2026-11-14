@@ -1,0 +1,11 @@
+sku,name,unit,current_stock,reorder_level,cost_price,list_price,floor_price,stock_value_at_cost,avg_weekly_sales_8w,weeks_cover,last_sale_date,last_receipt_date,open_po_qty,supplier_id,status
+P01,Blue Cotton Shirting,mtr,120,300,150,220,190,18000,100.0,1.2,2026-11-02,2026-10-10,600,S01,LOW
+P02,White Poplin,mtr,90,60,125,180,155,11250,18.8,4.8,2026-10-08,2026-10-10,0,S01,OK
+P03,Cotton Kurta Set,pc,70,90,330,440,390,23100,30.0,2.3,2026-11-07,2026-10-16,180,S05,LOW
+P04,Denim Fabric 12oz,mtr,80,40,235,310,275,18800,12.5,6.4,2026-10-10,2026-10-11,0,S02,OK
+P05,Rayon Printed Fabric,mtr,255,510,100,140,120,25500,168.8,1.5,2026-11-06,2026-10-12,1020,S03,LOW
+P06,School Uniform Shirt,pc,180,150,185,260,225,33300,50.0,3.6,2026-11-09,2026-10-16,0,S05,OK
+P07,Silk Blend Saree,pc,20,35,920,1250,1100,18400,11.2,1.8,2026-11-04,2026-10-13,70,S04,LOW
+P08,Polyester Lining,mtr,2490,415,38,60,50,94620,137.5,18.1,2026-10-15,2026-10-15,0,S06,OVERSTOCK
+P09,Linen Blend Fabric,mtr,360,90,290,380,335,104400,30.0,12.0,2026-10-30,2026-10-16,0,S07,OVERSTOCK
+P10,Track Pants,pc,115,90,235,330,290,27025,30.0,3.8,2026-10-25,2026-10-16,0,S05,OK

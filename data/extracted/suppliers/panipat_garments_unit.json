@@ -1,0 +1,122 @@
+{
+  "purchase_orders": [
+    {
+      "po_id": "PO-S05-1",
+      "order_date": "2026-07-26",
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 171,
+          "final_rate": 330
+        },
+        {
+          "sku": "P06",
+          "name": "School Uniform Shirt",
+          "qty": 423,
+          "final_rate": 185
+        },
+        {
+          "sku": "P10",
+          "name": "Track Pants",
+          "qty": 173,
+          "final_rate": 235
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-07-31",
+        "actual_delivery": "2026-07-31",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S05-2",
+      "order_date": "2026-09-05",
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 114,
+          "final_rate": 330
+        },
+        {
+          "sku": "P06",
+          "name": "School Uniform Shirt",
+          "qty": 282,
+          "final_rate": 185
+        },
+        {
+          "sku": "P10",
+          "name": "Track Pants",
+          "qty": 116,
+          "final_rate": 235
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-09-10",
+        "actual_delivery": "2026-09-10",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S05-3",
+      "order_date": "2026-10-09",
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 95,
+          "final_rate": 330
+        },
+        {
+          "sku": "P06",
+          "name": "School Uniform Shirt",
+          "qty": 235,
+          "final_rate": 185
+        },
+        {
+          "sku": "P10",
+          "name": "Track Pants",
+          "qty": 96,
+          "final_rate": 235
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-10-14",
+        "actual_delivery": "2026-10-16",
+        "revised_promised_date": null,
+        "expected_status": "late"
+      }
+    },
+    {
+      "po_id": "PO-S05-4",
+      "order_date": "2026-11-09",
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 180,
+          "final_rate": 330
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-11-16",
+        "actual_delivery": null,
+        "revised_promised_date": null,
+        "expected_status": "pending"
+      }
+    }
+  ],
+  "owner_payment_promises": [
+    {
+      "made_on": "2026-11-03",
+      "promised_date": "2026-11-09",
+      "amount": 50000,
+      "quote": "Monday tak 50000 ka payment ho jayega",
+      "direction": "owner_to_supplier",
+      "expected_status": "kept"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+quote_id,customer,date,taxable_value,status,items
+Q-01,Khanna Traders,2026-11-12,38000,open,Linen Blend Fabric x100
+Q-02,Mehta Fashion,2026-11-13,25000,open,Silk Blend Saree x20
+Q-03,Reddy Garments,2026-11-12,66000,open,Cotton Kurta Set x150
+Q-04,Patel Fabrics,2026-11-11,62000,open,Denim Fabric 12oz x200
+Q-05,Kapoor Tailors Supply,2026-11-10,84000,open,Rayon Printed Fabric x600

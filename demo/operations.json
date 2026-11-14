@@ -1,0 +1,4242 @@
+{
+  "salesLines": [
+    {
+      "invoiceId": "INV-101",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-08-05",
+      "sku": "P01",
+      "qty": 400,
+      "rate": 207,
+      "amount": 82800,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-101:P01:0"
+      }
+    },
+    {
+      "invoiceId": "INV-101",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-08-05",
+      "sku": "P02",
+      "qty": 300,
+      "rate": 169,
+      "amount": 50700,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-101:P02:1"
+      }
+    },
+    {
+      "invoiceId": "INV-102",
+      "customer": "Gupta Fabrics",
+      "date": "2026-08-08",
+      "sku": "P02",
+      "qty": 200,
+      "rate": 175,
+      "amount": 35000,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-102:P02:2"
+      }
+    },
+    {
+      "invoiceId": "INV-103",
+      "customer": "Sharma Textiles",
+      "date": "2026-08-12",
+      "sku": "P01",
+      "qty": 150,
+      "rate": 211,
+      "amount": 31650,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-103:P01:3"
+      }
+    },
+    {
+      "invoiceId": "INV-103",
+      "customer": "Sharma Textiles",
+      "date": "2026-08-12",
+      "sku": "P02",
+      "qty": 100,
+      "rate": 173,
+      "amount": 17300,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-103:P02:4"
+      }
+    },
+    {
+      "invoiceId": "INV-104",
+      "customer": "Singh Uniforms",
+      "date": "2026-08-20",
+      "sku": "P06",
+      "qty": 300,
+      "rate": 247,
+      "amount": 74100,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-104:P06:5"
+      }
+    },
+    {
+      "invoiceId": "INV-105",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-08-28",
+      "sku": "P08",
+      "qty": 800,
+      "rate": 57,
+      "amount": 45600,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-105:P08:6"
+      }
+    },
+    {
+      "invoiceId": "INV-105",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-08-28",
+      "sku": "P05",
+      "qty": 400,
+      "rate": 133,
+      "amount": 53200,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-105:P05:7"
+      }
+    },
+    {
+      "invoiceId": "INV-106",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-09-02",
+      "sku": "P04",
+      "qty": 250,
+      "rate": 291,
+      "amount": 72750,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-106:P04:8"
+      }
+    },
+    {
+      "invoiceId": "INV-107",
+      "customer": "Verma Garments",
+      "date": "2026-09-02",
+      "sku": "P03",
+      "qty": 50,
+      "rate": 418,
+      "amount": 20900,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-107:P03:9"
+      }
+    },
+    {
+      "invoiceId": "INV-108",
+      "customer": "Reddy Garments",
+      "date": "2026-09-05",
+      "sku": "P03",
+      "qty": 100,
+      "rate": 422,
+      "amount": 42200,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-108:P03:10"
+      }
+    },
+    {
+      "invoiceId": "INV-109",
+      "customer": "Sharma Textiles",
+      "date": "2026-09-10",
+      "sku": "P04",
+      "qty": 120,
+      "rate": 298,
+      "amount": 35760,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-109:P04:11"
+      }
+    },
+    {
+      "invoiceId": "INV-110",
+      "customer": "Jain Sarees",
+      "date": "2026-09-12",
+      "sku": "P07",
+      "qty": 40,
+      "rate": 1225,
+      "amount": 49000,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-110:P07:12"
+      }
+    },
+    {
+      "invoiceId": "INV-111",
+      "customer": "Gupta Fabrics",
+      "date": "2026-09-15",
+      "sku": "P05",
+      "qty": 300,
+      "rate": 136,
+      "amount": 40800,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-111:P05:13"
+      }
+    },
+    {
+      "invoiceId": "INV-111",
+      "customer": "Gupta Fabrics",
+      "date": "2026-09-15",
+      "sku": "P08",
+      "qty": 400,
+      "rate": 58,
+      "amount": 23200,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-111:P08:14"
+      }
+    },
+    {
+      "invoiceId": "INV-112",
+      "customer": "Singh Uniforms",
+      "date": "2026-09-18",
+      "sku": "P06",
+      "qty": 250,
+      "rate": 247,
+      "amount": 61750,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-112:P06:15"
+      }
+    },
+    {
+      "invoiceId": "INV-112",
+      "customer": "Singh Uniforms",
+      "date": "2026-09-18",
+      "sku": "P10",
+      "qty": 100,
+      "rate": 314,
+      "amount": 31400,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-112:P10:16"
+      }
+    },
+    {
+      "invoiceId": "INV-113",
+      "customer": "Patel Fabrics",
+      "date": "2026-09-25",
+      "sku": "P09",
+      "qty": 80,
+      "rate": 369,
+      "amount": 29520,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-113:P09:17"
+      }
+    },
+    {
+      "invoiceId": "INV-114",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-09-29",
+      "sku": "P08",
+      "qty": 500,
+      "rate": 57,
+      "amount": 28500,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-114:P08:18"
+      }
+    },
+    {
+      "invoiceId": "INV-115",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-09-30",
+      "sku": "P05",
+      "qty": 500,
+      "rate": 132,
+      "amount": 66000,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-115:P05:19"
+      }
+    },
+    {
+      "invoiceId": "INV-116",
+      "customer": "Verma Garments",
+      "date": "2026-10-01",
+      "sku": "P06",
+      "qty": 120,
+      "rate": 247,
+      "amount": 29640,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-116:P06:20"
+      }
+    },
+    {
+      "invoiceId": "INV-117",
+      "customer": "Mehta Fashion",
+      "date": "2026-10-02",
+      "sku": "P03",
+      "qty": 60,
+      "rate": 427,
+      "amount": 25620,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-117:P03:21"
+      }
+    },
+    {
+      "invoiceId": "INV-118",
+      "customer": "Sharma Textiles",
+      "date": "2026-10-05",
+      "sku": "P01",
+      "qty": 200,
+      "rate": 211,
+      "amount": 42200,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-118:P01:22"
+      }
+    },
+    {
+      "invoiceId": "INV-118",
+      "customer": "Sharma Textiles",
+      "date": "2026-10-05",
+      "sku": "P09",
+      "qty": 60,
+      "rate": 365,
+      "amount": 21900,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-118:P09:23"
+      }
+    },
+    {
+      "invoiceId": "INV-119",
+      "customer": "Gupta Fabrics",
+      "date": "2026-10-08",
+      "sku": "P02",
+      "qty": 150,
+      "rate": 175,
+      "amount": 26250,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-119:P02:24"
+      }
+    },
+    {
+      "invoiceId": "INV-119",
+      "customer": "Gupta Fabrics",
+      "date": "2026-10-08",
+      "sku": "P01",
+      "qty": 100,
+      "rate": 213,
+      "amount": 21300,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-119:P01:25"
+      }
+    },
+    {
+      "invoiceId": "INV-120",
+      "customer": "Khanna Traders",
+      "date": "2026-10-10",
+      "sku": "P04",
+      "qty": 100,
+      "rate": 304,
+      "amount": 30400,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-120:P04:26"
+      }
+    },
+    {
+      "invoiceId": "INV-121",
+      "customer": "Reddy Garments",
+      "date": "2026-10-12",
+      "sku": "P03",
+      "qty": 80,
+      "rate": 422,
+      "amount": 33760,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-121:P03:27"
+      }
+    },
+    {
+      "invoiceId": "INV-121",
+      "customer": "Reddy Garments",
+      "date": "2026-10-12",
+      "sku": "P10",
+      "qty": 60,
+      "rate": 317,
+      "amount": 19020,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-121:P10:28"
+      }
+    },
+    {
+      "invoiceId": "INV-122",
+      "customer": "Jain Sarees",
+      "date": "2026-10-14",
+      "sku": "P07",
+      "qty": 60,
+      "rate": 1225,
+      "amount": 73500,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-122:P07:29"
+      }
+    },
+    {
+      "invoiceId": "INV-123",
+      "customer": "Bansal Clothing",
+      "date": "2026-10-15",
+      "sku": "P08",
+      "qty": 600,
+      "rate": 59,
+      "amount": 35400,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-123:P08:30"
+      }
+    },
+    {
+      "invoiceId": "INV-124",
+      "customer": "Verma Garments",
+      "date": "2026-10-20",
+      "sku": "P10",
+      "qty": 80,
+      "rate": 314,
+      "amount": 25120,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-124:P10:31"
+      }
+    },
+    {
+      "invoiceId": "INV-125",
+      "customer": "Singh Uniforms",
+      "date": "2026-10-22",
+      "sku": "P06",
+      "qty": 200,
+      "rate": 247,
+      "amount": 49400,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-125:P06:32"
+      }
+    },
+    {
+      "invoiceId": "INV-126",
+      "customer": "Mehta Fashion",
+      "date": "2026-10-25",
+      "sku": "P10",
+      "qty": 100,
+      "rate": 320,
+      "amount": 32000,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-126:P10:33"
+      }
+    },
+    {
+      "invoiceId": "INV-127",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-10-26",
+      "sku": "P05",
+      "qty": 350,
+      "rate": 133,
+      "amount": 46550,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-127:P05:34"
+      }
+    },
+    {
+      "invoiceId": "INV-128",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-10-27",
+      "sku": "P01",
+      "qty": 300,
+      "rate": 207,
+      "amount": 62100,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-128:P01:35"
+      }
+    },
+    {
+      "invoiceId": "INV-129",
+      "customer": "Sharma Textiles",
+      "date": "2026-10-28",
+      "sku": "P03",
+      "qty": 40,
+      "rate": 422,
+      "amount": 16880,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-129:P03:36"
+      }
+    },
+    {
+      "invoiceId": "INV-130",
+      "customer": "Patel Fabrics",
+      "date": "2026-10-30",
+      "sku": "P09",
+      "qty": 100,
+      "rate": 369,
+      "amount": 36900,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-130:P09:37"
+      }
+    },
+    {
+      "invoiceId": "INV-130",
+      "customer": "Patel Fabrics",
+      "date": "2026-10-30",
+      "sku": "P01",
+      "qty": 120,
+      "rate": 213,
+      "amount": 25560,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-130:P01:38"
+      }
+    },
+    {
+      "invoiceId": "INV-131",
+      "customer": "Khanna Traders",
+      "date": "2026-11-02",
+      "sku": "P01",
+      "qty": 80,
+      "rate": 216,
+      "amount": 17280,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-131:P01:39"
+      }
+    },
+    {
+      "invoiceId": "INV-132",
+      "customer": "Gupta Fabrics",
+      "date": "2026-11-03",
+      "sku": "P05",
+      "qty": 200,
+      "rate": 136,
+      "amount": 27200,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-132:P05:40"
+      }
+    },
+    {
+      "invoiceId": "INV-133",
+      "customer": "Jain Sarees",
+      "date": "2026-11-04",
+      "sku": "P07",
+      "qty": 30,
+      "rate": 1225,
+      "amount": 36750,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-133:P07:41"
+      }
+    },
+    {
+      "invoiceId": "INV-134",
+      "customer": "Bansal Clothing",
+      "date": "2026-11-06",
+      "sku": "P05",
+      "qty": 300,
+      "rate": 137,
+      "amount": 41100,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-134:P05:42"
+      }
+    },
+    {
+      "invoiceId": "INV-135",
+      "customer": "Verma Garments",
+      "date": "2026-11-07",
+      "sku": "P03",
+      "qty": 60,
+      "rate": 418,
+      "amount": 25080,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-135:P03:43"
+      }
+    },
+    {
+      "invoiceId": "INV-136",
+      "customer": "Mehta Fashion",
+      "date": "2026-11-09",
+      "sku": "P06",
+      "qty": 80,
+      "rate": 252,
+      "amount": 20160,
+      "source": {
+        "file": "order_lines.csv",
+        "id": "INV-136:P06:44"
+      }
+    }
+  ],
+  "customerInvoices": [
+    {
+      "id": "INV-101",
+      "party": "Agarwal Cloth House",
+      "date": "2026-08-05",
+      "dueDate": "2026-09-19",
+      "total": 140175,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-101"
+      }
+    },
+    {
+      "id": "INV-102",
+      "party": "Gupta Fabrics",
+      "date": "2026-08-08",
+      "dueDate": "2026-09-07",
+      "total": 36750,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-102"
+      }
+    },
+    {
+      "id": "INV-103",
+      "party": "Sharma Textiles",
+      "date": "2026-08-12",
+      "dueDate": "2026-09-11",
+      "total": 51398,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-103"
+      }
+    },
+    {
+      "id": "INV-104",
+      "party": "Singh Uniforms",
+      "date": "2026-08-20",
+      "dueDate": "2026-09-19",
+      "total": 77805,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-104"
+      }
+    },
+    {
+      "id": "INV-105",
+      "party": "Kapoor Tailors Supply",
+      "date": "2026-08-28",
+      "dueDate": "2026-09-27",
+      "total": 103740,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-105"
+      }
+    },
+    {
+      "id": "INV-106",
+      "party": "Agarwal Cloth House",
+      "date": "2026-09-02",
+      "dueDate": "2026-10-17",
+      "total": 76388,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-106"
+      }
+    },
+    {
+      "id": "INV-107",
+      "party": "Verma Garments",
+      "date": "2026-09-02",
+      "dueDate": "2026-09-17",
+      "total": 21945,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-107"
+      }
+    },
+    {
+      "id": "INV-108",
+      "party": "Reddy Garments",
+      "date": "2026-09-05",
+      "dueDate": "2026-10-05",
+      "total": 44310,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-108"
+      }
+    },
+    {
+      "id": "INV-109",
+      "party": "Sharma Textiles",
+      "date": "2026-09-10",
+      "dueDate": "2026-10-10",
+      "total": 37548,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-109"
+      }
+    },
+    {
+      "id": "INV-110",
+      "party": "Jain Sarees",
+      "date": "2026-09-12",
+      "dueDate": "2026-10-12",
+      "total": 51450,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-110"
+      }
+    },
+    {
+      "id": "INV-111",
+      "party": "Gupta Fabrics",
+      "date": "2026-09-15",
+      "dueDate": "2026-10-15",
+      "total": 67200,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-111"
+      }
+    },
+    {
+      "id": "INV-112",
+      "party": "Singh Uniforms",
+      "date": "2026-09-18",
+      "dueDate": "2026-10-18",
+      "total": 97808,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-112"
+      }
+    },
+    {
+      "id": "INV-113",
+      "party": "Patel Fabrics",
+      "date": "2026-09-25",
+      "dueDate": "2026-10-25",
+      "total": 30996,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-113"
+      }
+    },
+    {
+      "id": "INV-114",
+      "party": "Kapoor Tailors Supply",
+      "date": "2026-09-29",
+      "dueDate": "2026-10-29",
+      "total": 29925,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-114"
+      }
+    },
+    {
+      "id": "INV-115",
+      "party": "Agarwal Cloth House",
+      "date": "2026-09-30",
+      "dueDate": "2026-11-14",
+      "total": 69300,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-115"
+      }
+    },
+    {
+      "id": "INV-116",
+      "party": "Verma Garments",
+      "date": "2026-10-01",
+      "dueDate": "2026-10-16",
+      "total": 31122,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-116"
+      }
+    },
+    {
+      "id": "INV-117",
+      "party": "Mehta Fashion",
+      "date": "2026-10-02",
+      "dueDate": "2026-10-17",
+      "total": 26901,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-117"
+      }
+    },
+    {
+      "id": "INV-118",
+      "party": "Sharma Textiles",
+      "date": "2026-10-05",
+      "dueDate": "2026-11-04",
+      "total": 67305,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-118"
+      }
+    },
+    {
+      "id": "INV-119",
+      "party": "Gupta Fabrics",
+      "date": "2026-10-08",
+      "dueDate": "2026-11-07",
+      "total": 49928,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-119"
+      }
+    },
+    {
+      "id": "INV-120",
+      "party": "Khanna Traders",
+      "date": "2026-10-10",
+      "dueDate": "2026-11-09",
+      "total": 31920,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-120"
+      }
+    },
+    {
+      "id": "INV-121",
+      "party": "Reddy Garments",
+      "date": "2026-10-12",
+      "dueDate": "2026-11-11",
+      "total": 55419,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-121"
+      }
+    },
+    {
+      "id": "INV-122",
+      "party": "Jain Sarees",
+      "date": "2026-10-14",
+      "dueDate": "2026-11-13",
+      "total": 77175,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-122"
+      }
+    },
+    {
+      "id": "INV-123",
+      "party": "Bansal Clothing",
+      "date": "2026-10-15",
+      "dueDate": "2026-10-30",
+      "total": 37170,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-123"
+      }
+    },
+    {
+      "id": "INV-124",
+      "party": "Verma Garments",
+      "date": "2026-10-20",
+      "dueDate": "2026-11-04",
+      "total": 26376,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-124"
+      }
+    },
+    {
+      "id": "INV-125",
+      "party": "Singh Uniforms",
+      "date": "2026-10-22",
+      "dueDate": "2026-11-21",
+      "total": 51870,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-125"
+      }
+    },
+    {
+      "id": "INV-126",
+      "party": "Mehta Fashion",
+      "date": "2026-10-25",
+      "dueDate": "2026-11-09",
+      "total": 33600,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-126"
+      }
+    },
+    {
+      "id": "INV-127",
+      "party": "Kapoor Tailors Supply",
+      "date": "2026-10-26",
+      "dueDate": "2026-11-25",
+      "total": 48878,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-127"
+      }
+    },
+    {
+      "id": "INV-128",
+      "party": "Agarwal Cloth House",
+      "date": "2026-10-27",
+      "dueDate": "2026-12-11",
+      "total": 65205,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-128"
+      }
+    },
+    {
+      "id": "INV-129",
+      "party": "Sharma Textiles",
+      "date": "2026-10-28",
+      "dueDate": "2026-11-27",
+      "total": 17724,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-129"
+      }
+    },
+    {
+      "id": "INV-130",
+      "party": "Patel Fabrics",
+      "date": "2026-10-30",
+      "dueDate": "2026-11-29",
+      "total": 65583,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-130"
+      }
+    },
+    {
+      "id": "INV-131",
+      "party": "Khanna Traders",
+      "date": "2026-11-02",
+      "dueDate": "2026-12-02",
+      "total": 18144,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-131"
+      }
+    },
+    {
+      "id": "INV-132",
+      "party": "Gupta Fabrics",
+      "date": "2026-11-03",
+      "dueDate": "2026-12-03",
+      "total": 28560,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-132"
+      }
+    },
+    {
+      "id": "INV-133",
+      "party": "Jain Sarees",
+      "date": "2026-11-04",
+      "dueDate": "2026-12-04",
+      "total": 38588,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-133"
+      }
+    },
+    {
+      "id": "INV-134",
+      "party": "Bansal Clothing",
+      "date": "2026-11-06",
+      "dueDate": "2026-11-21",
+      "total": 43155,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-134"
+      }
+    },
+    {
+      "id": "INV-135",
+      "party": "Verma Garments",
+      "date": "2026-11-07",
+      "dueDate": "2026-11-22",
+      "total": 26334,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-135"
+      }
+    },
+    {
+      "id": "INV-136",
+      "party": "Mehta Fashion",
+      "date": "2026-11-09",
+      "dueDate": "2026-11-24",
+      "total": 21168,
+      "source": {
+        "file": "invoices.csv",
+        "id": "INV-136"
+      }
+    }
+  ],
+  "customerPayments": [
+    {
+      "id": "PAY-001",
+      "party": "Gupta Fabrics",
+      "date": "2026-09-07",
+      "amount": 36750,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-001"
+      }
+    },
+    {
+      "id": "PAY-002",
+      "party": "Sharma Textiles",
+      "date": "2026-09-14",
+      "amount": 51398,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-002"
+      }
+    },
+    {
+      "id": "PAY-003",
+      "party": "Verma Garments",
+      "date": "2026-09-17",
+      "amount": 21945,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-003"
+      }
+    },
+    {
+      "id": "PAY-004",
+      "party": "Agarwal Cloth House",
+      "date": "2026-09-23",
+      "amount": 140175,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-004"
+      }
+    },
+    {
+      "id": "PAY-005",
+      "party": "Singh Uniforms",
+      "date": "2026-09-26",
+      "amount": 77805,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-005"
+      }
+    },
+    {
+      "id": "PAY-006",
+      "party": "Kapoor Tailors Supply",
+      "date": "2026-09-30",
+      "amount": 103740,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-006"
+      }
+    },
+    {
+      "id": "PAY-007",
+      "party": "Reddy Garments",
+      "date": "2026-10-05",
+      "amount": 44310,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-007"
+      }
+    },
+    {
+      "id": "PAY-008",
+      "party": "Jain Sarees",
+      "date": "2026-10-13",
+      "amount": 51450,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-008"
+      }
+    },
+    {
+      "id": "PAY-009",
+      "party": "Sharma Textiles",
+      "date": "2026-10-18",
+      "amount": 18774,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-009"
+      }
+    },
+    {
+      "id": "PAY-010",
+      "party": "Verma Garments",
+      "date": "2026-10-18",
+      "amount": 31122,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-010"
+      }
+    },
+    {
+      "id": "PAY-011",
+      "party": "Gupta Fabrics",
+      "date": "2026-10-20",
+      "amount": 67200,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-011"
+      }
+    },
+    {
+      "id": "PAY-012",
+      "party": "Mehta Fashion",
+      "date": "2026-10-20",
+      "amount": 26901,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-012"
+      }
+    },
+    {
+      "id": "PAY-013",
+      "party": "Singh Uniforms",
+      "date": "2026-10-23",
+      "amount": 68466,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-013"
+      }
+    },
+    {
+      "id": "PAY-014",
+      "party": "Sharma Textiles",
+      "date": "2026-10-26",
+      "amount": 12000,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-014"
+      }
+    },
+    {
+      "id": "PAY-015",
+      "party": "Agarwal Cloth House",
+      "date": "2026-10-27",
+      "amount": 76388,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-015"
+      }
+    },
+    {
+      "id": "PAY-016",
+      "party": "Patel Fabrics",
+      "date": "2026-10-27",
+      "amount": 30996,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-016"
+      }
+    },
+    {
+      "id": "PAY-017",
+      "party": "Gupta Fabrics",
+      "date": "2026-10-28",
+      "amount": 19971,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-017"
+      }
+    },
+    {
+      "id": "PAY-018",
+      "party": "Bansal Clothing",
+      "date": "2026-10-31",
+      "amount": 37170,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-018"
+      }
+    },
+    {
+      "id": "PAY-019",
+      "party": "Kapoor Tailors Supply",
+      "date": "2026-11-02",
+      "amount": 29925,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-019"
+      }
+    },
+    {
+      "id": "PAY-020",
+      "party": "Singh Uniforms",
+      "date": "2026-11-04",
+      "amount": 15000,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-020"
+      }
+    },
+    {
+      "id": "PAY-021",
+      "party": "Mehta Fashion",
+      "date": "2026-11-09",
+      "amount": 33600,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-021"
+      }
+    },
+    {
+      "id": "PAY-022",
+      "party": "Jain Sarees",
+      "date": "2026-11-10",
+      "amount": 25000,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-022"
+      }
+    },
+    {
+      "id": "PAY-023",
+      "party": "Verma Garments",
+      "date": "2026-11-10",
+      "amount": 26376,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-023"
+      }
+    },
+    {
+      "id": "PAY-024",
+      "party": "Verma Garments",
+      "date": "2026-11-11",
+      "amount": 26334,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-024"
+      }
+    },
+    {
+      "id": "PAY-025",
+      "party": "Reddy Garments",
+      "date": "2026-11-12",
+      "amount": 40000,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-025"
+      }
+    },
+    {
+      "id": "PAY-026",
+      "party": "Agarwal Cloth House",
+      "date": "2026-11-13",
+      "amount": 20000,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-026"
+      }
+    },
+    {
+      "id": "PAY-027",
+      "party": "Agarwal Cloth House",
+      "date": "2026-11-14",
+      "amount": 34650,
+      "source": {
+        "file": "payments.csv",
+        "id": "PAY-027"
+      }
+    }
+  ],
+  "supplierInvoices": [
+    {
+      "id": "SI-201",
+      "party": "Surat Weave Mills",
+      "date": "2026-07-27",
+      "dueDate": "2026-08-26",
+      "total": 144112,
+      "poId": "PO-S01-1",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-201"
+      }
+    },
+    {
+      "id": "SI-202",
+      "party": "Surat Weave Mills",
+      "date": "2026-09-09",
+      "dueDate": "2026-10-09",
+      "total": 83869,
+      "poId": "PO-S01-2",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-202"
+      }
+    },
+    {
+      "id": "SI-203",
+      "party": "Surat Weave Mills",
+      "date": "2026-10-10",
+      "dueDate": "2026-11-09",
+      "total": 51581,
+      "poId": "PO-S01-3",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-203"
+      }
+    },
+    {
+      "id": "SI-204",
+      "party": "Ludhiana Denim Works",
+      "date": "2026-07-28",
+      "dueDate": "2026-09-11",
+      "total": 58973,
+      "poId": "PO-S02-1",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-204"
+      }
+    },
+    {
+      "id": "SI-205",
+      "party": "Ludhiana Denim Works",
+      "date": "2026-09-07",
+      "dueDate": "2026-10-22",
+      "total": 33558,
+      "poId": "PO-S02-2",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-205"
+      }
+    },
+    {
+      "id": "SI-206",
+      "party": "Ludhiana Denim Works",
+      "date": "2026-10-11",
+      "dueDate": "2026-11-25",
+      "total": 19740,
+      "poId": "PO-S02-3",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-206"
+      }
+    },
+    {
+      "id": "SI-207",
+      "party": "Jaipur Print House",
+      "date": "2026-07-29",
+      "dueDate": "2026-08-28",
+      "total": 89565,
+      "poId": "PO-S03-1",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-207"
+      }
+    },
+    {
+      "id": "SI-208",
+      "party": "Jaipur Print House",
+      "date": "2026-09-09",
+      "dueDate": "2026-10-09",
+      "total": 59640,
+      "poId": "PO-S03-2",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-208"
+      }
+    },
+    {
+      "id": "SI-209",
+      "party": "Jaipur Print House",
+      "date": "2026-10-12",
+      "dueDate": "2026-11-11",
+      "total": 49770,
+      "poId": "PO-S03-3",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-209"
+      }
+    },
+    {
+      "id": "SI-210",
+      "party": "Silk Route Sarees",
+      "date": "2026-07-30",
+      "dueDate": "2026-08-20",
+      "total": 54096,
+      "poId": "PO-S04-1",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-210"
+      }
+    },
+    {
+      "id": "SI-211",
+      "party": "Silk Route Sarees",
+      "date": "2026-09-09",
+      "dueDate": "2026-09-30",
+      "total": 36708,
+      "poId": "PO-S04-2",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-211"
+      }
+    },
+    {
+      "id": "SI-212",
+      "party": "Silk Route Sarees",
+      "date": "2026-10-13",
+      "dueDate": "2026-11-03",
+      "total": 29946,
+      "poId": "PO-S04-3",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-212"
+      }
+    },
+    {
+      "id": "SI-213",
+      "party": "Panipat Garments Unit",
+      "date": "2026-07-31",
+      "dueDate": "2026-08-30",
+      "total": 184107,
+      "poId": "PO-S05-1",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-213"
+      }
+    },
+    {
+      "id": "SI-214",
+      "party": "Panipat Garments Unit",
+      "date": "2026-09-10",
+      "dueDate": "2026-10-10",
+      "total": 122902,
+      "poId": "PO-S05-2",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-214"
+      }
+    },
+    {
+      "id": "SI-215",
+      "party": "Panipat Garments Unit",
+      "date": "2026-10-16",
+      "dueDate": "2026-11-15",
+      "total": 102254,
+      "poId": "PO-S05-3",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-215"
+      }
+    },
+    {
+      "id": "SI-216",
+      "party": "Delhi Lining and Trims",
+      "date": "2026-08-01",
+      "dueDate": "2026-08-16",
+      "total": 77725,
+      "poId": "PO-S06-1",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-216"
+      }
+    },
+    {
+      "id": "SI-217",
+      "party": "Delhi Lining and Trims",
+      "date": "2026-09-11",
+      "dueDate": "2026-09-26",
+      "total": 51830,
+      "poId": "PO-S06-2",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-217"
+      }
+    },
+    {
+      "id": "SI-218",
+      "party": "Delhi Lining and Trims",
+      "date": "2026-10-15",
+      "dueDate": "2026-10-30",
+      "total": 43212,
+      "poId": "PO-S06-3",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-218"
+      }
+    },
+    {
+      "id": "SI-219",
+      "party": "Ahmedabad Linen Co",
+      "date": "2026-08-02",
+      "dueDate": "2026-09-01",
+      "total": 75516,
+      "poId": "PO-S07-1",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-219"
+      }
+    },
+    {
+      "id": "SI-220",
+      "party": "Ahmedabad Linen Co",
+      "date": "2026-09-12",
+      "dueDate": "2026-10-12",
+      "total": 50242,
+      "poId": "PO-S07-2",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-220"
+      }
+    },
+    {
+      "id": "SI-221",
+      "party": "Ahmedabad Linen Co",
+      "date": "2026-10-16",
+      "dueDate": "2026-11-15",
+      "total": 41716,
+      "poId": "PO-S07-3",
+      "source": {
+        "file": "suppliers/supplier_invoices.csv",
+        "id": "SI-221"
+      }
+    }
+  ],
+  "supplierPayments": [
+    {
+      "id": "SPAY-001",
+      "party": "Delhi Lining and Trims",
+      "date": "2026-08-16",
+      "amount": 77725,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-001"
+      }
+    },
+    {
+      "id": "SPAY-002",
+      "party": "Silk Route Sarees",
+      "date": "2026-08-20",
+      "amount": 54096,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-002"
+      }
+    },
+    {
+      "id": "SPAY-003",
+      "party": "Surat Weave Mills",
+      "date": "2026-08-26",
+      "amount": 144112,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-003"
+      }
+    },
+    {
+      "id": "SPAY-004",
+      "party": "Jaipur Print House",
+      "date": "2026-08-30",
+      "amount": 89565,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-004"
+      }
+    },
+    {
+      "id": "SPAY-005",
+      "party": "Panipat Garments Unit",
+      "date": "2026-08-31",
+      "amount": 184107,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-005"
+      }
+    },
+    {
+      "id": "SPAY-006",
+      "party": "Ahmedabad Linen Co",
+      "date": "2026-09-01",
+      "amount": 75516,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-006"
+      }
+    },
+    {
+      "id": "SPAY-007",
+      "party": "Ludhiana Denim Works",
+      "date": "2026-09-11",
+      "amount": 58973,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-007"
+      }
+    },
+    {
+      "id": "SPAY-008",
+      "party": "Delhi Lining and Trims",
+      "date": "2026-09-27",
+      "amount": 51830,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-008"
+      }
+    },
+    {
+      "id": "SPAY-009",
+      "party": "Jaipur Print House",
+      "date": "2026-10-09",
+      "amount": 59640,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-009"
+      }
+    },
+    {
+      "id": "SPAY-010",
+      "party": "Panipat Garments Unit",
+      "date": "2026-10-14",
+      "amount": 73741,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-010"
+      }
+    },
+    {
+      "id": "SPAY-011",
+      "party": "Surat Weave Mills",
+      "date": "2026-10-14",
+      "amount": 41934,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-011"
+      }
+    },
+    {
+      "id": "SPAY-012",
+      "party": "Ludhiana Denim Works",
+      "date": "2026-10-25",
+      "amount": 33558,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-012"
+      }
+    },
+    {
+      "id": "SPAY-013",
+      "party": "Ahmedabad Linen Co",
+      "date": "2026-11-04",
+      "amount": 20000,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-013"
+      }
+    },
+    {
+      "id": "SPAY-014",
+      "party": "Silk Route Sarees",
+      "date": "2026-11-08",
+      "amount": 30000,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-014"
+      }
+    },
+    {
+      "id": "SPAY-015",
+      "party": "Panipat Garments Unit",
+      "date": "2026-11-09",
+      "amount": 50000,
+      "source": {
+        "file": "suppliers/supplier_payments.csv",
+        "id": "SPAY-015"
+      }
+    }
+  ],
+  "quotes": [
+    {
+      "id": "Q-01",
+      "customer": "Khanna Traders",
+      "date": "2026-11-12",
+      "taxableValue": 38000,
+      "status": "open",
+      "items": "Linen Blend Fabric x100",
+      "source": {
+        "file": "quotes.csv",
+        "id": "Q-01"
+      }
+    },
+    {
+      "id": "Q-02",
+      "customer": "Mehta Fashion",
+      "date": "2026-11-13",
+      "taxableValue": 25000,
+      "status": "open",
+      "items": "Silk Blend Saree x20",
+      "source": {
+        "file": "quotes.csv",
+        "id": "Q-02"
+      }
+    },
+    {
+      "id": "Q-03",
+      "customer": "Reddy Garments",
+      "date": "2026-11-12",
+      "taxableValue": 66000,
+      "status": "open",
+      "items": "Cotton Kurta Set x150",
+      "source": {
+        "file": "quotes.csv",
+        "id": "Q-03"
+      }
+    },
+    {
+      "id": "Q-04",
+      "customer": "Patel Fabrics",
+      "date": "2026-11-11",
+      "taxableValue": 62000,
+      "status": "open",
+      "items": "Denim Fabric 12oz x200",
+      "source": {
+        "file": "quotes.csv",
+        "id": "Q-04"
+      }
+    },
+    {
+      "id": "Q-05",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-11-10",
+      "taxableValue": 84000,
+      "status": "open",
+      "items": "Rayon Printed Fabric x600",
+      "source": {
+        "file": "quotes.csv",
+        "id": "Q-05"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "name": "Sharma Textiles",
+      "city": "Delhi"
+    },
+    {
+      "name": "Gupta Fabrics",
+      "city": "Surat"
+    },
+    {
+      "name": "Verma Garments",
+      "city": "Ludhiana"
+    },
+    {
+      "name": "Khanna Traders",
+      "city": "Delhi"
+    },
+    {
+      "name": "Agarwal Cloth House",
+      "city": "Jaipur"
+    },
+    {
+      "name": "Jain Sarees",
+      "city": "Surat"
+    },
+    {
+      "name": "Mehta Fashion",
+      "city": "Mumbai"
+    },
+    {
+      "name": "Singh Uniforms",
+      "city": "Ludhiana"
+    },
+    {
+      "name": "Reddy Garments",
+      "city": "Hyderabad"
+    },
+    {
+      "name": "Patel Fabrics",
+      "city": "Ahmedabad"
+    },
+    {
+      "name": "Bansal Clothing",
+      "city": "Delhi"
+    },
+    {
+      "name": "Kapoor Tailors Supply",
+      "city": "Delhi"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "S01",
+      "name": "Surat Weave Mills",
+      "city": "Surat",
+      "contact": "Mehul",
+      "creditDays": 30,
+      "skus": [
+        "P01",
+        "P02"
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "Ludhiana Denim Works",
+      "city": "Ludhiana",
+      "contact": "Harpreet",
+      "creditDays": 45,
+      "skus": [
+        "P04"
+      ]
+    },
+    {
+      "id": "S03",
+      "name": "Jaipur Print House",
+      "city": "Jaipur",
+      "contact": "Imran",
+      "creditDays": 30,
+      "skus": [
+        "P05"
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "Silk Route Sarees",
+      "city": "Surat",
+      "contact": "Chirag",
+      "creditDays": 21,
+      "skus": [
+        "P07"
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "Panipat Garments Unit",
+      "city": "Panipat",
+      "contact": "Deepak",
+      "creditDays": 30,
+      "skus": [
+        "P03",
+        "P06",
+        "P10"
+      ]
+    },
+    {
+      "id": "S06",
+      "name": "Delhi Lining and Trims",
+      "city": "Delhi",
+      "contact": "Sunil",
+      "creditDays": 15,
+      "skus": [
+        "P08"
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "Ahmedabad Linen Co",
+      "city": "Ahmedabad",
+      "contact": "Nitin",
+      "creditDays": 30,
+      "skus": [
+        "P09"
+      ]
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "id": "PO-S01-1",
+      "supplier": "Surat Weave Mills",
+      "orderDate": "2026-07-22",
+      "promisedDate": "2026-07-27",
+      "actualDelivery": "2026-07-27",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S01-1"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/surat_weave_mills.json",
+        "id": "PO-S01-1"
+      }
+    },
+    {
+      "id": "PO-S01-2",
+      "supplier": "Surat Weave Mills",
+      "orderDate": "2026-09-01",
+      "promisedDate": "2026-09-06",
+      "actualDelivery": "2026-09-09",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S01-2"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/surat_weave_mills.json",
+        "id": "PO-S01-2"
+      }
+    },
+    {
+      "id": "PO-S01-3",
+      "supplier": "Surat Weave Mills",
+      "orderDate": "2026-10-05",
+      "promisedDate": "2026-10-10",
+      "actualDelivery": "2026-10-10",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S01-3"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/surat_weave_mills.json",
+        "id": "PO-S01-3"
+      }
+    },
+    {
+      "id": "PO-S01-4",
+      "supplier": "Surat Weave Mills",
+      "orderDate": "2026-11-05",
+      "promisedDate": "2026-11-12",
+      "actualDelivery": null,
+      "revisedPromisedDate": "2026-11-16",
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S01-4"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/surat_weave_mills.json",
+        "id": "PO-S01-4"
+      }
+    },
+    {
+      "id": "PO-S02-1",
+      "supplier": "Ludhiana Denim Works",
+      "orderDate": "2026-07-23",
+      "promisedDate": "2026-07-28",
+      "actualDelivery": "2026-07-28",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S02-1"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/ludhiana_denim_works.json",
+        "id": "PO-S02-1"
+      }
+    },
+    {
+      "id": "PO-S02-2",
+      "supplier": "Ludhiana Denim Works",
+      "orderDate": "2026-09-02",
+      "promisedDate": "2026-09-07",
+      "actualDelivery": "2026-09-07",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S02-2"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/ludhiana_denim_works.json",
+        "id": "PO-S02-2"
+      }
+    },
+    {
+      "id": "PO-S02-3",
+      "supplier": "Ludhiana Denim Works",
+      "orderDate": "2026-10-06",
+      "promisedDate": "2026-10-11",
+      "actualDelivery": "2026-10-11",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S02-3"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/ludhiana_denim_works.json",
+        "id": "PO-S02-3"
+      }
+    },
+    {
+      "id": "PO-S03-1",
+      "supplier": "Jaipur Print House",
+      "orderDate": "2026-07-24",
+      "promisedDate": "2026-07-29",
+      "actualDelivery": "2026-07-29",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S03-1"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/jaipur_print_house.json",
+        "id": "PO-S03-1"
+      }
+    },
+    {
+      "id": "PO-S03-2",
+      "supplier": "Jaipur Print House",
+      "orderDate": "2026-09-03",
+      "promisedDate": "2026-09-08",
+      "actualDelivery": "2026-09-09",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S03-2"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/jaipur_print_house.json",
+        "id": "PO-S03-2"
+      }
+    },
+    {
+      "id": "PO-S03-3",
+      "supplier": "Jaipur Print House",
+      "orderDate": "2026-10-07",
+      "promisedDate": "2026-10-12",
+      "actualDelivery": "2026-10-12",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S03-3"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/jaipur_print_house.json",
+        "id": "PO-S03-3"
+      }
+    },
+    {
+      "id": "PO-S03-4",
+      "supplier": "Jaipur Print House",
+      "orderDate": "2026-11-10",
+      "promisedDate": "2026-11-17",
+      "actualDelivery": null,
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S03-4"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/jaipur_print_house.json",
+        "id": "PO-S03-4"
+      }
+    },
+    {
+      "id": "PO-S04-1",
+      "supplier": "Silk Route Sarees",
+      "orderDate": "2026-07-25",
+      "promisedDate": "2026-07-30",
+      "actualDelivery": "2026-07-30",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S04-1"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/silk_route_sarees.json",
+        "id": "PO-S04-1"
+      }
+    },
+    {
+      "id": "PO-S04-2",
+      "supplier": "Silk Route Sarees",
+      "orderDate": "2026-09-04",
+      "promisedDate": "2026-09-09",
+      "actualDelivery": "2026-09-09",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S04-2"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/silk_route_sarees.json",
+        "id": "PO-S04-2"
+      }
+    },
+    {
+      "id": "PO-S04-3",
+      "supplier": "Silk Route Sarees",
+      "orderDate": "2026-10-08",
+      "promisedDate": "2026-10-13",
+      "actualDelivery": "2026-10-13",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S04-3"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/silk_route_sarees.json",
+        "id": "PO-S04-3"
+      }
+    },
+    {
+      "id": "PO-S04-4",
+      "supplier": "Silk Route Sarees",
+      "orderDate": "2026-11-11",
+      "promisedDate": "2026-11-18",
+      "actualDelivery": null,
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S04-4"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/silk_route_sarees.json",
+        "id": "PO-S04-4"
+      }
+    },
+    {
+      "id": "PO-S05-1",
+      "supplier": "Panipat Garments Unit",
+      "orderDate": "2026-07-26",
+      "promisedDate": "2026-07-31",
+      "actualDelivery": "2026-07-31",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S05-1"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/panipat_garments_unit.json",
+        "id": "PO-S05-1"
+      }
+    },
+    {
+      "id": "PO-S05-2",
+      "supplier": "Panipat Garments Unit",
+      "orderDate": "2026-09-05",
+      "promisedDate": "2026-09-10",
+      "actualDelivery": "2026-09-10",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S05-2"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/panipat_garments_unit.json",
+        "id": "PO-S05-2"
+      }
+    },
+    {
+      "id": "PO-S05-3",
+      "supplier": "Panipat Garments Unit",
+      "orderDate": "2026-10-09",
+      "promisedDate": "2026-10-14",
+      "actualDelivery": "2026-10-16",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S05-3"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/panipat_garments_unit.json",
+        "id": "PO-S05-3"
+      }
+    },
+    {
+      "id": "PO-S05-4",
+      "supplier": "Panipat Garments Unit",
+      "orderDate": "2026-11-09",
+      "promisedDate": "2026-11-16",
+      "actualDelivery": null,
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S05-4"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/panipat_garments_unit.json",
+        "id": "PO-S05-4"
+      }
+    },
+    {
+      "id": "PO-S06-1",
+      "supplier": "Delhi Lining and Trims",
+      "orderDate": "2026-07-27",
+      "promisedDate": "2026-08-01",
+      "actualDelivery": "2026-08-01",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S06-1"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/delhi_lining_and_trims.json",
+        "id": "PO-S06-1"
+      }
+    },
+    {
+      "id": "PO-S06-2",
+      "supplier": "Delhi Lining and Trims",
+      "orderDate": "2026-09-06",
+      "promisedDate": "2026-09-11",
+      "actualDelivery": "2026-09-11",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S06-2"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/delhi_lining_and_trims.json",
+        "id": "PO-S06-2"
+      }
+    },
+    {
+      "id": "PO-S06-3",
+      "supplier": "Delhi Lining and Trims",
+      "orderDate": "2026-10-10",
+      "promisedDate": "2026-10-15",
+      "actualDelivery": "2026-10-15",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S06-3"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/delhi_lining_and_trims.json",
+        "id": "PO-S06-3"
+      }
+    },
+    {
+      "id": "PO-S07-1",
+      "supplier": "Ahmedabad Linen Co",
+      "orderDate": "2026-07-28",
+      "promisedDate": "2026-08-02",
+      "actualDelivery": "2026-08-02",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S07-1"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/ahmedabad_linen_co.json",
+        "id": "PO-S07-1"
+      }
+    },
+    {
+      "id": "PO-S07-2",
+      "supplier": "Ahmedabad Linen Co",
+      "orderDate": "2026-09-07",
+      "promisedDate": "2026-09-12",
+      "actualDelivery": "2026-09-12",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S07-2"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/ahmedabad_linen_co.json",
+        "id": "PO-S07-2"
+      }
+    },
+    {
+      "id": "PO-S07-3",
+      "supplier": "Ahmedabad Linen Co",
+      "orderDate": "2026-10-11",
+      "promisedDate": "2026-10-16",
+      "actualDelivery": "2026-10-16",
+      "revisedPromisedDate": null,
+      "source": {
+        "file": "suppliers/purchase_orders.csv",
+        "id": "PO-S07-3"
+      },
+      "annotationSource": {
+        "file": "extracted/suppliers/ahmedabad_linen_co.json",
+        "id": "PO-S07-3"
+      }
+    }
+  ],
+  "purchaseLines": [
+    {
+      "poId": "PO-S01-1",
+      "sku": "P01",
+      "qty": 540,
+      "rate": 150,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S01-1:P01:0"
+      }
+    },
+    {
+      "poId": "PO-S01-1",
+      "sku": "P02",
+      "qty": 450,
+      "rate": 125,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S01-1:P02:1"
+      }
+    },
+    {
+      "poId": "PO-S01-2",
+      "sku": "P01",
+      "qty": 360,
+      "rate": 150,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S01-2:P01:2"
+      }
+    },
+    {
+      "poId": "PO-S01-2",
+      "sku": "P02",
+      "qty": 207,
+      "rate": 125,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S01-2:P02:3"
+      }
+    },
+    {
+      "poId": "PO-S01-3",
+      "sku": "P01",
+      "qty": 300,
+      "rate": 150,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S01-3:P01:4"
+      }
+    },
+    {
+      "poId": "PO-S01-3",
+      "sku": "P02",
+      "qty": 33,
+      "rate": 125,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S01-3:P02:5"
+      }
+    },
+    {
+      "poId": "PO-S01-4",
+      "sku": "P01",
+      "qty": 600,
+      "rate": 150,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S01-4:P01:6"
+      }
+    },
+    {
+      "poId": "PO-S02-1",
+      "sku": "P04",
+      "qty": 239,
+      "rate": 235,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S02-1:P04:7"
+      }
+    },
+    {
+      "poId": "PO-S02-2",
+      "sku": "P04",
+      "qty": 136,
+      "rate": 235,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S02-2:P04:8"
+      }
+    },
+    {
+      "poId": "PO-S02-3",
+      "sku": "P04",
+      "qty": 80,
+      "rate": 235,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S02-3:P04:9"
+      }
+    },
+    {
+      "poId": "PO-S03-1",
+      "sku": "P05",
+      "qty": 853,
+      "rate": 100,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S03-1:P05:10"
+      }
+    },
+    {
+      "poId": "PO-S03-2",
+      "sku": "P05",
+      "qty": 568,
+      "rate": 100,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S03-2:P05:11"
+      }
+    },
+    {
+      "poId": "PO-S03-3",
+      "sku": "P05",
+      "qty": 474,
+      "rate": 100,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S03-3:P05:12"
+      }
+    },
+    {
+      "poId": "PO-S03-4",
+      "sku": "P05",
+      "qty": 1020,
+      "rate": 100,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S03-4:P05:13"
+      }
+    },
+    {
+      "poId": "PO-S04-1",
+      "sku": "P07",
+      "qty": 56,
+      "rate": 920,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S04-1:P07:14"
+      }
+    },
+    {
+      "poId": "PO-S04-2",
+      "sku": "P07",
+      "qty": 38,
+      "rate": 920,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S04-2:P07:15"
+      }
+    },
+    {
+      "poId": "PO-S04-3",
+      "sku": "P07",
+      "qty": 31,
+      "rate": 920,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S04-3:P07:16"
+      }
+    },
+    {
+      "poId": "PO-S04-4",
+      "sku": "P07",
+      "qty": 70,
+      "rate": 920,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S04-4:P07:17"
+      }
+    },
+    {
+      "poId": "PO-S05-1",
+      "sku": "P03",
+      "qty": 171,
+      "rate": 330,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-1:P03:18"
+      }
+    },
+    {
+      "poId": "PO-S05-1",
+      "sku": "P06",
+      "qty": 423,
+      "rate": 185,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-1:P06:19"
+      }
+    },
+    {
+      "poId": "PO-S05-1",
+      "sku": "P10",
+      "qty": 173,
+      "rate": 235,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-1:P10:20"
+      }
+    },
+    {
+      "poId": "PO-S05-2",
+      "sku": "P03",
+      "qty": 114,
+      "rate": 330,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-2:P03:21"
+      }
+    },
+    {
+      "poId": "PO-S05-2",
+      "sku": "P06",
+      "qty": 282,
+      "rate": 185,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-2:P06:22"
+      }
+    },
+    {
+      "poId": "PO-S05-2",
+      "sku": "P10",
+      "qty": 116,
+      "rate": 235,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-2:P10:23"
+      }
+    },
+    {
+      "poId": "PO-S05-3",
+      "sku": "P03",
+      "qty": 95,
+      "rate": 330,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-3:P03:24"
+      }
+    },
+    {
+      "poId": "PO-S05-3",
+      "sku": "P06",
+      "qty": 235,
+      "rate": 185,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-3:P06:25"
+      }
+    },
+    {
+      "poId": "PO-S05-3",
+      "sku": "P10",
+      "qty": 96,
+      "rate": 235,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-3:P10:26"
+      }
+    },
+    {
+      "poId": "PO-S05-4",
+      "sku": "P03",
+      "qty": 180,
+      "rate": 330,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S05-4:P03:27"
+      }
+    },
+    {
+      "poId": "PO-S06-1",
+      "sku": "P08",
+      "qty": 1948,
+      "rate": 38,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S06-1:P08:28"
+      }
+    },
+    {
+      "poId": "PO-S06-2",
+      "sku": "P08",
+      "qty": 1299,
+      "rate": 38,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S06-2:P08:29"
+      }
+    },
+    {
+      "poId": "PO-S06-3",
+      "sku": "P08",
+      "qty": 1083,
+      "rate": 38,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S06-3:P08:30"
+      }
+    },
+    {
+      "poId": "PO-S07-1",
+      "sku": "P09",
+      "qty": 248,
+      "rate": 290,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S07-1:P09:31"
+      }
+    },
+    {
+      "poId": "PO-S07-2",
+      "sku": "P09",
+      "qty": 165,
+      "rate": 290,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S07-2:P09:32"
+      }
+    },
+    {
+      "poId": "PO-S07-3",
+      "sku": "P09",
+      "qty": 137,
+      "rate": 290,
+      "source": {
+        "file": "suppliers/purchase_lines.csv",
+        "id": "PO-S07-3:P09:33"
+      }
+    }
+  ],
+  "inventory": [
+    {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "unit": "mtr",
+      "currentStock": 120,
+      "reorderLevel": 300,
+      "costPrice": 150,
+      "avgWeeklySales": 100,
+      "reportedWeeksCover": 1.2,
+      "supplierId": "S01",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P01"
+      }
+    },
+    {
+      "sku": "P02",
+      "name": "White Poplin",
+      "unit": "mtr",
+      "currentStock": 90,
+      "reorderLevel": 60,
+      "costPrice": 125,
+      "avgWeeklySales": 18.8,
+      "reportedWeeksCover": 4.8,
+      "supplierId": "S01",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P02"
+      }
+    },
+    {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "unit": "pc",
+      "currentStock": 70,
+      "reorderLevel": 90,
+      "costPrice": 330,
+      "avgWeeklySales": 30,
+      "reportedWeeksCover": 2.3,
+      "supplierId": "S05",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P03"
+      }
+    },
+    {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "unit": "mtr",
+      "currentStock": 80,
+      "reorderLevel": 40,
+      "costPrice": 235,
+      "avgWeeklySales": 12.5,
+      "reportedWeeksCover": 6.4,
+      "supplierId": "S02",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P04"
+      }
+    },
+    {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "unit": "mtr",
+      "currentStock": 255,
+      "reorderLevel": 510,
+      "costPrice": 100,
+      "avgWeeklySales": 168.8,
+      "reportedWeeksCover": 1.5,
+      "supplierId": "S03",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P05"
+      }
+    },
+    {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "unit": "pc",
+      "currentStock": 180,
+      "reorderLevel": 150,
+      "costPrice": 185,
+      "avgWeeklySales": 50,
+      "reportedWeeksCover": 3.6,
+      "supplierId": "S05",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P06"
+      }
+    },
+    {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "unit": "pc",
+      "currentStock": 20,
+      "reorderLevel": 35,
+      "costPrice": 920,
+      "avgWeeklySales": 11.2,
+      "reportedWeeksCover": 1.8,
+      "supplierId": "S04",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P07"
+      }
+    },
+    {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "unit": "mtr",
+      "currentStock": 2490,
+      "reorderLevel": 415,
+      "costPrice": 38,
+      "avgWeeklySales": 137.5,
+      "reportedWeeksCover": 18.1,
+      "supplierId": "S06",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P08"
+      }
+    },
+    {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "unit": "mtr",
+      "currentStock": 360,
+      "reorderLevel": 90,
+      "costPrice": 290,
+      "avgWeeklySales": 30,
+      "reportedWeeksCover": 12,
+      "supplierId": "S07",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P09"
+      }
+    },
+    {
+      "sku": "P10",
+      "name": "Track Pants",
+      "unit": "pc",
+      "currentStock": 115,
+      "reorderLevel": 90,
+      "costPrice": 235,
+      "avgWeeklySales": 30,
+      "reportedWeeksCover": 3.8,
+      "supplierId": "S05",
+      "source": {
+        "file": "inventory/inventory_snapshot.csv",
+        "id": "P10"
+      }
+    }
+  ],
+  "stockMovements": [
+    {
+      "id": "movement:2",
+      "date": "2026-07-01",
+      "sku": "P01",
+      "type": "OPENING",
+      "qty": 270,
+      "reference": "opening stock",
+      "reportedBalance": 270,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:2"
+      }
+    },
+    {
+      "id": "movement:3",
+      "date": "2026-07-01",
+      "sku": "P02",
+      "type": "OPENING",
+      "qty": 150,
+      "reference": "opening stock",
+      "reportedBalance": 150,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:3"
+      }
+    },
+    {
+      "id": "movement:4",
+      "date": "2026-07-01",
+      "sku": "P03",
+      "type": "OPENING",
+      "qty": 80,
+      "reference": "opening stock",
+      "reportedBalance": 80,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:4"
+      }
+    },
+    {
+      "id": "movement:5",
+      "date": "2026-07-01",
+      "sku": "P04",
+      "type": "OPENING",
+      "qty": 95,
+      "reference": "opening stock",
+      "reportedBalance": 95,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:5"
+      }
+    },
+    {
+      "id": "movement:6",
+      "date": "2026-07-01",
+      "sku": "P05",
+      "type": "OPENING",
+      "qty": 410,
+      "reference": "opening stock",
+      "reportedBalance": 410,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:6"
+      }
+    },
+    {
+      "id": "movement:7",
+      "date": "2026-07-01",
+      "sku": "P06",
+      "type": "OPENING",
+      "qty": 190,
+      "reference": "opening stock",
+      "reportedBalance": 190,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:7"
+      }
+    },
+    {
+      "id": "movement:8",
+      "date": "2026-07-01",
+      "sku": "P07",
+      "type": "OPENING",
+      "qty": 25,
+      "reference": "opening stock",
+      "reportedBalance": 25,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:8"
+      }
+    },
+    {
+      "id": "movement:9",
+      "date": "2026-07-01",
+      "sku": "P08",
+      "type": "OPENING",
+      "qty": 460,
+      "reference": "opening stock",
+      "reportedBalance": 460,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:9"
+      }
+    },
+    {
+      "id": "movement:10",
+      "date": "2026-07-01",
+      "sku": "P09",
+      "type": "OPENING",
+      "qty": 50,
+      "reference": "opening stock",
+      "reportedBalance": 50,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:10"
+      }
+    },
+    {
+      "id": "movement:11",
+      "date": "2026-07-01",
+      "sku": "P10",
+      "type": "OPENING",
+      "qty": 70,
+      "reference": "opening stock",
+      "reportedBalance": 70,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:11"
+      }
+    },
+    {
+      "id": "movement:12",
+      "date": "2026-07-27",
+      "sku": "P01",
+      "type": "IN",
+      "qty": 540,
+      "reference": "GRN S01-PO1",
+      "reportedBalance": 810,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:12"
+      }
+    },
+    {
+      "id": "movement:13",
+      "date": "2026-07-27",
+      "sku": "P02",
+      "type": "IN",
+      "qty": 450,
+      "reference": "GRN S01-PO1",
+      "reportedBalance": 600,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:13"
+      }
+    },
+    {
+      "id": "movement:14",
+      "date": "2026-07-28",
+      "sku": "P04",
+      "type": "IN",
+      "qty": 239,
+      "reference": "GRN S02-PO1",
+      "reportedBalance": 334,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:14"
+      }
+    },
+    {
+      "id": "movement:15",
+      "date": "2026-07-29",
+      "sku": "P05",
+      "type": "IN",
+      "qty": 853,
+      "reference": "GRN S03-PO1",
+      "reportedBalance": 1263,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:15"
+      }
+    },
+    {
+      "id": "movement:16",
+      "date": "2026-07-30",
+      "sku": "P07",
+      "type": "IN",
+      "qty": 56,
+      "reference": "GRN S04-PO1",
+      "reportedBalance": 81,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:16"
+      }
+    },
+    {
+      "id": "movement:17",
+      "date": "2026-07-31",
+      "sku": "P03",
+      "type": "IN",
+      "qty": 171,
+      "reference": "GRN S05-PO1",
+      "reportedBalance": 251,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:17"
+      }
+    },
+    {
+      "id": "movement:18",
+      "date": "2026-07-31",
+      "sku": "P06",
+      "type": "IN",
+      "qty": 423,
+      "reference": "GRN S05-PO1",
+      "reportedBalance": 613,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:18"
+      }
+    },
+    {
+      "id": "movement:19",
+      "date": "2026-07-31",
+      "sku": "P10",
+      "type": "IN",
+      "qty": 173,
+      "reference": "GRN S05-PO1",
+      "reportedBalance": 243,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:19"
+      }
+    },
+    {
+      "id": "movement:20",
+      "date": "2026-08-01",
+      "sku": "P08",
+      "type": "IN",
+      "qty": 1948,
+      "reference": "GRN S06-PO1",
+      "reportedBalance": 2408,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:20"
+      }
+    },
+    {
+      "id": "movement:21",
+      "date": "2026-08-02",
+      "sku": "P09",
+      "type": "IN",
+      "qty": 248,
+      "reference": "GRN S07-PO1",
+      "reportedBalance": 298,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:21"
+      }
+    },
+    {
+      "id": "movement:22",
+      "date": "2026-08-05",
+      "sku": "P01",
+      "type": "OUT",
+      "qty": 400,
+      "reference": "INV-101",
+      "reportedBalance": 410,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:22"
+      }
+    },
+    {
+      "id": "movement:23",
+      "date": "2026-08-05",
+      "sku": "P02",
+      "type": "OUT",
+      "qty": 300,
+      "reference": "INV-101",
+      "reportedBalance": 300,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:23"
+      }
+    },
+    {
+      "id": "movement:24",
+      "date": "2026-08-08",
+      "sku": "P02",
+      "type": "OUT",
+      "qty": 200,
+      "reference": "INV-102",
+      "reportedBalance": 100,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:24"
+      }
+    },
+    {
+      "id": "movement:25",
+      "date": "2026-08-12",
+      "sku": "P01",
+      "type": "OUT",
+      "qty": 150,
+      "reference": "INV-103",
+      "reportedBalance": 260,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:25"
+      }
+    },
+    {
+      "id": "movement:26",
+      "date": "2026-08-12",
+      "sku": "P02",
+      "type": "OUT",
+      "qty": 100,
+      "reference": "INV-103",
+      "reportedBalance": 0,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:26"
+      }
+    },
+    {
+      "id": "movement:27",
+      "date": "2026-08-20",
+      "sku": "P06",
+      "type": "OUT",
+      "qty": 300,
+      "reference": "INV-104",
+      "reportedBalance": 313,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:27"
+      }
+    },
+    {
+      "id": "movement:28",
+      "date": "2026-08-28",
+      "sku": "P08",
+      "type": "OUT",
+      "qty": 800,
+      "reference": "INV-105",
+      "reportedBalance": 1608,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:28"
+      }
+    },
+    {
+      "id": "movement:29",
+      "date": "2026-08-28",
+      "sku": "P05",
+      "type": "OUT",
+      "qty": 400,
+      "reference": "INV-105",
+      "reportedBalance": 863,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:29"
+      }
+    },
+    {
+      "id": "movement:30",
+      "date": "2026-09-02",
+      "sku": "P04",
+      "type": "OUT",
+      "qty": 250,
+      "reference": "INV-106",
+      "reportedBalance": 84,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:30"
+      }
+    },
+    {
+      "id": "movement:31",
+      "date": "2026-09-02",
+      "sku": "P03",
+      "type": "OUT",
+      "qty": 50,
+      "reference": "INV-107",
+      "reportedBalance": 201,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:31"
+      }
+    },
+    {
+      "id": "movement:32",
+      "date": "2026-09-05",
+      "sku": "P03",
+      "type": "OUT",
+      "qty": 100,
+      "reference": "INV-108",
+      "reportedBalance": 101,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:32"
+      }
+    },
+    {
+      "id": "movement:33",
+      "date": "2026-09-07",
+      "sku": "P04",
+      "type": "IN",
+      "qty": 136,
+      "reference": "GRN S02-PO2",
+      "reportedBalance": 220,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:33"
+      }
+    },
+    {
+      "id": "movement:34",
+      "date": "2026-09-09",
+      "sku": "P01",
+      "type": "IN",
+      "qty": 360,
+      "reference": "GRN S01-PO2",
+      "reportedBalance": 620,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:34"
+      }
+    },
+    {
+      "id": "movement:35",
+      "date": "2026-09-09",
+      "sku": "P02",
+      "type": "IN",
+      "qty": 207,
+      "reference": "GRN S01-PO2",
+      "reportedBalance": 207,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:35"
+      }
+    },
+    {
+      "id": "movement:36",
+      "date": "2026-09-09",
+      "sku": "P05",
+      "type": "IN",
+      "qty": 568,
+      "reference": "GRN S03-PO2",
+      "reportedBalance": 1431,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:36"
+      }
+    },
+    {
+      "id": "movement:37",
+      "date": "2026-09-09",
+      "sku": "P07",
+      "type": "IN",
+      "qty": 38,
+      "reference": "GRN S04-PO2",
+      "reportedBalance": 119,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:37"
+      }
+    },
+    {
+      "id": "movement:38",
+      "date": "2026-09-10",
+      "sku": "P03",
+      "type": "IN",
+      "qty": 114,
+      "reference": "GRN S05-PO2",
+      "reportedBalance": 215,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:38"
+      }
+    },
+    {
+      "id": "movement:39",
+      "date": "2026-09-10",
+      "sku": "P06",
+      "type": "IN",
+      "qty": 282,
+      "reference": "GRN S05-PO2",
+      "reportedBalance": 595,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:39"
+      }
+    },
+    {
+      "id": "movement:40",
+      "date": "2026-09-10",
+      "sku": "P10",
+      "type": "IN",
+      "qty": 116,
+      "reference": "GRN S05-PO2",
+      "reportedBalance": 359,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:40"
+      }
+    },
+    {
+      "id": "movement:41",
+      "date": "2026-09-10",
+      "sku": "P04",
+      "type": "OUT",
+      "qty": 120,
+      "reference": "INV-109",
+      "reportedBalance": 100,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:41"
+      }
+    },
+    {
+      "id": "movement:42",
+      "date": "2026-09-11",
+      "sku": "P08",
+      "type": "IN",
+      "qty": 1299,
+      "reference": "GRN S06-PO2",
+      "reportedBalance": 2907,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:42"
+      }
+    },
+    {
+      "id": "movement:43",
+      "date": "2026-09-12",
+      "sku": "P09",
+      "type": "IN",
+      "qty": 165,
+      "reference": "GRN S07-PO2",
+      "reportedBalance": 463,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:43"
+      }
+    },
+    {
+      "id": "movement:44",
+      "date": "2026-09-12",
+      "sku": "P07",
+      "type": "OUT",
+      "qty": 40,
+      "reference": "INV-110",
+      "reportedBalance": 79,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:44"
+      }
+    },
+    {
+      "id": "movement:45",
+      "date": "2026-09-15",
+      "sku": "P05",
+      "type": "OUT",
+      "qty": 300,
+      "reference": "INV-111",
+      "reportedBalance": 1131,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:45"
+      }
+    },
+    {
+      "id": "movement:46",
+      "date": "2026-09-15",
+      "sku": "P08",
+      "type": "OUT",
+      "qty": 400,
+      "reference": "INV-111",
+      "reportedBalance": 2507,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:46"
+      }
+    },
+    {
+      "id": "movement:47",
+      "date": "2026-09-18",
+      "sku": "P06",
+      "type": "OUT",
+      "qty": 250,
+      "reference": "INV-112",
+      "reportedBalance": 345,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:47"
+      }
+    },
+    {
+      "id": "movement:48",
+      "date": "2026-09-18",
+      "sku": "P10",
+      "type": "OUT",
+      "qty": 100,
+      "reference": "INV-112",
+      "reportedBalance": 259,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:48"
+      }
+    },
+    {
+      "id": "movement:49",
+      "date": "2026-09-25",
+      "sku": "P09",
+      "type": "OUT",
+      "qty": 80,
+      "reference": "INV-113",
+      "reportedBalance": 383,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:49"
+      }
+    },
+    {
+      "id": "movement:50",
+      "date": "2026-09-29",
+      "sku": "P08",
+      "type": "OUT",
+      "qty": 500,
+      "reference": "INV-114",
+      "reportedBalance": 2007,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:50"
+      }
+    },
+    {
+      "id": "movement:51",
+      "date": "2026-09-30",
+      "sku": "P05",
+      "type": "OUT",
+      "qty": 500,
+      "reference": "INV-115",
+      "reportedBalance": 631,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:51"
+      }
+    },
+    {
+      "id": "movement:52",
+      "date": "2026-10-01",
+      "sku": "P06",
+      "type": "OUT",
+      "qty": 120,
+      "reference": "INV-116",
+      "reportedBalance": 225,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:52"
+      }
+    },
+    {
+      "id": "movement:53",
+      "date": "2026-10-02",
+      "sku": "P03",
+      "type": "OUT",
+      "qty": 60,
+      "reference": "INV-117",
+      "reportedBalance": 155,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:53"
+      }
+    },
+    {
+      "id": "movement:54",
+      "date": "2026-10-05",
+      "sku": "P01",
+      "type": "OUT",
+      "qty": 200,
+      "reference": "INV-118",
+      "reportedBalance": 420,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:54"
+      }
+    },
+    {
+      "id": "movement:55",
+      "date": "2026-10-05",
+      "sku": "P09",
+      "type": "OUT",
+      "qty": 60,
+      "reference": "INV-118",
+      "reportedBalance": 323,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:55"
+      }
+    },
+    {
+      "id": "movement:56",
+      "date": "2026-10-08",
+      "sku": "P02",
+      "type": "OUT",
+      "qty": 150,
+      "reference": "INV-119",
+      "reportedBalance": 57,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:56"
+      }
+    },
+    {
+      "id": "movement:57",
+      "date": "2026-10-08",
+      "sku": "P01",
+      "type": "OUT",
+      "qty": 100,
+      "reference": "INV-119",
+      "reportedBalance": 320,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:57"
+      }
+    },
+    {
+      "id": "movement:58",
+      "date": "2026-10-10",
+      "sku": "P01",
+      "type": "IN",
+      "qty": 300,
+      "reference": "GRN S01-PO3",
+      "reportedBalance": 620,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:58"
+      }
+    },
+    {
+      "id": "movement:59",
+      "date": "2026-10-10",
+      "sku": "P02",
+      "type": "IN",
+      "qty": 33,
+      "reference": "GRN S01-PO3",
+      "reportedBalance": 90,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:59"
+      }
+    },
+    {
+      "id": "movement:60",
+      "date": "2026-10-10",
+      "sku": "P04",
+      "type": "OUT",
+      "qty": 100,
+      "reference": "INV-120",
+      "reportedBalance": 0,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:60"
+      }
+    },
+    {
+      "id": "movement:61",
+      "date": "2026-10-11",
+      "sku": "P04",
+      "type": "IN",
+      "qty": 80,
+      "reference": "GRN S02-PO3",
+      "reportedBalance": 80,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:61"
+      }
+    },
+    {
+      "id": "movement:62",
+      "date": "2026-10-12",
+      "sku": "P05",
+      "type": "IN",
+      "qty": 474,
+      "reference": "GRN S03-PO3",
+      "reportedBalance": 1105,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:62"
+      }
+    },
+    {
+      "id": "movement:63",
+      "date": "2026-10-12",
+      "sku": "P03",
+      "type": "OUT",
+      "qty": 80,
+      "reference": "INV-121",
+      "reportedBalance": 75,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:63"
+      }
+    },
+    {
+      "id": "movement:64",
+      "date": "2026-10-12",
+      "sku": "P10",
+      "type": "OUT",
+      "qty": 60,
+      "reference": "INV-121",
+      "reportedBalance": 199,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:64"
+      }
+    },
+    {
+      "id": "movement:65",
+      "date": "2026-10-13",
+      "sku": "P07",
+      "type": "IN",
+      "qty": 31,
+      "reference": "GRN S04-PO3",
+      "reportedBalance": 110,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:65"
+      }
+    },
+    {
+      "id": "movement:66",
+      "date": "2026-10-14",
+      "sku": "P07",
+      "type": "OUT",
+      "qty": 60,
+      "reference": "INV-122",
+      "reportedBalance": 50,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:66"
+      }
+    },
+    {
+      "id": "movement:67",
+      "date": "2026-10-15",
+      "sku": "P08",
+      "type": "IN",
+      "qty": 1083,
+      "reference": "GRN S06-PO3",
+      "reportedBalance": 3090,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:67"
+      }
+    },
+    {
+      "id": "movement:68",
+      "date": "2026-10-15",
+      "sku": "P08",
+      "type": "OUT",
+      "qty": 600,
+      "reference": "INV-123",
+      "reportedBalance": 2490,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:68"
+      }
+    },
+    {
+      "id": "movement:69",
+      "date": "2026-10-16",
+      "sku": "P03",
+      "type": "IN",
+      "qty": 95,
+      "reference": "GRN S05-PO3",
+      "reportedBalance": 170,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:69"
+      }
+    },
+    {
+      "id": "movement:70",
+      "date": "2026-10-16",
+      "sku": "P06",
+      "type": "IN",
+      "qty": 235,
+      "reference": "GRN S05-PO3",
+      "reportedBalance": 460,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:70"
+      }
+    },
+    {
+      "id": "movement:71",
+      "date": "2026-10-16",
+      "sku": "P09",
+      "type": "IN",
+      "qty": 137,
+      "reference": "GRN S07-PO3",
+      "reportedBalance": 460,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:71"
+      }
+    },
+    {
+      "id": "movement:72",
+      "date": "2026-10-16",
+      "sku": "P10",
+      "type": "IN",
+      "qty": 96,
+      "reference": "GRN S05-PO3",
+      "reportedBalance": 295,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:72"
+      }
+    },
+    {
+      "id": "movement:73",
+      "date": "2026-10-20",
+      "sku": "P10",
+      "type": "OUT",
+      "qty": 80,
+      "reference": "INV-124",
+      "reportedBalance": 215,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:73"
+      }
+    },
+    {
+      "id": "movement:74",
+      "date": "2026-10-22",
+      "sku": "P06",
+      "type": "OUT",
+      "qty": 200,
+      "reference": "INV-125",
+      "reportedBalance": 260,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:74"
+      }
+    },
+    {
+      "id": "movement:75",
+      "date": "2026-10-25",
+      "sku": "P10",
+      "type": "OUT",
+      "qty": 100,
+      "reference": "INV-126",
+      "reportedBalance": 115,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:75"
+      }
+    },
+    {
+      "id": "movement:76",
+      "date": "2026-10-26",
+      "sku": "P05",
+      "type": "OUT",
+      "qty": 350,
+      "reference": "INV-127",
+      "reportedBalance": 755,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:76"
+      }
+    },
+    {
+      "id": "movement:77",
+      "date": "2026-10-27",
+      "sku": "P01",
+      "type": "OUT",
+      "qty": 300,
+      "reference": "INV-128",
+      "reportedBalance": 320,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:77"
+      }
+    },
+    {
+      "id": "movement:78",
+      "date": "2026-10-28",
+      "sku": "P03",
+      "type": "OUT",
+      "qty": 40,
+      "reference": "INV-129",
+      "reportedBalance": 130,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:78"
+      }
+    },
+    {
+      "id": "movement:79",
+      "date": "2026-10-30",
+      "sku": "P09",
+      "type": "OUT",
+      "qty": 100,
+      "reference": "INV-130",
+      "reportedBalance": 360,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:79"
+      }
+    },
+    {
+      "id": "movement:80",
+      "date": "2026-10-30",
+      "sku": "P01",
+      "type": "OUT",
+      "qty": 120,
+      "reference": "INV-130",
+      "reportedBalance": 200,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:80"
+      }
+    },
+    {
+      "id": "movement:81",
+      "date": "2026-11-02",
+      "sku": "P01",
+      "type": "OUT",
+      "qty": 80,
+      "reference": "INV-131",
+      "reportedBalance": 120,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:81"
+      }
+    },
+    {
+      "id": "movement:82",
+      "date": "2026-11-03",
+      "sku": "P05",
+      "type": "OUT",
+      "qty": 200,
+      "reference": "INV-132",
+      "reportedBalance": 555,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:82"
+      }
+    },
+    {
+      "id": "movement:83",
+      "date": "2026-11-04",
+      "sku": "P07",
+      "type": "OUT",
+      "qty": 30,
+      "reference": "INV-133",
+      "reportedBalance": 20,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:83"
+      }
+    },
+    {
+      "id": "movement:84",
+      "date": "2026-11-06",
+      "sku": "P05",
+      "type": "OUT",
+      "qty": 300,
+      "reference": "INV-134",
+      "reportedBalance": 255,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:84"
+      }
+    },
+    {
+      "id": "movement:85",
+      "date": "2026-11-07",
+      "sku": "P03",
+      "type": "OUT",
+      "qty": 60,
+      "reference": "INV-135",
+      "reportedBalance": 70,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:85"
+      }
+    },
+    {
+      "id": "movement:86",
+      "date": "2026-11-09",
+      "sku": "P06",
+      "type": "OUT",
+      "qty": 80,
+      "reference": "INV-136",
+      "reportedBalance": 180,
+      "source": {
+        "file": "inventory/stock_movements.csv",
+        "id": "row:86"
+      }
+    }
+  ],
+  "customerPromises": [
+    {
+      "id": "sharma_textiles:promise:0",
+      "party": "Sharma Textiles",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-10-20",
+      "promisedDate": "2026-10-26",
+      "amount": 20000,
+      "quote": "26 tarikh ko 20000 UPI kar dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/sharma_textiles.json",
+        "id": "Sharma Textiles:promises[0]"
+      },
+      "chatFile": "chats/sharma_textiles.txt"
+    },
+    {
+      "id": "sharma_textiles:promise:1",
+      "party": "Sharma Textiles",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-02",
+      "promisedDate": "2026-11-09",
+      "amount": 15000,
+      "quote": "9 tarikh ko 15000 UPI kar dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/sharma_textiles.json",
+        "id": "Sharma Textiles:promises[1]"
+      },
+      "chatFile": "chats/sharma_textiles.txt"
+    },
+    {
+      "id": "gupta_fabrics:promise:0",
+      "party": "Gupta Fabrics",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-05",
+      "promisedDate": "2026-11-06",
+      "amount": 15000,
+      "quote": "kal tak 15000 pakka bhej deta hoon",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/gupta_fabrics.json",
+        "id": "Gupta Fabrics:promises[0]"
+      },
+      "chatFile": "chats/gupta_fabrics.txt"
+    },
+    {
+      "id": "gupta_fabrics:promise:1",
+      "party": "Gupta Fabrics",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-11",
+      "promisedDate": "2026-11-12",
+      "amount": 15000,
+      "quote": "kal tak 15000 pakka bhej deta hoon",
+      "viaVoice": true,
+      "source": {
+        "file": "extracted/customers/gupta_fabrics.json",
+        "id": "Gupta Fabrics:promises[1]"
+      },
+      "chatFile": "chats/gupta_fabrics.txt"
+    },
+    {
+      "id": "verma_garments:promise:0",
+      "party": "Verma Garments",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-05",
+      "promisedDate": "2026-11-10",
+      "amount": 26334,
+      "quote": "Tuesday pakka 26334 bhej dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/verma_garments.json",
+        "id": "Verma Garments:promises[0]"
+      },
+      "chatFile": "chats/verma_garments.txt"
+    },
+    {
+      "id": "khanna_traders:promise:0",
+      "party": "Khanna Traders",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-12",
+      "promisedDate": "2026-11-16",
+      "amount": 31920,
+      "quote": "Monday pakka 31920 bhej dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/khanna_traders.json",
+        "id": "Khanna Traders:promises[0]"
+      },
+      "chatFile": "chats/khanna_traders.txt"
+    },
+    {
+      "id": "agarwal_cloth_house:promise:0",
+      "party": "Agarwal Cloth House",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-08",
+      "promisedDate": "2026-11-13",
+      "amount": 20000,
+      "quote": "13 tarikh ko 20000 UPI kar dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/agarwal_cloth_house.json",
+        "id": "Agarwal Cloth House:promises[0]"
+      },
+      "chatFile": "chats/agarwal_cloth_house.txt"
+    },
+    {
+      "id": "jain_sarees:promise:0",
+      "party": "Jain Sarees",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-06",
+      "promisedDate": "2026-11-10",
+      "amount": 50000,
+      "quote": "Tuesday pakka 50000 bhej dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/jain_sarees.json",
+        "id": "Jain Sarees:promises[0]"
+      },
+      "chatFile": "chats/jain_sarees.txt"
+    },
+    {
+      "id": "mehta_fashion:promise:0",
+      "party": "Mehta Fashion",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-10",
+      "promisedDate": "2026-11-14",
+      "amount": 21168,
+      "quote": "Saturday pakka 21168 bhej dunga",
+      "viaVoice": true,
+      "source": {
+        "file": "extracted/customers/mehta_fashion.json",
+        "id": "Mehta Fashion:promises[0]"
+      },
+      "chatFile": "chats/mehta_fashion.txt"
+    },
+    {
+      "id": "singh_uniforms:promise:0",
+      "party": "Singh Uniforms",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-10-30",
+      "promisedDate": "2026-11-04",
+      "amount": 30000,
+      "quote": "4 tarikh ko 30000 UPI kar dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/singh_uniforms.json",
+        "id": "Singh Uniforms:promises[0]"
+      },
+      "chatFile": "chats/singh_uniforms.txt"
+    },
+    {
+      "id": "singh_uniforms:promise:1",
+      "party": "Singh Uniforms",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-10",
+      "promisedDate": "2026-11-13",
+      "amount": 30000,
+      "quote": "Friday tak 30000 ka payment ho jayega",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/singh_uniforms.json",
+        "id": "Singh Uniforms:promises[1]"
+      },
+      "chatFile": "chats/singh_uniforms.txt"
+    },
+    {
+      "id": "reddy_garments:promise:0",
+      "party": "Reddy Garments",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-09",
+      "promisedDate": "2026-11-12",
+      "amount": 40000,
+      "quote": "Thursday tak 40000 ka payment ho jayega",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/reddy_garments.json",
+        "id": "Reddy Garments:promises[0]"
+      },
+      "chatFile": "chats/reddy_garments.txt"
+    },
+    {
+      "id": "bansal_clothing:promise:0",
+      "party": "Bansal Clothing",
+      "direction": "customer_to_owner",
+      "madeOn": "2026-11-12",
+      "promisedDate": "2026-11-16",
+      "amount": 43155,
+      "quote": "16 tarikh ko 43155 UPI kar dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/customers/bansal_clothing.json",
+        "id": "Bansal Clothing:promises[0]"
+      },
+      "chatFile": "chats/bansal_clothing.txt"
+    }
+  ],
+  "ownerPromises": [
+    {
+      "id": "surat_weave_mills:promise:0",
+      "party": "Surat Weave Mills",
+      "direction": "owner_to_supplier",
+      "madeOn": "2026-11-07",
+      "promisedDate": "2026-11-10",
+      "amount": 40000,
+      "quote": "10 tarikh ko 40000 NEFT kar dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/suppliers/surat_weave_mills.json",
+        "id": "Surat Weave Mills:owner_payment_promises[0]"
+      },
+      "chatFile": "suppliers/chats/surat_weave_mills.txt"
+    },
+    {
+      "id": "ludhiana_denim_works:promise:0",
+      "party": "Ludhiana Denim Works",
+      "direction": "owner_to_supplier",
+      "madeOn": "2026-11-12",
+      "promisedDate": "2026-11-16",
+      "amount": 19740,
+      "quote": "Monday pakka 19740 bhej dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/suppliers/ludhiana_denim_works.json",
+        "id": "Ludhiana Denim Works:owner_payment_promises[0]"
+      },
+      "chatFile": "suppliers/chats/ludhiana_denim_works.txt"
+    },
+    {
+      "id": "silk_route_sarees:promise:0",
+      "party": "Silk Route Sarees",
+      "direction": "owner_to_supplier",
+      "madeOn": "2026-11-02",
+      "promisedDate": "2026-11-08",
+      "amount": 60000,
+      "quote": "8 tarikh ko 60000 NEFT kar dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/suppliers/silk_route_sarees.json",
+        "id": "Silk Route Sarees:owner_payment_promises[0]"
+      },
+      "chatFile": "suppliers/chats/silk_route_sarees.txt"
+    },
+    {
+      "id": "panipat_garments_unit:promise:0",
+      "party": "Panipat Garments Unit",
+      "direction": "owner_to_supplier",
+      "madeOn": "2026-11-03",
+      "promisedDate": "2026-11-09",
+      "amount": 50000,
+      "quote": "Monday tak 50000 ka payment ho jayega",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/suppliers/panipat_garments_unit.json",
+        "id": "Panipat Garments Unit:owner_payment_promises[0]"
+      },
+      "chatFile": "suppliers/chats/panipat_garments_unit.txt"
+    },
+    {
+      "id": "ahmedabad_linen_co:promise:0",
+      "party": "Ahmedabad Linen Co",
+      "direction": "owner_to_supplier",
+      "madeOn": "2026-10-28",
+      "promisedDate": "2026-11-04",
+      "amount": 30000,
+      "quote": "Wednesday pakka 30000 bhej dunga",
+      "viaVoice": false,
+      "source": {
+        "file": "extracted/suppliers/ahmedabad_linen_co.json",
+        "id": "Ahmedabad Linen Co:owner_payment_promises[0]"
+      },
+      "chatFile": "suppliers/chats/ahmedabad_linen_co.txt"
+    }
+  ],
+  "productAttributes": [
+    {
+      "sku": "P01",
+      "category": "Fabric",
+      "fabric": "Cotton",
+      "color": "Blue",
+      "gender": "Not applicable",
+      "provenance": "Product-name tag"
+    },
+    {
+      "sku": "P02",
+      "category": "Fabric",
+      "fabric": "Poplin",
+      "color": "White",
+      "gender": "Not applicable",
+      "provenance": "Product-name tag"
+    },
+    {
+      "sku": "P03",
+      "category": "Ready-made",
+      "fabric": "Cotton",
+      "color": "Unspecified",
+      "gender": "Men",
+      "provenance": "Demo owner classification"
+    },
+    {
+      "sku": "P04",
+      "category": "Fabric",
+      "fabric": "Denim",
+      "color": "Unspecified",
+      "gender": "Not applicable",
+      "provenance": "Product-name tag"
+    },
+    {
+      "sku": "P05",
+      "category": "Fabric",
+      "fabric": "Rayon",
+      "color": "Unspecified",
+      "gender": "Not applicable",
+      "provenance": "Product-name tag"
+    },
+    {
+      "sku": "P06",
+      "category": "Ready-made",
+      "fabric": "Unspecified",
+      "color": "Unspecified",
+      "gender": "Unisex",
+      "provenance": "Demo owner classification"
+    },
+    {
+      "sku": "P07",
+      "category": "Ready-made",
+      "fabric": "Silk blend",
+      "color": "Unspecified",
+      "gender": "Women",
+      "provenance": "Demo owner classification"
+    },
+    {
+      "sku": "P08",
+      "category": "Fabric",
+      "fabric": "Polyester",
+      "color": "Unspecified",
+      "gender": "Not applicable",
+      "provenance": "Product-name tag"
+    },
+    {
+      "sku": "P09",
+      "category": "Fabric",
+      "fabric": "Linen blend",
+      "color": "Unspecified",
+      "gender": "Not applicable",
+      "provenance": "Product-name tag"
+    },
+    {
+      "sku": "P10",
+      "category": "Ready-made",
+      "fabric": "Unspecified",
+      "color": "Unspecified",
+      "gender": "Unisex",
+      "provenance": "Demo owner classification"
+    }
+  ],
+  "warnings": [],
+  "supplierChats": [
+    {
+      "supplier": "Surat Weave Mills",
+      "text": "22/07/2026, 10:38 - Rakesh: Mehul bhai blue shirting 540 meter aur white poplin 450 meter chahiye, rate bata do\n22/07/2026, 10:44 - Mehul: blue shirting 159, white poplin 132 per unit\n22/07/2026, 10:50 - Rakesh: 142 lagao bhai, regular order hai\n22/07/2026, 10:53 - Mehul: 150 last hai, Monday tak maal pahunch jayega\n22/07/2026, 10:59 - Rakesh: Theek hai confirm, order pakka\n27/07/2026, 15:27 - Rakesh: Maal mil gaya, check kar liya\n27/07/2026, 16:10 - Mehul: Bill S01/2607/284 bhej diya, total Rs 144112, due 26/08\n01/09/2026, 10:14 - Rakesh: Mehul bhai blue shirting 360 meter aur white poplin 207 meter chahiye, rate bata do\n01/09/2026, 10:18 - Mehul: blue shirting 159, white poplin 132 per unit\n01/09/2026, 10:26 - Rakesh: 142 lagao bhai, regular order hai\n01/09/2026, 10:27 - Mehul: 150 last hai, 6 tarikh tak delivery ho jayegi\n01/09/2026, 10:32 - Rakesh: Theek hai confirm, order pakka\n07/09/2026, 11:00 - Rakesh: Mehul bhai maal kab tak aayega?\n07/09/2026, 11:20 - Mehul: Thoda late ho gaya, aaj nikal raha hoon\n09/09/2026, 15:27 - Rakesh: Maal mil gaya, check kar liya\n09/09/2026, 16:10 - Mehul: Bill S01/2609/545 bhej diya, total Rs 83869, due 09/10\n14/09/2026, 18:43 - Rakesh: Ok ji\n05/10/2026, 10:23 - Rakesh: Mehul bhai blue shirting 300 meter aur white poplin 33 meter chahiye, rate bata do\n05/10/2026, 10:29 - Mehul: blue shirting 159, white poplin 132 per unit\n05/10/2026, 10:31 - Rakesh: 142 lagao bhai, regular order hai\n05/10/2026, 10:38 - Mehul: 150 last hai, Saturday tak maal pahunch jayega\n05/10/2026, 10:42 - Rakesh: Theek hai confirm, order pakka\n07/10/2026, 13:44 - Rakesh: Good morning\n10/10/2026, 15:06 - Rakesh: Maal mil gaya, check kar liya\n10/10/2026, 16:10 - Mehul: Bill S01/2610/138 bhej diya, total Rs 51581, due 09/11\n27/10/2026, 16:20 - Rakesh: Good morning\n05/11/2026, 10:37 - Rakesh: Mehul bhai blue shirting 600 meter chahiye, rate bata do\n05/11/2026, 10:45 - Mehul: blue shirting 159 per unit\n05/11/2026, 10:47 - Rakesh: 142 lagao bhai, urgent hai\n05/11/2026, 10:49 - Mehul: 150 last hai, Thursday tak maal pahunch jayega\n05/11/2026, 10:54 - Rakesh: Theek hai confirm, jaldi bhejna\n07/11/2026, 15:22 - Mehul: Rakesh bhai payment pending hai, kab tak aayega?\n07/11/2026, 15:29 - Rakesh: 10 tarikh ko 40000 NEFT kar dunga\n11/11/2026, 11:00 - Mehul: Bhai kal payment aana tha, abhi tak nahi aaya\n11/11/2026, 11:30 - Rakesh: Thoda ruko bhai, dekhta hoon\n13/11/2026, 11:00 - Rakesh: Mehul bhai maal abhi tak nahi aaya\n13/11/2026, 11:25 - Mehul: Truck mein deri hai, Monday tak pakka pahunch jayega\n"
+    },
+    {
+      "supplier": "Ludhiana Denim Works",
+      "text": "23/07/2026, 10:20 - Rakesh: Harpreet bhai denim 239 meter chahiye, rate bata do\n23/07/2026, 10:24 - Harpreet: denim 249 per unit\n23/07/2026, 10:32 - Rakesh: 223 lagao bhai, regular order hai\n23/07/2026, 10:34 - Harpreet: 235 last hai, 28 tarikh tak delivery ho jayegi\n23/07/2026, 10:39 - Rakesh: Theek hai confirm, order pakka\n28/07/2026, 15:23 - Rakesh: Maal mil gaya, check kar liya\n28/07/2026, 16:10 - Harpreet: Bill S02/2607/604 bhej diya, total Rs 58973, due 11/09\n02/09/2026, 10:29 - Rakesh: Harpreet bhai denim 136 meter chahiye, rate bata do\n02/09/2026, 10:30 - Harpreet: denim 249 per unit\n02/09/2026, 10:35 - Rakesh: 223 lagao bhai, regular order hai\n02/09/2026, 10:36 - Harpreet: 235 last hai, 7 tarikh tak delivery ho jayegi\n02/09/2026, 10:39 - Rakesh: Theek hai confirm, order pakka\n07/09/2026, 15:14 - Rakesh: Maal mil gaya, check kar liya\n07/09/2026, 16:10 - Harpreet: Bill S02/2609/371 bhej diya, total Rs 33558, due 22/10\n24/09/2026, 17:05 - Harpreet: Good morning\n30/09/2026, 10:38 - Rakesh: Thik hai\n06/10/2026, 10:23 - Rakesh: Harpreet bhai denim 80 meter chahiye, rate bata do\n06/10/2026, 10:27 - Harpreet: denim 249 per unit\n06/10/2026, 10:30 - Rakesh: 223 lagao bhai, regular order hai\n06/10/2026, 10:32 - Harpreet: 235 last hai, 11 tarikh tak delivery ho jayegi\n06/10/2026, 10:36 - Rakesh: Theek hai confirm, order pakka\n09/10/2026, 09:11 - Harpreet: Ok ji\n11/10/2026, 15:13 - Rakesh: Maal mil gaya, check kar liya\n11/10/2026, 16:10 - Harpreet: Bill S02/2610/935 bhej diya, total Rs 19740, due 25/11\n12/11/2026, 15:25 - Harpreet: Rakesh bhai payment pending hai, kab tak aayega?\n12/11/2026, 15:32 - Rakesh: Monday pakka 19740 bhej dunga\n"
+    },
+    {
+      "supplier": "Jaipur Print House",
+      "text": "24/07/2026, 10:29 - Rakesh: Imran bhai rayon print 853 meter chahiye, rate bata do\n24/07/2026, 10:37 - Imran: rayon print 106 per unit\n24/07/2026, 10:38 - Rakesh: 95 lagao bhai, regular order hai\n24/07/2026, 10:42 - Imran: 100 last hai, Wednesday tak maal pahunch jayega\n24/07/2026, 10:43 - Rakesh: Theek hai confirm, order pakka\n29/07/2026, 15:30 - Rakesh: Maal mil gaya, check kar liya\n29/07/2026, 16:10 - Imran: Bill S03/2607/194 bhej diya, total Rs 89565, due 28/08\n03/09/2026, 10:01 - Rakesh: Imran bhai rayon print 568 meter chahiye, rate bata do\n03/09/2026, 10:02 - Imran: rayon print 106 per unit\n03/09/2026, 10:10 - Rakesh: 95 lagao bhai, regular order hai\n03/09/2026, 10:12 - Imran: 100 last hai, Tuesday tak maal pahunch jayega\n03/09/2026, 10:19 - Rakesh: Theek hai confirm, order pakka\n09/09/2026, 11:00 - Rakesh: Imran bhai maal kab tak aayega?\n09/09/2026, 11:20 - Imran: Thoda late ho gaya, aaj nikal raha hoon\n09/09/2026, 15:05 - Rakesh: Maal mil gaya, check kar liya\n09/09/2026, 16:10 - Imran: Bill S03/2609/917 bhej diya, total Rs 59640, due 09/10\n23/09/2026, 15:23 - Imran: Good morning\n28/09/2026, 17:26 - Rakesh: Thik hai\n07/10/2026, 10:19 - Rakesh: Imran bhai rayon print 474 meter chahiye, rate bata do\n07/10/2026, 10:21 - Imran: rayon print 106 per unit\n07/10/2026, 10:24 - Rakesh: 95 lagao bhai, regular order hai\n07/10/2026, 10:25 - Imran: 100 last hai, Monday tak maal pahunch jayega\n07/10/2026, 10:30 - Rakesh: Theek hai confirm, order pakka\n12/10/2026, 15:02 - Rakesh: Maal mil gaya, check kar liya\n12/10/2026, 16:10 - Imran: Bill S03/2610/173 bhej diya, total Rs 49770, due 11/11\n10/11/2026, 10:11 - Rakesh: Imran bhai rayon print 1020 meter chahiye, rate bata do\n10/11/2026, 10:12 - Imran: rayon print 106 per unit\n10/11/2026, 10:14 - Rakesh: 95 lagao bhai, urgent hai\n10/11/2026, 10:21 - Imran: 100 last hai, Tuesday tak maal pahunch jayega\n10/11/2026, 10:25 - Rakesh: Theek hai confirm, jaldi bhejna\n13/11/2026, 18:50 - Rakesh: Ok ji\n"
+    },
+    {
+      "supplier": "Silk Route Sarees",
+      "text": "25/07/2026, 10:05 - Rakesh: Chirag bhai silk saree 56 piece chahiye, rate bata do\n25/07/2026, 10:12 - Chirag: silk saree 975 per unit\n25/07/2026, 10:16 - Rakesh: 874 lagao bhai, regular order hai\n25/07/2026, 10:18 - Chirag: 920 last hai, Thursday tak maal pahunch jayega\n25/07/2026, 10:26 - Rakesh: Theek hai confirm, order pakka\n30/07/2026, 15:19 - Rakesh: Maal mil gaya, check kar liya\n30/07/2026, 16:10 - Chirag: Bill S04/2607/238 bhej diya, total Rs 54096, due 20/08\n30/08/2026, 17:00 - Rakesh: Ok ji\n04/09/2026, 10:21 - Rakesh: Chirag bhai silk saree 38 piece chahiye, rate bata do\n04/09/2026, 10:29 - Chirag: silk saree 975 per unit\n04/09/2026, 10:35 - Rakesh: 874 lagao bhai, regular order hai\n04/09/2026, 10:43 - Chirag: 920 last hai, 9 tarikh tak delivery ho jayegi\n04/09/2026, 10:51 - Rakesh: Theek hai confirm, order pakka\n09/09/2026, 15:15 - Rakesh: Maal mil gaya, check kar liya\n09/09/2026, 16:10 - Chirag: Bill S04/2609/962 bhej diya, total Rs 36708, due 30/09\n23/09/2026, 11:46 - Chirag: Thik hai\n08/10/2026, 10:32 - Rakesh: Chirag bhai silk saree 31 piece chahiye, rate bata do\n08/10/2026, 10:36 - Chirag: silk saree 975 per unit\n08/10/2026, 10:40 - Rakesh: 874 lagao bhai, regular order hai\n08/10/2026, 10:48 - Chirag: 920 last hai, Tuesday tak maal pahunch jayega\n08/10/2026, 10:50 - Rakesh: Theek hai confirm, order pakka\n13/10/2026, 15:25 - Rakesh: Maal mil gaya, check kar liya\n13/10/2026, 16:10 - Chirag: Bill S04/2610/100 bhej diya, total Rs 29946, due 03/11\n02/11/2026, 15:15 - Chirag: Rakesh bhai payment pending hai, kab tak aayega?\n02/11/2026, 15:22 - Rakesh: 8 tarikh ko 60000 NEFT kar dunga\n05/11/2026, 12:51 - Rakesh: Ok ji\n08/11/2026, 11:20 - Rakesh: 30000 bhej diya, baaki baad mein dekhta hoon\n08/11/2026, 11:40 - Chirag: Theek hai, baaki jaldi dena\n11/11/2026, 10:05 - Rakesh: Chirag bhai silk saree 70 piece chahiye, rate bata do\n11/11/2026, 10:08 - Chirag: silk saree 975 per unit\n11/11/2026, 10:11 - Rakesh: 874 lagao bhai, urgent hai\n11/11/2026, 10:16 - Chirag: 920 last hai, Wednesday tak maal pahunch jayega\n11/11/2026, 10:23 - Rakesh: Theek hai confirm, jaldi bhejna\n"
+    },
+    {
+      "supplier": "Panipat Garments Unit",
+      "text": "26/07/2026, 10:24 - Rakesh: Deepak bhai kurta set 171 piece aur uniform shirt 423 piece aur track pant 173 piece chahiye, rate bata do\n26/07/2026, 10:30 - Deepak: kurta set 350, uniform shirt 196, track pant 249 per unit\n26/07/2026, 10:31 - Rakesh: 313 lagao bhai, regular order hai\n26/07/2026, 10:39 - Deepak: 330 last hai, 31 tarikh tak delivery ho jayegi\n26/07/2026, 10:46 - Rakesh: Theek hai confirm, order pakka\n31/07/2026, 15:08 - Rakesh: Maal mil gaya, check kar liya\n31/07/2026, 16:10 - Deepak: Bill S05/2607/392 bhej diya, total Rs 184107, due 30/08\n05/09/2026, 10:38 - Rakesh: Deepak bhai kurta set 114 piece aur uniform shirt 282 piece aur track pant 116 piece chahiye, rate bata do\n05/09/2026, 10:43 - Deepak: kurta set 350, uniform shirt 196, track pant 249 per unit\n05/09/2026, 10:45 - Rakesh: 313 lagao bhai, regular order hai\n05/09/2026, 10:52 - Deepak: 330 last hai, Thursday tak maal pahunch jayega\n05/09/2026, 10:56 - Rakesh: Theek hai confirm, order pakka\n10/09/2026, 15:32 - Rakesh: Maal mil gaya, check kar liya\n10/09/2026, 16:10 - Deepak: Bill S05/2609/844 bhej diya, total Rs 122902, due 10/10\n14/09/2026, 19:55 - Deepak: Sab theek?\n17/09/2026, 16:34 - Deepak: Sab theek?\n09/10/2026, 10:24 - Rakesh: Deepak bhai kurta set 95 piece aur uniform shirt 235 piece aur track pant 96 piece chahiye, rate bata do\n09/10/2026, 10:30 - Deepak: kurta set 350, uniform shirt 196, track pant 249 per unit\n09/10/2026, 10:34 - Rakesh: 313 lagao bhai, regular order hai\n09/10/2026, 10:41 - Deepak: 330 last hai, Wednesday tak maal pahunch jayega\n09/10/2026, 10:45 - Rakesh: Theek hai confirm, order pakka\n15/10/2026, 11:00 - Rakesh: Deepak bhai maal kab tak aayega?\n15/10/2026, 11:20 - Deepak: Thoda late ho gaya, aaj nikal raha hoon\n16/10/2026, 15:17 - Rakesh: Maal mil gaya, check kar liya\n16/10/2026, 16:10 - Deepak: Bill S05/2610/978 bhej diya, total Rs 102254, due 15/11\n19/10/2026, 18:52 - Rakesh: Thik hai\n03/11/2026, 15:07 - Deepak: Rakesh bhai payment pending hai, kab tak aayega?\n03/11/2026, 15:14 - Rakesh: Monday tak 50000 ka payment ho jayega\n09/11/2026, 10:06 - Rakesh: Deepak bhai kurta set 180 piece chahiye, rate bata do\n09/11/2026, 10:10 - Deepak: kurta set 350 per unit\n09/11/2026, 10:18 - Rakesh: 313 lagao bhai, urgent hai\n09/11/2026, 10:26 - Deepak: 330 last hai, Monday tak maal pahunch jayega\n09/11/2026, 10:31 - Rakesh: Theek hai confirm, jaldi bhejna\n09/11/2026, 11:20 - Rakesh: Bhej diya, check kar lo\n09/11/2026, 11:40 - Deepak: Mil gaya, dhanyavaad\n"
+    },
+    {
+      "supplier": "Delhi Lining and Trims",
+      "text": "27/07/2026, 10:05 - Rakesh: Sunil bhai lining 1948 meter chahiye, rate bata do\n27/07/2026, 10:13 - Sunil: lining 40 per unit\n27/07/2026, 10:16 - Rakesh: 36 lagao bhai, regular order hai\n27/07/2026, 10:17 - Sunil: 38 last hai, 1 tarikh tak delivery ho jayegi\n27/07/2026, 10:24 - Rakesh: Theek hai confirm, order pakka\n01/08/2026, 15:04 - Rakesh: Maal mil gaya, check kar liya\n01/08/2026, 16:10 - Sunil: Bill S06/2608/671 bhej diya, total Rs 77725, due 16/08\n06/09/2026, 10:25 - Rakesh: Sunil bhai lining 1299 meter chahiye, rate bata do\n06/09/2026, 10:27 - Sunil: lining 40 per unit\n06/09/2026, 10:28 - Rakesh: 36 lagao bhai, regular order hai\n06/09/2026, 10:30 - Sunil: 38 last hai, Friday tak maal pahunch jayega\n06/09/2026, 10:37 - Rakesh: Theek hai confirm, order pakka\n11/09/2026, 15:26 - Rakesh: Maal mil gaya, check kar liya\n11/09/2026, 16:10 - Sunil: Bill S06/2609/491 bhej diya, total Rs 51830, due 26/09\n24/09/2026, 16:22 - Sunil: Good morning\n10/10/2026, 10:39 - Rakesh: Sunil bhai lining 1083 meter chahiye, rate bata do\n10/10/2026, 10:40 - Sunil: lining 40 per unit\n10/10/2026, 10:42 - Rakesh: 36 lagao bhai, regular order hai\n10/10/2026, 10:46 - Sunil: 38 last hai, Thursday tak maal pahunch jayega\n10/10/2026, 10:47 - Rakesh: Theek hai confirm, order pakka\n13/10/2026, 12:13 - Sunil: Sab theek?\n15/10/2026, 15:40 - Rakesh: Maal mil gaya, check kar liya\n15/10/2026, 16:10 - Sunil: Bill S06/2610/150 bhej diya, total Rs 43212, due 30/10\n21/10/2026, 09:07 - Sunil: Ok ji\n"
+    },
+    {
+      "supplier": "Ahmedabad Linen Co",
+      "text": "28/07/2026, 10:18 - Rakesh: Nitin bhai linen 248 meter chahiye, rate bata do\n28/07/2026, 10:23 - Nitin: linen 307 per unit\n28/07/2026, 10:27 - Rakesh: 275 lagao bhai, regular order hai\n28/07/2026, 10:28 - Nitin: 290 last hai, Sunday tak maal pahunch jayega\n28/07/2026, 10:34 - Rakesh: Theek hai confirm, order pakka\n02/08/2026, 15:03 - Rakesh: Maal mil gaya, check kar liya\n02/08/2026, 16:10 - Nitin: Bill S07/2608/461 bhej diya, total Rs 75516, due 01/09\n19/08/2026, 12:01 - Rakesh: Thik hai\n07/09/2026, 10:27 - Rakesh: Nitin bhai linen 165 meter chahiye, rate bata do\n07/09/2026, 10:31 - Nitin: linen 307 per unit\n07/09/2026, 10:34 - Rakesh: 275 lagao bhai, regular order hai\n07/09/2026, 10:39 - Nitin: 290 last hai, Saturday tak maal pahunch jayega\n07/09/2026, 10:47 - Rakesh: Theek hai confirm, order pakka\n12/09/2026, 15:35 - Rakesh: Maal mil gaya, check kar liya\n12/09/2026, 16:10 - Nitin: Bill S07/2609/496 bhej diya, total Rs 50242, due 12/10\n24/09/2026, 10:32 - Nitin: Ok ji\n11/10/2026, 10:10 - Rakesh: Nitin bhai linen 137 meter chahiye, rate bata do\n11/10/2026, 10:17 - Nitin: linen 307 per unit\n11/10/2026, 10:22 - Rakesh: 275 lagao bhai, regular order hai\n11/10/2026, 10:23 - Nitin: 290 last hai, 16 tarikh tak delivery ho jayegi\n11/10/2026, 10:30 - Rakesh: Theek hai confirm, order pakka\n16/10/2026, 15:14 - Rakesh: Maal mil gaya, check kar liya\n16/10/2026, 16:10 - Nitin: Bill S07/2610/577 bhej diya, total Rs 41716, due 15/11\n28/10/2026, 15:04 - Nitin: Rakesh bhai payment pending hai, kab tak aayega?\n28/10/2026, 15:11 - Rakesh: Wednesday pakka 30000 bhej dunga\n30/10/2026, 15:15 - Nitin: Thik hai\n04/11/2026, 11:20 - Rakesh: 20000 bhej diya, baaki baad mein dekhta hoon\n04/11/2026, 11:40 - Nitin: Theek hai, baaki jaldi dena\n"
+    }
+  ]
+}

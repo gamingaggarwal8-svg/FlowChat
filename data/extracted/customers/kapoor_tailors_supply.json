@@ -1,0 +1,60 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-105",
+      "chat_date": "2026-08-27",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P08",
+          "name": "Polyester Lining",
+          "qty": 800,
+          "rate": 57
+        },
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 400,
+          "rate": 133
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-114",
+      "chat_date": "2026-09-28",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P08",
+          "name": "Polyester Lining",
+          "qty": 500,
+          "rate": 57
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-127",
+      "chat_date": "2026-10-25",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 350,
+          "rate": 133
+        }
+      ]
+    }
+  ],
+  "promises": [],
+  "open_quotes": [
+    {
+      "quote_id": "Q-05",
+      "date": "2026-11-10",
+      "taxable_value": 84000
+    }
+  ]
+}

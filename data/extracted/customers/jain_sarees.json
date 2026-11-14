@@ -1,0 +1,57 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-110",
+      "chat_date": "2026-09-11",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P07",
+          "name": "Silk Blend Saree",
+          "qty": 40,
+          "rate": 1225
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-122",
+      "chat_date": "2026-10-13",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P07",
+          "name": "Silk Blend Saree",
+          "qty": 60,
+          "rate": 1225
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-133",
+      "chat_date": "2026-11-03",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P07",
+          "name": "Silk Blend Saree",
+          "qty": 30,
+          "rate": 1225
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-11-06",
+      "promised_date": "2026-11-10",
+      "amount": 50000,
+      "quote": "Tuesday pakka 50000 bhej dunga",
+      "via_voice": false,
+      "expected_status": "partial"
+    }
+  ],
+  "open_quotes": []
+}

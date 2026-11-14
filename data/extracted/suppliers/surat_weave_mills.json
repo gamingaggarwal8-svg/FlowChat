@@ -1,0 +1,104 @@
+{
+  "purchase_orders": [
+    {
+      "po_id": "PO-S01-1",
+      "order_date": "2026-07-22",
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 540,
+          "final_rate": 150
+        },
+        {
+          "sku": "P02",
+          "name": "White Poplin",
+          "qty": 450,
+          "final_rate": 125
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-07-27",
+        "actual_delivery": "2026-07-27",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S01-2",
+      "order_date": "2026-09-01",
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 360,
+          "final_rate": 150
+        },
+        {
+          "sku": "P02",
+          "name": "White Poplin",
+          "qty": 207,
+          "final_rate": 125
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-09-06",
+        "actual_delivery": "2026-09-09",
+        "revised_promised_date": null,
+        "expected_status": "late"
+      }
+    },
+    {
+      "po_id": "PO-S01-3",
+      "order_date": "2026-10-05",
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 300,
+          "final_rate": 150
+        },
+        {
+          "sku": "P02",
+          "name": "White Poplin",
+          "qty": 33,
+          "final_rate": 125
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-10-10",
+        "actual_delivery": "2026-10-10",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S01-4",
+      "order_date": "2026-11-05",
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 600,
+          "final_rate": 150
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-11-12",
+        "actual_delivery": null,
+        "revised_promised_date": "2026-11-16",
+        "expected_status": "delayed"
+      }
+    }
+  ],
+  "owner_payment_promises": [
+    {
+      "made_on": "2026-11-07",
+      "promised_date": "2026-11-10",
+      "amount": 40000,
+      "quote": "10 tarikh ko 40000 NEFT kar dunga",
+      "direction": "owner_to_supplier",
+      "expected_status": "missed"
+    }
+  ]
+}

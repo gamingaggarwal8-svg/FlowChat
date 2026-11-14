@@ -1,0 +1,43 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-123",
+      "chat_date": "2026-10-14",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P08",
+          "name": "Polyester Lining",
+          "qty": 600,
+          "rate": 59
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-134",
+      "chat_date": "2026-11-05",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 300,
+          "rate": 137
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-11-12",
+      "promised_date": "2026-11-16",
+      "amount": 43155,
+      "quote": "16 tarikh ko 43155 UPI kar dunga",
+      "via_voice": false,
+      "expected_status": "pending"
+    }
+  ],
+  "open_quotes": []
+}

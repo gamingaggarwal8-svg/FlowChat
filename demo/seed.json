@@ -1,0 +1,910 @@
+{
+  "invoices": [
+    {
+      "invoice_id": "INV-101",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-08-05",
+      "due_date": "2026-09-19",
+      "taxable": 133500.0,
+      "gst": 6675.0,
+      "total": 140175.0
+    },
+    {
+      "invoice_id": "INV-102",
+      "customer": "Gupta Fabrics",
+      "date": "2026-08-08",
+      "due_date": "2026-09-07",
+      "taxable": 35000.0,
+      "gst": 1750.0,
+      "total": 36750.0
+    },
+    {
+      "invoice_id": "INV-103",
+      "customer": "Sharma Textiles",
+      "date": "2026-08-12",
+      "due_date": "2026-09-11",
+      "taxable": 48950.0,
+      "gst": 2448.0,
+      "total": 51398.0
+    },
+    {
+      "invoice_id": "INV-104",
+      "customer": "Singh Uniforms",
+      "date": "2026-08-20",
+      "due_date": "2026-09-19",
+      "taxable": 74100.0,
+      "gst": 3705.0,
+      "total": 77805.0
+    },
+    {
+      "invoice_id": "INV-105",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-08-28",
+      "due_date": "2026-09-27",
+      "taxable": 98800.0,
+      "gst": 4940.0,
+      "total": 103740.0
+    },
+    {
+      "invoice_id": "INV-106",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-09-02",
+      "due_date": "2026-10-17",
+      "taxable": 72750.0,
+      "gst": 3638.0,
+      "total": 76388.0
+    },
+    {
+      "invoice_id": "INV-107",
+      "customer": "Verma Garments",
+      "date": "2026-09-02",
+      "due_date": "2026-09-17",
+      "taxable": 20900.0,
+      "gst": 1045.0,
+      "total": 21945.0
+    },
+    {
+      "invoice_id": "INV-108",
+      "customer": "Reddy Garments",
+      "date": "2026-09-05",
+      "due_date": "2026-10-05",
+      "taxable": 42200.0,
+      "gst": 2110.0,
+      "total": 44310.0
+    },
+    {
+      "invoice_id": "INV-109",
+      "customer": "Sharma Textiles",
+      "date": "2026-09-10",
+      "due_date": "2026-10-10",
+      "taxable": 35760.0,
+      "gst": 1788.0,
+      "total": 37548.0
+    },
+    {
+      "invoice_id": "INV-110",
+      "customer": "Jain Sarees",
+      "date": "2026-09-12",
+      "due_date": "2026-10-12",
+      "taxable": 49000.0,
+      "gst": 2450.0,
+      "total": 51450.0
+    },
+    {
+      "invoice_id": "INV-111",
+      "customer": "Gupta Fabrics",
+      "date": "2026-09-15",
+      "due_date": "2026-10-15",
+      "taxable": 64000.0,
+      "gst": 3200.0,
+      "total": 67200.0
+    },
+    {
+      "invoice_id": "INV-112",
+      "customer": "Singh Uniforms",
+      "date": "2026-09-18",
+      "due_date": "2026-10-18",
+      "taxable": 93150.0,
+      "gst": 4658.0,
+      "total": 97808.0
+    },
+    {
+      "invoice_id": "INV-113",
+      "customer": "Patel Fabrics",
+      "date": "2026-09-25",
+      "due_date": "2026-10-25",
+      "taxable": 29520.0,
+      "gst": 1476.0,
+      "total": 30996.0
+    },
+    {
+      "invoice_id": "INV-114",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-09-29",
+      "due_date": "2026-10-29",
+      "taxable": 28500.0,
+      "gst": 1425.0,
+      "total": 29925.0
+    },
+    {
+      "invoice_id": "INV-115",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-09-30",
+      "due_date": "2026-11-14",
+      "taxable": 66000.0,
+      "gst": 3300.0,
+      "total": 69300.0
+    },
+    {
+      "invoice_id": "INV-116",
+      "customer": "Verma Garments",
+      "date": "2026-10-01",
+      "due_date": "2026-10-16",
+      "taxable": 29640.0,
+      "gst": 1482.0,
+      "total": 31122.0
+    },
+    {
+      "invoice_id": "INV-117",
+      "customer": "Mehta Fashion",
+      "date": "2026-10-02",
+      "due_date": "2026-10-17",
+      "taxable": 25620.0,
+      "gst": 1281.0,
+      "total": 26901.0
+    },
+    {
+      "invoice_id": "INV-118",
+      "customer": "Sharma Textiles",
+      "date": "2026-10-05",
+      "due_date": "2026-11-04",
+      "taxable": 64100.0,
+      "gst": 3205.0,
+      "total": 67305.0
+    },
+    {
+      "invoice_id": "INV-119",
+      "customer": "Gupta Fabrics",
+      "date": "2026-10-08",
+      "due_date": "2026-11-07",
+      "taxable": 47550.0,
+      "gst": 2378.0,
+      "total": 49928.0
+    },
+    {
+      "invoice_id": "INV-120",
+      "customer": "Khanna Traders",
+      "date": "2026-10-10",
+      "due_date": "2026-11-09",
+      "taxable": 30400.0,
+      "gst": 1520.0,
+      "total": 31920.0
+    },
+    {
+      "invoice_id": "INV-121",
+      "customer": "Reddy Garments",
+      "date": "2026-10-12",
+      "due_date": "2026-11-11",
+      "taxable": 52780.0,
+      "gst": 2639.0,
+      "total": 55419.0
+    },
+    {
+      "invoice_id": "INV-122",
+      "customer": "Jain Sarees",
+      "date": "2026-10-14",
+      "due_date": "2026-11-13",
+      "taxable": 73500.0,
+      "gst": 3675.0,
+      "total": 77175.0
+    },
+    {
+      "invoice_id": "INV-123",
+      "customer": "Bansal Clothing",
+      "date": "2026-10-15",
+      "due_date": "2026-10-30",
+      "taxable": 35400.0,
+      "gst": 1770.0,
+      "total": 37170.0
+    },
+    {
+      "invoice_id": "INV-124",
+      "customer": "Verma Garments",
+      "date": "2026-10-20",
+      "due_date": "2026-11-04",
+      "taxable": 25120.0,
+      "gst": 1256.0,
+      "total": 26376.0
+    },
+    {
+      "invoice_id": "INV-125",
+      "customer": "Singh Uniforms",
+      "date": "2026-10-22",
+      "due_date": "2026-11-21",
+      "taxable": 49400.0,
+      "gst": 2470.0,
+      "total": 51870.0
+    },
+    {
+      "invoice_id": "INV-126",
+      "customer": "Mehta Fashion",
+      "date": "2026-10-25",
+      "due_date": "2026-11-09",
+      "taxable": 32000.0,
+      "gst": 1600.0,
+      "total": 33600.0
+    },
+    {
+      "invoice_id": "INV-127",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-10-26",
+      "due_date": "2026-11-25",
+      "taxable": 46550.0,
+      "gst": 2328.0,
+      "total": 48878.0
+    },
+    {
+      "invoice_id": "INV-128",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-10-27",
+      "due_date": "2026-12-11",
+      "taxable": 62100.0,
+      "gst": 3105.0,
+      "total": 65205.0
+    },
+    {
+      "invoice_id": "INV-129",
+      "customer": "Sharma Textiles",
+      "date": "2026-10-28",
+      "due_date": "2026-11-27",
+      "taxable": 16880.0,
+      "gst": 844.0,
+      "total": 17724.0
+    },
+    {
+      "invoice_id": "INV-130",
+      "customer": "Patel Fabrics",
+      "date": "2026-10-30",
+      "due_date": "2026-11-29",
+      "taxable": 62460.0,
+      "gst": 3123.0,
+      "total": 65583.0
+    },
+    {
+      "invoice_id": "INV-131",
+      "customer": "Khanna Traders",
+      "date": "2026-11-02",
+      "due_date": "2026-12-02",
+      "taxable": 17280.0,
+      "gst": 864.0,
+      "total": 18144.0
+    },
+    {
+      "invoice_id": "INV-132",
+      "customer": "Gupta Fabrics",
+      "date": "2026-11-03",
+      "due_date": "2026-12-03",
+      "taxable": 27200.0,
+      "gst": 1360.0,
+      "total": 28560.0
+    },
+    {
+      "invoice_id": "INV-133",
+      "customer": "Jain Sarees",
+      "date": "2026-11-04",
+      "due_date": "2026-12-04",
+      "taxable": 36750.0,
+      "gst": 1838.0,
+      "total": 38588.0
+    },
+    {
+      "invoice_id": "INV-134",
+      "customer": "Bansal Clothing",
+      "date": "2026-11-06",
+      "due_date": "2026-11-21",
+      "taxable": 41100.0,
+      "gst": 2055.0,
+      "total": 43155.0
+    },
+    {
+      "invoice_id": "INV-135",
+      "customer": "Verma Garments",
+      "date": "2026-11-07",
+      "due_date": "2026-11-22",
+      "taxable": 25080.0,
+      "gst": 1254.0,
+      "total": 26334.0
+    },
+    {
+      "invoice_id": "INV-136",
+      "customer": "Mehta Fashion",
+      "date": "2026-11-09",
+      "due_date": "2026-11-24",
+      "taxable": 20160.0,
+      "gst": 1008.0,
+      "total": 21168.0
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": "PAY-001",
+      "customer": "Gupta Fabrics",
+      "date": "2026-09-07",
+      "amount": 36750.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/GUPTA/0709"
+    },
+    {
+      "payment_id": "PAY-002",
+      "customer": "Sharma Textiles",
+      "date": "2026-09-14",
+      "amount": 51398.0,
+      "mode": "NEFT",
+      "bank_narration": "NEFT/SHARMA/1409"
+    },
+    {
+      "payment_id": "PAY-003",
+      "customer": "Verma Garments",
+      "date": "2026-09-17",
+      "amount": 21945.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/VERMA/1709"
+    },
+    {
+      "payment_id": "PAY-004",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-09-23",
+      "amount": 140175.0,
+      "mode": "NEFT",
+      "bank_narration": "NEFT/AGARWAL/2309"
+    },
+    {
+      "payment_id": "PAY-005",
+      "customer": "Singh Uniforms",
+      "date": "2026-09-26",
+      "amount": 77805.0,
+      "mode": "NEFT",
+      "bank_narration": "NEFT/SINGH/2609"
+    },
+    {
+      "payment_id": "PAY-006",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-09-30",
+      "amount": 103740.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/KAPOOR/3009"
+    },
+    {
+      "payment_id": "PAY-007",
+      "customer": "Reddy Garments",
+      "date": "2026-10-05",
+      "amount": 44310.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/REDDY/0510"
+    },
+    {
+      "payment_id": "PAY-008",
+      "customer": "Jain Sarees",
+      "date": "2026-10-13",
+      "amount": 51450.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/JAIN/1310"
+    },
+    {
+      "payment_id": "PAY-009",
+      "customer": "Sharma Textiles",
+      "date": "2026-10-18",
+      "amount": 18774.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/SHARMA/1810"
+    },
+    {
+      "payment_id": "PAY-010",
+      "customer": "Verma Garments",
+      "date": "2026-10-18",
+      "amount": 31122.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/VERMA/1810"
+    },
+    {
+      "payment_id": "PAY-011",
+      "customer": "Gupta Fabrics",
+      "date": "2026-10-20",
+      "amount": 67200.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/GUPTA/2010"
+    },
+    {
+      "payment_id": "PAY-012",
+      "customer": "Mehta Fashion",
+      "date": "2026-10-20",
+      "amount": 26901.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/MEHTA/2010"
+    },
+    {
+      "payment_id": "PAY-013",
+      "customer": "Singh Uniforms",
+      "date": "2026-10-23",
+      "amount": 68466.0,
+      "mode": "NEFT",
+      "bank_narration": "NEFT/SINGH/2310"
+    },
+    {
+      "payment_id": "PAY-014",
+      "customer": "Sharma Textiles",
+      "date": "2026-10-26",
+      "amount": 12000.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/SHARMA/2610"
+    },
+    {
+      "payment_id": "PAY-015",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-10-27",
+      "amount": 76388.0,
+      "mode": "NEFT",
+      "bank_narration": "NEFT/AGARWAL/2710"
+    },
+    {
+      "payment_id": "PAY-016",
+      "customer": "Patel Fabrics",
+      "date": "2026-10-27",
+      "amount": 30996.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/PATEL/2710"
+    },
+    {
+      "payment_id": "PAY-017",
+      "customer": "Gupta Fabrics",
+      "date": "2026-10-28",
+      "amount": 19971.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/GUPTA/2810"
+    },
+    {
+      "payment_id": "PAY-018",
+      "customer": "Bansal Clothing",
+      "date": "2026-10-31",
+      "amount": 37170.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/BANSAL/3110"
+    },
+    {
+      "payment_id": "PAY-019",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-11-02",
+      "amount": 29925.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/KAPOOR/0211"
+    },
+    {
+      "payment_id": "PAY-020",
+      "customer": "Singh Uniforms",
+      "date": "2026-11-04",
+      "amount": 15000.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/SINGH/0411"
+    },
+    {
+      "payment_id": "PAY-021",
+      "customer": "Mehta Fashion",
+      "date": "2026-11-09",
+      "amount": 33600.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/MEHTA/0911"
+    },
+    {
+      "payment_id": "PAY-022",
+      "customer": "Jain Sarees",
+      "date": "2026-11-10",
+      "amount": 25000.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/JAIN/1011"
+    },
+    {
+      "payment_id": "PAY-023",
+      "customer": "Verma Garments",
+      "date": "2026-11-10",
+      "amount": 26376.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/VERMA/1011"
+    },
+    {
+      "payment_id": "PAY-024",
+      "customer": "Verma Garments",
+      "date": "2026-11-11",
+      "amount": 26334.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/VERMA/1111"
+    },
+    {
+      "payment_id": "PAY-025",
+      "customer": "Reddy Garments",
+      "date": "2026-11-12",
+      "amount": 40000.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/REDDY/1211"
+    },
+    {
+      "payment_id": "PAY-026",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-11-13",
+      "amount": 20000.0,
+      "mode": "UPI",
+      "bank_narration": "UPI/AGARWAL/1311"
+    },
+    {
+      "payment_id": "PAY-027",
+      "customer": "Agarwal Cloth House",
+      "date": "2026-11-14",
+      "amount": 34650.0,
+      "mode": "NEFT",
+      "bank_narration": "NEFT/AGARWAL/1411"
+    }
+  ],
+  "customers": [
+    {
+      "customer": "Sharma Textiles",
+      "city": "Delhi",
+      "credit_days": 30.0
+    },
+    {
+      "customer": "Gupta Fabrics",
+      "city": "Surat",
+      "credit_days": 30.0
+    },
+    {
+      "customer": "Verma Garments",
+      "city": "Ludhiana",
+      "credit_days": 15.0
+    },
+    {
+      "customer": "Khanna Traders",
+      "city": "Delhi",
+      "credit_days": 30.0
+    },
+    {
+      "customer": "Agarwal Cloth House",
+      "city": "Jaipur",
+      "credit_days": 45.0
+    },
+    {
+      "customer": "Jain Sarees",
+      "city": "Surat",
+      "credit_days": 30.0
+    },
+    {
+      "customer": "Mehta Fashion",
+      "city": "Mumbai",
+      "credit_days": 15.0
+    },
+    {
+      "customer": "Singh Uniforms",
+      "city": "Ludhiana",
+      "credit_days": 30.0
+    },
+    {
+      "customer": "Reddy Garments",
+      "city": "Hyderabad",
+      "credit_days": 30.0
+    },
+    {
+      "customer": "Patel Fabrics",
+      "city": "Ahmedabad",
+      "credit_days": 30.0
+    },
+    {
+      "customer": "Bansal Clothing",
+      "city": "Delhi",
+      "credit_days": 15.0
+    },
+    {
+      "customer": "Kapoor Tailors Supply",
+      "city": "Delhi",
+      "credit_days": 30.0
+    }
+  ],
+  "quotes": [
+    {
+      "quote_id": "Q-01",
+      "customer": "Khanna Traders",
+      "date": "2026-11-12",
+      "taxable_value": 38000.0,
+      "status": "open",
+      "items": "Linen Blend Fabric x100"
+    },
+    {
+      "quote_id": "Q-02",
+      "customer": "Mehta Fashion",
+      "date": "2026-11-13",
+      "taxable_value": 25000.0,
+      "status": "open",
+      "items": "Silk Blend Saree x20"
+    },
+    {
+      "quote_id": "Q-03",
+      "customer": "Reddy Garments",
+      "date": "2026-11-12",
+      "taxable_value": 66000.0,
+      "status": "open",
+      "items": "Cotton Kurta Set x150"
+    },
+    {
+      "quote_id": "Q-04",
+      "customer": "Patel Fabrics",
+      "date": "2026-11-11",
+      "taxable_value": 62000.0,
+      "status": "open",
+      "items": "Denim Fabric 12oz x200"
+    },
+    {
+      "quote_id": "Q-05",
+      "customer": "Kapoor Tailors Supply",
+      "date": "2026-11-10",
+      "taxable_value": 84000.0,
+      "status": "open",
+      "items": "Rayon Printed Fabric x600"
+    }
+  ],
+  "products": [
+    {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "chat_alias": "blue shirting",
+      "unit": "mtr",
+      "list_price": 220.0,
+      "floor_price": 190.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P02",
+      "name": "White Poplin",
+      "chat_alias": "white poplin",
+      "unit": "mtr",
+      "list_price": 180.0,
+      "floor_price": 155.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "chat_alias": "kurta set",
+      "unit": "pc",
+      "list_price": 440.0,
+      "floor_price": 390.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "chat_alias": "denim",
+      "unit": "mtr",
+      "list_price": 310.0,
+      "floor_price": 275.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "chat_alias": "rayon print",
+      "unit": "mtr",
+      "list_price": 140.0,
+      "floor_price": 120.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "chat_alias": "uniform shirt",
+      "unit": "pc",
+      "list_price": 260.0,
+      "floor_price": 225.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "chat_alias": "silk saree",
+      "unit": "pc",
+      "list_price": 1250.0,
+      "floor_price": 1100.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "chat_alias": "lining",
+      "unit": "mtr",
+      "list_price": 60.0,
+      "floor_price": 50.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "chat_alias": "linen",
+      "unit": "mtr",
+      "list_price": 380.0,
+      "floor_price": 335.0,
+      "gst_rate": 5.0
+    },
+    {
+      "sku": "P10",
+      "name": "Track Pants",
+      "chat_alias": "track pant",
+      "unit": "pc",
+      "list_price": 330.0,
+      "floor_price": 290.0,
+      "gst_rate": 5.0
+    }
+  ],
+  "promises": [
+    {
+      "customer": "Sharma Textiles",
+      "made_on": "2026-10-20",
+      "promised_date": "2026-10-26",
+      "amount": 20000,
+      "quote": "26 tarikh ko 20000 UPI kar dunga",
+      "via_voice": false
+    },
+    {
+      "customer": "Sharma Textiles",
+      "made_on": "2026-11-02",
+      "promised_date": "2026-11-09",
+      "amount": 15000,
+      "quote": "9 tarikh ko 15000 UPI kar dunga",
+      "via_voice": false
+    },
+    {
+      "customer": "Gupta Fabrics",
+      "made_on": "2026-11-05",
+      "promised_date": "2026-11-06",
+      "amount": 15000,
+      "quote": "kal tak 15000 pakka bhej deta hoon",
+      "via_voice": false
+    },
+    {
+      "customer": "Gupta Fabrics",
+      "made_on": "2026-11-11",
+      "promised_date": "2026-11-12",
+      "amount": 15000,
+      "quote": "kal tak 15000 pakka bhej deta hoon",
+      "via_voice": true
+    },
+    {
+      "customer": "Verma Garments",
+      "made_on": "2026-11-05",
+      "promised_date": "2026-11-10",
+      "amount": 26334,
+      "quote": "Tuesday pakka 26334 bhej dunga",
+      "via_voice": false
+    },
+    {
+      "customer": "Khanna Traders",
+      "made_on": "2026-11-12",
+      "promised_date": "2026-11-16",
+      "amount": 31920,
+      "quote": "Monday pakka 31920 bhej dunga",
+      "via_voice": false
+    },
+    {
+      "customer": "Agarwal Cloth House",
+      "made_on": "2026-11-08",
+      "promised_date": "2026-11-13",
+      "amount": 20000,
+      "quote": "13 tarikh ko 20000 UPI kar dunga",
+      "via_voice": false
+    },
+    {
+      "customer": "Jain Sarees",
+      "made_on": "2026-11-06",
+      "promised_date": "2026-11-10",
+      "amount": 50000,
+      "quote": "Tuesday pakka 50000 bhej dunga",
+      "via_voice": false
+    },
+    {
+      "customer": "Mehta Fashion",
+      "made_on": "2026-11-10",
+      "promised_date": "2026-11-14",
+      "amount": 21168,
+      "quote": "Saturday pakka 21168 bhej dunga",
+      "via_voice": true
+    },
+    {
+      "customer": "Singh Uniforms",
+      "made_on": "2026-10-30",
+      "promised_date": "2026-11-04",
+      "amount": 30000,
+      "quote": "4 tarikh ko 30000 UPI kar dunga",
+      "via_voice": false
+    },
+    {
+      "customer": "Singh Uniforms",
+      "made_on": "2026-11-10",
+      "promised_date": "2026-11-13",
+      "amount": 30000,
+      "quote": "Friday tak 30000 ka payment ho jayega",
+      "via_voice": false
+    },
+    {
+      "customer": "Reddy Garments",
+      "made_on": "2026-11-09",
+      "promised_date": "2026-11-12",
+      "amount": 40000,
+      "quote": "Thursday tak 40000 ka payment ho jayega",
+      "via_voice": false
+    },
+    {
+      "customer": "Bansal Clothing",
+      "made_on": "2026-11-12",
+      "promised_date": "2026-11-16",
+      "amount": 43155,
+      "quote": "16 tarikh ko 43155 UPI kar dunga",
+      "via_voice": false
+    }
+  ],
+  "chats": [
+    {
+      "customer": "Agarwal Cloth House",
+      "text": "04/08/2026, 10:38 - Agarwal: Bhaiya blue shirting 400 meter aur white poplin 300 meter chahiye, rate batao\n04/08/2026, 10:39 - Rakesh: blue shirting 220, white poplin 180 per unit lagega\n04/08/2026, 10:47 - Agarwal: Itna zyada hai, 195 mein de do\n04/08/2026, 10:48 - Rakesh: 207 final hai, isse kam nahi hoga (baaki items bhi isi hisaab se)\n04/08/2026, 10:56 - Agarwal: Theek hai confirm\n05/08/2026, 12:20 - Rakesh: Bill INV-101 bana diya, total Rs 140175, due 19/09\n01/09/2026, 10:39 - Agarwal: Bhaiya denim 250 meter chahiye, rate batao\n01/09/2026, 10:42 - Rakesh: denim 310 per unit lagega\n01/09/2026, 10:43 - Agarwal: 270 kar do to abhi confirm\n01/09/2026, 10:45 - Rakesh: Chalo 291 kar deta hoon, last\n01/09/2026, 10:48 - Agarwal: Chalo done, bhej do\n02/09/2026, 12:17 - Rakesh: Bill INV-106 bana diya, total Rs 76388, due 17/10\n04/09/2026, 16:05 - Agarwal: Maal pahunch gaya, quality badhiya hai\n17/09/2026, 12:40 - Agarwal: GST bill bhej dena please\n21/09/2026, 19:23 - Agarwal: Aaj market band hai kya?\n29/09/2026, 10:09 - Agarwal: Bhaiya rayon print 500 meter chahiye, rate batao\n29/09/2026, 10:14 - Rakesh: rayon print 140 per unit lagega\n29/09/2026, 10:18 - Agarwal: 120 kar do to abhi confirm\n29/09/2026, 10:21 - Rakesh: 132 final hai, isse kam nahi hoga\n29/09/2026, 10:28 - Agarwal: Theek hai confirm\n30/09/2026, 12:23 - Rakesh: Bill INV-115 bana diya, total Rs 69300, due 14/11\n26/10/2026, 10:27 - Agarwal: Bhaiya woh wala 300 meter bhej dena jo pichli baar liya tha\n26/10/2026, 10:32 - Rakesh: Woh 207 per mtr lagega, same rate\n26/10/2026, 10:40 - Agarwal: Chalo done, bhej do\n27/10/2026, 12:07 - Rakesh: Bill INV-128 bana diya, total Rs 65205, due 11/12\n29/10/2026, 16:05 - Agarwal: Maal pahunch gaya, quality badhiya hai\n02/11/2026, 10:54 - Agarwal: Thik hai bhaiya\n08/11/2026, 09:15 - Agarwal: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n08/11/2026, 15:30 - Rakesh: Agarwal bhai payment ka kya scene hai?\n08/11/2026, 15:36 - Agarwal: 13 tarikh ko 20000 UPI kar dunga\n13/11/2026, 11:20 - Agarwal: Bhej diya, UPI check kar lo\n13/11/2026, 11:35 - Rakesh: Mil gaya, thanks\n",
+      "filename": "agarwal_cloth_house.txt"
+    },
+    {
+      "customer": "Bansal Clothing",
+      "text": "12/08/2026, 19:26 - Bansal: Thik hai bhaiya\n22/08/2026, 13:32 - Bansal: GST bill bhej dena please\n16/09/2026, 09:50 - Bansal: Good morning bhaiya\n14/10/2026, 10:06 - Bansal: Bhaiya lining 600 meter chahiye, rate batao\n14/10/2026, 10:08 - Rakesh: lining 60 per unit lagega\n14/10/2026, 10:11 - Bansal: Thoda kam karo bhaiya, 55 lagao\n14/10/2026, 10:19 - Rakesh: 59 final hai, isse kam nahi hoga\n14/10/2026, 10:21 - Bansal: Theek hai confirm\n15/10/2026, 12:12 - Rakesh: Bill INV-123 bana diya, total Rs 37170, due 30/10\n17/10/2026, 16:05 - Bansal: Maal pahunch gaya, quality badhiya hai\n05/11/2026, 10:14 - Bansal: Bhaiya rayon print 300 meter chahiye, rate batao\n05/11/2026, 10:20 - Rakesh: rayon print 140 per unit lagega\n05/11/2026, 10:28 - Bansal: Thoda kam karo bhaiya, 125 lagao\n05/11/2026, 10:34 - Rakesh: 137 final hai, isse kam nahi hoga\n05/11/2026, 10:40 - Bansal: Ok pakka, maal bhej do\n06/11/2026, 12:01 - Rakesh: Bill INV-134 bana diya, total Rs 43155, due 21/11\n08/11/2026, 09:05 - Bansal: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n12/11/2026, 15:21 - Rakesh: Bansal ji namaste, payment pending hai, kab tak ho jayega?\n12/11/2026, 15:27 - Bansal: 16 tarikh ko 43155 UPI kar dunga\n",
+      "filename": "bansal_clothing.txt"
+    },
+    {
+      "customer": "Gupta Fabrics",
+      "text": "07/08/2026, 10:33 - Gupta: Bhaiya white poplin 200 meter chahiye, rate batao\n07/08/2026, 10:39 - Rakesh: white poplin 180 per unit lagega\n07/08/2026, 10:40 - Gupta: 165 kar do to abhi confirm\n07/08/2026, 10:48 - Rakesh: Chalo 175 kar deta hoon, last\n07/08/2026, 10:51 - Gupta: Ok pakka, maal bhej do\n08/08/2026, 12:01 - Rakesh: Bill INV-102 bana diya, total Rs 36750, due 07/09\n10/08/2026, 16:05 - Gupta: Maal pahunch gaya, quality badhiya hai\n25/08/2026, 15:24 - Gupta: Aaj market band hai kya?\n14/09/2026, 10:23 - Gupta: Bhaiya rayon print 300 meter aur lining 400 meter chahiye, rate batao\n14/09/2026, 10:31 - Rakesh: rayon print 140, lining 60 per unit lagega\n14/09/2026, 10:33 - Gupta: Thoda kam karo bhaiya, 120 lagao\n14/09/2026, 10:38 - Rakesh: 136 final hai, isse kam nahi hoga (baaki items bhi isi hisaab se)\n14/09/2026, 10:43 - Gupta: Chalo done, bhej do\n15/09/2026, 12:08 - Rakesh: Bill INV-111 bana diya, total Rs 67200, due 15/10\n03/10/2026, 10:50 - Gupta: GST bill bhej dena please\n07/10/2026, 10:07 - Gupta: Bhaiya white poplin 150 meter aur blue shirting 100 meter chahiye, rate batao\n07/10/2026, 10:09 - Rakesh: white poplin 180, blue shirting 220 per unit lagega\n07/10/2026, 10:16 - Gupta: Itna zyada hai, 165 mein de do\n07/10/2026, 10:23 - Rakesh: Chalo 175 kar deta hoon, last (baaki items bhi isi hisaab se)\n07/10/2026, 10:26 - Gupta: Theek hai confirm\n08/10/2026, 12:19 - Rakesh: Bill INV-119 bana diya, total Rs 49928, due 07/11\n30/10/2026, 15:44 - Gupta: Sab theek? Naya stock aaya kya?\n02/11/2026, 10:37 - Gupta: Bhaiya woh wala 200 meter bhej dena jo pichli baar liya tha\n02/11/2026, 10:38 - Rakesh: Woh 136 per mtr lagega, same rate\n02/11/2026, 10:44 - Gupta: Ok pakka, maal bhej do\n03/11/2026, 12:24 - Rakesh: Bill INV-132 bana diya, total Rs 28560, due 03/12\n05/11/2026, 15:06 - Rakesh: Gupta bhai payment ka kya scene hai?\n05/11/2026, 15:12 - Gupta: kal tak 15000 pakka bhej deta hoon\n05/11/2026, 16:05 - Gupta: Maal pahunch gaya, quality badhiya hai\n07/11/2026, 11:00 - Rakesh: Gupta ji kal payment aana tha, abhi tak nahi aaya\n07/11/2026, 11:25 - Gupta: Bhaiya bank mein issue tha, dekhta hoon\n08/11/2026, 09:09 - Gupta: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n11/11/2026, 15:19 - Rakesh: Gupta ji namaste, payment pending hai, kab tak ho jayega?\n11/11/2026, 15:25 - Gupta: <Voice note transcript> kal tak 15000 pakka bhej deta hoon\n13/11/2026, 11:00 - Rakesh: Gupta ji kal payment aana tha, abhi tak nahi aaya\n13/11/2026, 11:25 - Gupta: Bhaiya bank mein issue tha, dekhta hoon\n",
+      "filename": "gupta_fabrics.txt"
+    },
+    {
+      "customer": "Jain Sarees",
+      "text": "05/08/2026, 09:01 - Jain: Good morning bhaiya\n19/08/2026, 12:23 - Jain: Namaste ji\n11/09/2026, 10:38 - Jain: Bhaiya silk saree 40 piece chahiye, rate batao\n11/09/2026, 10:43 - Rakesh: silk saree 1250 per unit lagega\n11/09/2026, 10:46 - Jain: 1100 kar do to abhi confirm\n11/09/2026, 10:53 - Rakesh: Chalo 1225 kar deta hoon, last\n11/09/2026, 11:00 - Jain: Chalo done, bhej do\n12/09/2026, 12:08 - Rakesh: Bill INV-110 bana diya, total Rs 51450, due 12/10\n14/09/2026, 16:05 - Jain: Maal pahunch gaya, quality badhiya hai\n12/10/2026, 19:53 - Jain: Good morning bhaiya\n13/10/2026, 10:26 - Jain: Bhaiya silk saree 60 piece chahiye, rate batao\n13/10/2026, 10:34 - Rakesh: silk saree 1250 per unit lagega\n13/10/2026, 10:40 - Jain: Itna zyada hai, 1100 mein de do\n13/10/2026, 10:42 - Rakesh: Chalo 1225 kar deta hoon, last\n13/10/2026, 10:46 - Jain: Theek hai confirm\n14/10/2026, 12:00 - Rakesh: Bill INV-122 bana diya, total Rs 77175, due 13/11\n03/11/2026, 10:00 - Jain: Bhaiya silk saree 30 piece chahiye, rate batao\n03/11/2026, 10:06 - Rakesh: silk saree 1250 per unit lagega\n03/11/2026, 10:09 - Jain: Thoda kam karo bhaiya, 1140 lagao\n03/11/2026, 10:15 - Rakesh: Chalo 1225 kar deta hoon, last\n03/11/2026, 10:18 - Jain: Theek hai confirm\n04/11/2026, 12:18 - Rakesh: Bill INV-133 bana diya, total Rs 38588, due 04/12\n06/11/2026, 15:16 - Rakesh: Jain bhai payment ka kya scene hai?\n06/11/2026, 15:22 - Jain: Tuesday pakka 50000 bhej dunga\n06/11/2026, 16:05 - Jain: Maal pahunch gaya, quality badhiya hai\n08/11/2026, 09:02 - Jain: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n10/11/2026, 11:20 - Jain: 25000 bhej diya abhi, baaki baad mein dekhta hoon\n10/11/2026, 11:40 - Rakesh: Theek hai, baaki jaldi dena\n",
+      "filename": "jain_sarees.txt"
+    },
+    {
+      "customer": "Kapoor Tailors Supply",
+      "text": "27/08/2026, 10:00 - Kapoor: Bhaiya lining 800 meter aur rayon print 400 meter chahiye, rate batao\n27/08/2026, 10:03 - Rakesh: lining 60, rayon print 140 per unit lagega\n27/08/2026, 10:07 - Kapoor: Thoda kam karo bhaiya, 55 lagao\n27/08/2026, 10:15 - Rakesh: Chalo 57 kar deta hoon, last (baaki items bhi isi hisaab se)\n27/08/2026, 10:17 - Kapoor: Theek hai confirm\n28/08/2026, 12:09 - Rakesh: Bill INV-105 bana diya, total Rs 103740, due 27/09\n19/09/2026, 17:03 - Kapoor: Good morning bhaiya\n28/09/2026, 10:28 - Kapoor: Bhaiya lining 500 meter chahiye, rate batao\n28/09/2026, 10:34 - Rakesh: lining 60 per unit lagega\n28/09/2026, 10:38 - Kapoor: Itna zyada hai, 50 mein de do\n28/09/2026, 10:43 - Rakesh: Chalo 57 kar deta hoon, last\n28/09/2026, 10:48 - Kapoor: Theek hai confirm\n29/09/2026, 12:30 - Rakesh: Bill INV-114 bana diya, total Rs 29925, due 29/10\n01/10/2026, 16:05 - Kapoor: Maal pahunch gaya, quality badhiya hai\n25/10/2026, 10:19 - Kapoor: Bhaiya rayon print 350 meter chahiye, rate batao\n25/10/2026, 10:20 - Rakesh: rayon print 140 per unit lagega\n25/10/2026, 10:25 - Kapoor: Itna zyada hai, 125 mein de do\n25/10/2026, 10:27 - Rakesh: 133 final hai, isse kam nahi hoga\n25/10/2026, 10:29 - Kapoor: Ok pakka, maal bhej do\n26/10/2026, 12:16 - Rakesh: Bill INV-127 bana diya, total Rs 48878, due 25/11\n06/11/2026, 16:18 - Kapoor: Dhanyavaad\n08/11/2026, 09:00 - Kapoor: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n10/11/2026, 12:06 - Kapoor: Rate quote bhej do 600 meter rayon print ka\n10/11/2026, 12:11 - Rakesh: rayon print 140 per mtr\n10/11/2026, 12:24 - Kapoor: Boss se puchke bataunga\n13/11/2026, 17:24 - Kapoor: Dhanyavaad\n",
+      "filename": "kapoor_tailors_supply.txt"
+    },
+    {
+      "customer": "Khanna Traders",
+      "text": "12/08/2026, 12:42 - Khanna: Dhanyavaad\n29/08/2026, 12:09 - Khanna: GST bill bhej dena please\n09/10/2026, 10:31 - Khanna: Bhaiya denim 100 meter chahiye, rate batao\n09/10/2026, 10:32 - Rakesh: denim 310 per unit lagega\n09/10/2026, 10:36 - Khanna: Thoda kam karo bhaiya, 275 lagao\n09/10/2026, 10:40 - Rakesh: 304 final hai, isse kam nahi hoga\n09/10/2026, 10:45 - Khanna: Chalo done, bhej do\n10/10/2026, 12:07 - Rakesh: Bill INV-120 bana diya, total Rs 31920, due 09/11\n01/11/2026, 10:00 - Khanna: Bhaiya blue shirting 80 meter chahiye, rate batao\n01/11/2026, 10:04 - Rakesh: blue shirting 220 per unit lagega\n01/11/2026, 10:10 - Khanna: 195 kar do to abhi confirm\n01/11/2026, 10:12 - Rakesh: Chalo 216 kar deta hoon, last\n01/11/2026, 10:17 - Khanna: Chalo done, bhej do\n02/11/2026, 12:30 - Rakesh: Bill INV-131 bana diya, total Rs 18144, due 02/12\n04/11/2026, 16:05 - Khanna: Maal pahunch gaya, quality badhiya hai\n08/11/2026, 09:06 - Khanna: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n12/11/2026, 12:20 - Khanna: Rate quote bhej do 100 meter linen ka\n12/11/2026, 12:25 - Rakesh: linen 380 per mtr\n12/11/2026, 12:38 - Khanna: Boss se puchke bataunga\n12/11/2026, 15:36 - Rakesh: Khanna ji namaste, payment pending hai, kab tak ho jayega?\n12/11/2026, 15:42 - Khanna: Monday pakka 31920 bhej dunga\n13/11/2026, 10:14 - Khanna: Aaj market band hai kya?\n",
+      "filename": "khanna_traders.txt"
+    },
+    {
+      "customer": "Mehta Fashion",
+      "text": "01/10/2026, 10:04 - Mehta: Bhaiya kurta set 60 piece chahiye, rate batao\n01/10/2026, 10:09 - Rakesh: kurta set 440 per unit lagega\n01/10/2026, 10:17 - Mehta: Thoda kam karo bhaiya, 395 lagao\n01/10/2026, 10:19 - Rakesh: Chalo 427 kar deta hoon, last\n01/10/2026, 10:27 - Mehta: Ok pakka, maal bhej do\n02/10/2026, 12:10 - Rakesh: Bill INV-117 bana diya, total Rs 26901, due 17/10\n02/10/2026, 18:29 - Mehta: Aaj market band hai kya?\n04/10/2026, 16:05 - Mehta: Maal pahunch gaya, quality badhiya hai\n24/10/2026, 10:20 - Mehta: Bhaiya track pant 100 piece chahiye, rate batao\n24/10/2026, 10:22 - Rakesh: track pant 330 per unit lagega\n24/10/2026, 10:27 - Mehta: Thoda kam karo bhaiya, 305 lagao\n24/10/2026, 10:28 - Rakesh: Chalo 320 kar deta hoon, last\n24/10/2026, 10:36 - Mehta: Ok pakka, maal bhej do\n25/10/2026, 12:03 - Rakesh: Bill INV-126 bana diya, total Rs 33600, due 09/11\n30/10/2026, 18:07 - Mehta: Ok ji\n08/11/2026, 09:24 - Mehta: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n08/11/2026, 10:12 - Mehta: Bhaiya uniform shirt 80 piece chahiye, rate batao\n08/11/2026, 10:20 - Rakesh: uniform shirt 260 per unit lagega\n08/11/2026, 10:24 - Mehta: Thoda kam karo bhaiya, 240 lagao\n08/11/2026, 10:27 - Rakesh: Chalo 252 kar deta hoon, last\n08/11/2026, 10:35 - Mehta: Ok pakka, maal bhej do\n09/11/2026, 12:19 - Rakesh: Bill INV-136 bana diya, total Rs 21168, due 24/11\n10/11/2026, 15:40 - Rakesh: Mehta ji namaste, payment pending hai, kab tak ho jayega?\n10/11/2026, 15:46 - Mehta: <Voice note transcript> Saturday pakka 21168 bhej dunga\n11/11/2026, 16:05 - Mehta: Maal pahunch gaya, quality badhiya hai\n11/11/2026, 17:48 - Mehta: Namaste ji\n13/11/2026, 12:00 - Mehta: Rate quote bhej do 20 piece silk saree ka\n13/11/2026, 12:05 - Rakesh: silk saree 1250 per pc\n13/11/2026, 12:18 - Mehta: Boss se puchke bataunga\n",
+      "filename": "mehta_fashion.txt"
+    },
+    {
+      "customer": "Patel Fabrics",
+      "text": "28/08/2026, 11:40 - Patel: Thik hai bhaiya\n24/09/2026, 10:36 - Patel: Bhaiya linen 80 meter chahiye, rate batao\n24/09/2026, 10:39 - Rakesh: linen 380 per unit lagega\n24/09/2026, 10:44 - Patel: Thoda kam karo bhaiya, 350 lagao\n24/09/2026, 10:45 - Rakesh: Chalo 369 kar deta hoon, last\n24/09/2026, 10:47 - Patel: Ok pakka, maal bhej do\n25/09/2026, 12:25 - Rakesh: Bill INV-113 bana diya, total Rs 30996, due 25/10\n27/09/2026, 16:05 - Patel: Maal pahunch gaya, quality badhiya hai\n29/10/2026, 10:39 - Patel: Bhaiya linen 100 meter aur blue shirting 120 meter chahiye, rate batao\n29/10/2026, 10:40 - Rakesh: linen 380, blue shirting 220 per unit lagega\n29/10/2026, 10:45 - Patel: 330 kar do to abhi confirm\n29/10/2026, 10:52 - Rakesh: 369 final hai, isse kam nahi hoga (baaki items bhi isi hisaab se)\n29/10/2026, 10:57 - Patel: Theek hai confirm\n30/10/2026, 12:21 - Rakesh: Bill INV-130 bana diya, total Rs 65583, due 29/11\n03/11/2026, 12:26 - Patel: Dhanyavaad\n07/11/2026, 14:05 - Patel: Dhanyavaad\n08/11/2026, 09:23 - Patel: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n11/11/2026, 12:11 - Patel: Rate quote bhej do 200 meter denim ka\n11/11/2026, 12:16 - Rakesh: denim 310 per mtr\n11/11/2026, 12:29 - Patel: Boss se puchke bataunga\n",
+      "filename": "patel_fabrics.txt"
+    },
+    {
+      "customer": "Reddy Garments",
+      "text": "02/09/2026, 12:20 - Reddy: Dhanyavaad\n04/09/2026, 10:37 - Reddy: Bhaiya kurta set 100 piece chahiye, rate batao\n04/09/2026, 10:42 - Rakesh: kurta set 440 per unit lagega\n04/09/2026, 10:47 - Reddy: Itna zyada hai, 390 mein de do\n04/09/2026, 10:55 - Rakesh: 422 final hai, isse kam nahi hoga\n04/09/2026, 11:00 - Reddy: Theek hai confirm\n05/09/2026, 12:04 - Rakesh: Bill INV-108 bana diya, total Rs 44310, due 05/10\n07/09/2026, 16:05 - Reddy: Maal pahunch gaya, quality badhiya hai\n11/09/2026, 13:54 - Reddy: GST bill bhej dena please\n08/10/2026, 13:25 - Reddy: Good morning bhaiya\n11/10/2026, 10:25 - Reddy: Bhaiya kurta set 80 piece aur track pant 60 piece chahiye, rate batao\n11/10/2026, 10:32 - Rakesh: kurta set 440, track pant 330 per unit lagega\n11/10/2026, 10:34 - Reddy: Itna zyada hai, 390 mein de do\n11/10/2026, 10:36 - Rakesh: Chalo 422 kar deta hoon, last (baaki items bhi isi hisaab se)\n11/10/2026, 10:43 - Reddy: Theek hai confirm\n12/10/2026, 12:12 - Rakesh: Bill INV-121 bana diya, total Rs 55419, due 11/11\n14/10/2026, 16:05 - Reddy: Maal pahunch gaya, quality badhiya hai\n08/11/2026, 09:15 - Reddy: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n09/11/2026, 15:20 - Rakesh: Reddy ji namaste, payment pending hai, kab tak ho jayega?\n09/11/2026, 15:26 - Reddy: Thursday tak 40000 ka payment ho jayega\n12/11/2026, 11:20 - Reddy: Bhej diya, UPI check kar lo\n12/11/2026, 11:35 - Rakesh: Mil gaya, thanks\n12/11/2026, 12:22 - Reddy: Rate quote bhej do 150 piece kurta set ka\n12/11/2026, 12:27 - Rakesh: kurta set 440 per pc\n12/11/2026, 12:40 - Reddy: Boss se puchke bataunga\n",
+      "filename": "reddy_garments.txt"
+    },
+    {
+      "customer": "Sharma Textiles",
+      "text": "11/08/2026, 10:27 - Sharma: Bhaiya blue shirting 150 meter aur white poplin 100 meter chahiye, rate batao\n11/08/2026, 10:35 - Rakesh: blue shirting 220, white poplin 180 per unit lagega\n11/08/2026, 10:42 - Sharma: 190 kar do to abhi confirm\n11/08/2026, 10:43 - Rakesh: 211 final hai, isse kam nahi hoga (baaki items bhi isi hisaab se)\n11/08/2026, 10:50 - Sharma: Theek hai confirm\n12/08/2026, 12:10 - Rakesh: Bill INV-103 bana diya, total Rs 51398, due 11/09\n14/08/2026, 16:05 - Sharma: Maal pahunch gaya, quality badhiya hai\n18/08/2026, 09:02 - Sharma: Namaste ji\n06/09/2026, 16:30 - Sharma: Good morning bhaiya\n09/09/2026, 10:40 - Sharma: Bhaiya denim 120 meter chahiye, rate batao\n09/09/2026, 10:41 - Rakesh: denim 310 per unit lagega\n09/09/2026, 10:42 - Sharma: Itna zyada hai, 275 mein de do\n09/09/2026, 10:44 - Rakesh: 298 final hai, isse kam nahi hoga\n09/09/2026, 10:50 - Sharma: Chalo done, bhej do\n10/09/2026, 12:21 - Rakesh: Bill INV-109 bana diya, total Rs 37548, due 10/10\n04/10/2026, 10:30 - Sharma: Bhaiya blue shirting 200 meter aur linen 60 meter chahiye, rate batao\n04/10/2026, 10:33 - Rakesh: blue shirting 220, linen 380 per unit lagega\n04/10/2026, 10:40 - Sharma: 200 kar do to abhi confirm\n04/10/2026, 10:43 - Rakesh: 211 final hai, isse kam nahi hoga (baaki items bhi isi hisaab se)\n04/10/2026, 10:45 - Sharma: Theek hai confirm\n05/10/2026, 12:10 - Rakesh: Bill INV-118 bana diya, total Rs 67305, due 04/11\n07/10/2026, 16:05 - Sharma: Maal pahunch gaya, quality badhiya hai\n17/10/2026, 13:45 - Sharma: Ok ji\n20/10/2026, 15:16 - Rakesh: Sharma bhai payment ka kya scene hai?\n20/10/2026, 15:22 - Sharma: 26 tarikh ko 20000 UPI kar dunga\n26/10/2026, 11:20 - Sharma: 12000 bhej diya abhi, baaki baad mein dekhta hoon\n26/10/2026, 11:40 - Rakesh: Theek hai, baaki jaldi dena\n27/10/2026, 10:08 - Sharma: Bhaiya woh wala 40 piece bhej dena jo pichli baar liya tha\n27/10/2026, 10:10 - Rakesh: Woh 422 per pc lagega, same rate\n27/10/2026, 10:11 - Sharma: Theek hai confirm\n28/10/2026, 12:30 - Rakesh: Bill INV-129 bana diya, total Rs 17724, due 27/11\n02/11/2026, 15:40 - Rakesh: Sharma ji namaste, payment pending hai, kab tak ho jayega?\n02/11/2026, 15:46 - Sharma: 9 tarikh ko 15000 UPI kar dunga\n08/11/2026, 09:16 - Sharma: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n10/11/2026, 11:00 - Rakesh: Sharma ji kal payment aana tha, abhi tak nahi aaya\n10/11/2026, 11:25 - Sharma: Bhaiya bank mein issue tha, dekhta hoon\n",
+      "filename": "sharma_textiles.txt"
+    },
+    {
+      "customer": "Singh Uniforms",
+      "text": "19/08/2026, 10:37 - Singh: Bhaiya uniform shirt 300 piece chahiye, rate batao\n19/08/2026, 10:41 - Rakesh: uniform shirt 260 per unit lagega\n19/08/2026, 10:44 - Singh: 235 kar do to abhi confirm\n19/08/2026, 10:45 - Rakesh: 247 final hai, isse kam nahi hoga\n19/08/2026, 10:47 - Singh: Chalo done, bhej do\n20/08/2026, 12:30 - Rakesh: Bill INV-104 bana diya, total Rs 77805, due 19/09\n23/08/2026, 10:42 - Singh: Good morning bhaiya\n29/08/2026, 13:00 - Singh: Good morning bhaiya\n31/08/2026, 18:34 - Singh: GST bill bhej dena please\n17/09/2026, 10:40 - Singh: Bhaiya uniform shirt 250 piece aur track pant 100 piece chahiye, rate batao\n17/09/2026, 10:45 - Rakesh: uniform shirt 260, track pant 330 per unit lagega\n17/09/2026, 10:49 - Singh: Thoda kam karo bhaiya, 235 lagao\n17/09/2026, 10:50 - Rakesh: 247 final hai, isse kam nahi hoga (baaki items bhi isi hisaab se)\n17/09/2026, 10:54 - Singh: Theek hai confirm\n18/09/2026, 12:12 - Rakesh: Bill INV-112 bana diya, total Rs 97808, due 18/10\n20/09/2026, 16:05 - Singh: Maal pahunch gaya, quality badhiya hai\n21/10/2026, 10:11 - Singh: Bhaiya uniform shirt 200 piece chahiye, rate batao\n21/10/2026, 10:14 - Rakesh: uniform shirt 260 per unit lagega\n21/10/2026, 10:19 - Singh: 235 kar do to abhi confirm\n21/10/2026, 10:23 - Rakesh: 247 final hai, isse kam nahi hoga\n21/10/2026, 10:30 - Singh: Ok pakka, maal bhej do\n22/10/2026, 12:22 - Rakesh: Bill INV-125 bana diya, total Rs 51870, due 21/11\n24/10/2026, 16:05 - Singh: Maal pahunch gaya, quality badhiya hai\n30/10/2026, 15:00 - Rakesh: Singh bhai payment ka kya scene hai?\n30/10/2026, 15:06 - Singh: 4 tarikh ko 30000 UPI kar dunga\n04/11/2026, 11:20 - Singh: 15000 bhej diya abhi, baaki baad mein dekhta hoon\n04/11/2026, 11:40 - Rakesh: Theek hai, baaki jaldi dena\n08/11/2026, 09:05 - Singh: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n10/11/2026, 15:07 - Rakesh: Singh ji namaste, payment pending hai, kab tak ho jayega?\n10/11/2026, 15:13 - Singh: Friday tak 30000 ka payment ho jayega\n14/11/2026, 11:00 - Rakesh: Singh ji kal payment aana tha, abhi tak nahi aaya\n14/11/2026, 11:25 - Singh: Thoda ruko bhaiya, mai dekhta hoon\n",
+      "filename": "singh_uniforms.txt"
+    },
+    {
+      "customer": "Verma Garments",
+      "text": "24/08/2026, 19:53 - Verma: Namaste ji\n30/08/2026, 12:21 - Verma: Ok ji\n01/09/2026, 10:06 - Verma: Bhaiya kurta set 50 piece chahiye, rate batao\n01/09/2026, 10:11 - Rakesh: kurta set 440 per unit lagega\n01/09/2026, 10:17 - Verma: 375 kar do to abhi confirm\n01/09/2026, 10:22 - Rakesh: Chalo 418 kar deta hoon, last\n01/09/2026, 10:29 - Verma: Ok pakka, maal bhej do\n02/09/2026, 12:24 - Rakesh: Bill INV-107 bana diya, total Rs 21945, due 17/09\n04/09/2026, 16:05 - Verma: Maal pahunch gaya, quality badhiya hai\n30/09/2026, 10:39 - Verma: Bhaiya uniform shirt 120 piece chahiye, rate batao\n30/09/2026, 10:44 - Rakesh: uniform shirt 260 per unit lagega\n30/09/2026, 10:50 - Verma: Itna zyada hai, 230 mein de do\n30/09/2026, 10:57 - Rakesh: Chalo 247 kar deta hoon, last\n30/09/2026, 11:00 - Verma: Ok pakka, maal bhej do\n01/10/2026, 12:24 - Rakesh: Bill INV-116 bana diya, total Rs 31122, due 16/10\n03/10/2026, 16:05 - Verma: Maal pahunch gaya, quality badhiya hai\n19/10/2026, 10:05 - Verma: Bhaiya track pant 80 piece chahiye, rate batao\n19/10/2026, 10:12 - Rakesh: track pant 330 per unit lagega\n19/10/2026, 10:13 - Verma: 285 kar do to abhi confirm\n19/10/2026, 10:21 - Rakesh: 314 final hai, isse kam nahi hoga\n19/10/2026, 10:23 - Verma: Theek hai confirm\n20/10/2026, 12:02 - Rakesh: Bill INV-124 bana diya, total Rs 26376, due 04/11\n21/10/2026, 15:41 - Verma: Thik hai bhaiya\n22/10/2026, 16:05 - Verma: Maal pahunch gaya, quality badhiya hai\n05/11/2026, 15:40 - Rakesh: Verma ji namaste, payment pending hai, kab tak ho jayega?\n05/11/2026, 15:46 - Verma: Tuesday pakka 26334 bhej dunga\n06/11/2026, 10:04 - Verma: Bhaiya woh wala 60 piece bhej dena jo pichli baar liya tha\n06/11/2026, 10:11 - Rakesh: Woh 418 per pc lagega, same rate\n06/11/2026, 10:17 - Verma: Theek hai confirm\n07/11/2026, 12:09 - Rakesh: Bill INV-135 bana diya, total Rs 26334, due 22/11\n08/11/2026, 09:09 - Verma: Diwali ki bahut bahut shubhkamnayein bhaiya\n08/11/2026, 10:05 - Rakesh: Aapko bhi, parivar ko shubhkamnayein\n11/11/2026, 11:20 - Verma: Bhej diya, UPI check kar lo\n11/11/2026, 11:35 - Rakesh: Mil gaya, thanks\n",
+      "filename": "verma_garments.txt"
+    }
+  ]
+}

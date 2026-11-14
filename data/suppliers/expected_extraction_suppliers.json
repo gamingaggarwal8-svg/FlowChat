@@ -1,0 +1,586 @@
+{
+ "Surat Weave Mills": {
+  "purchase_orders": [
+   {
+    "po_id": "PO-S01-1",
+    "order_date": "2026-07-22",
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 540,
+      "final_rate": 150
+     },
+     {
+      "sku": "P02",
+      "name": "White Poplin",
+      "qty": 450,
+      "final_rate": 125
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-07-27",
+     "actual_delivery": "2026-07-27",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S01-2",
+    "order_date": "2026-09-01",
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 360,
+      "final_rate": 150
+     },
+     {
+      "sku": "P02",
+      "name": "White Poplin",
+      "qty": 207,
+      "final_rate": 125
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-09-06",
+     "actual_delivery": "2026-09-09",
+     "revised_promised_date": null,
+     "expected_status": "late"
+    }
+   },
+   {
+    "po_id": "PO-S01-3",
+    "order_date": "2026-10-05",
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 300,
+      "final_rate": 150
+     },
+     {
+      "sku": "P02",
+      "name": "White Poplin",
+      "qty": 33,
+      "final_rate": 125
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-10-10",
+     "actual_delivery": "2026-10-10",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S01-4",
+    "order_date": "2026-11-05",
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 600,
+      "final_rate": 150
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-11-12",
+     "actual_delivery": null,
+     "revised_promised_date": "2026-11-16",
+     "expected_status": "delayed"
+    }
+   }
+  ],
+  "owner_payment_promises": [
+   {
+    "made_on": "2026-11-07",
+    "promised_date": "2026-11-10",
+    "amount": 40000,
+    "quote": "10 tarikh ko 40000 NEFT kar dunga",
+    "direction": "owner_to_supplier",
+    "expected_status": "missed"
+   }
+  ]
+ },
+ "Ludhiana Denim Works": {
+  "purchase_orders": [
+   {
+    "po_id": "PO-S02-1",
+    "order_date": "2026-07-23",
+    "items": [
+     {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "qty": 239,
+      "final_rate": 235
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-07-28",
+     "actual_delivery": "2026-07-28",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S02-2",
+    "order_date": "2026-09-02",
+    "items": [
+     {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "qty": 136,
+      "final_rate": 235
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-09-07",
+     "actual_delivery": "2026-09-07",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S02-3",
+    "order_date": "2026-10-06",
+    "items": [
+     {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "qty": 80,
+      "final_rate": 235
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-10-11",
+     "actual_delivery": "2026-10-11",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   }
+  ],
+  "owner_payment_promises": [
+   {
+    "made_on": "2026-11-12",
+    "promised_date": "2026-11-16",
+    "amount": 19740,
+    "quote": "Monday pakka 19740 bhej dunga",
+    "direction": "owner_to_supplier",
+    "expected_status": "pending"
+   }
+  ]
+ },
+ "Jaipur Print House": {
+  "purchase_orders": [
+   {
+    "po_id": "PO-S03-1",
+    "order_date": "2026-07-24",
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 853,
+      "final_rate": 100
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-07-29",
+     "actual_delivery": "2026-07-29",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S03-2",
+    "order_date": "2026-09-03",
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 568,
+      "final_rate": 100
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-09-08",
+     "actual_delivery": "2026-09-09",
+     "revised_promised_date": null,
+     "expected_status": "late"
+    }
+   },
+   {
+    "po_id": "PO-S03-3",
+    "order_date": "2026-10-07",
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 474,
+      "final_rate": 100
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-10-12",
+     "actual_delivery": "2026-10-12",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S03-4",
+    "order_date": "2026-11-10",
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 1020,
+      "final_rate": 100
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-11-17",
+     "actual_delivery": null,
+     "revised_promised_date": null,
+     "expected_status": "pending"
+    }
+   }
+  ],
+  "owner_payment_promises": []
+ },
+ "Silk Route Sarees": {
+  "purchase_orders": [
+   {
+    "po_id": "PO-S04-1",
+    "order_date": "2026-07-25",
+    "items": [
+     {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "qty": 56,
+      "final_rate": 920
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-07-30",
+     "actual_delivery": "2026-07-30",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S04-2",
+    "order_date": "2026-09-04",
+    "items": [
+     {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "qty": 38,
+      "final_rate": 920
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-09-09",
+     "actual_delivery": "2026-09-09",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S04-3",
+    "order_date": "2026-10-08",
+    "items": [
+     {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "qty": 31,
+      "final_rate": 920
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-10-13",
+     "actual_delivery": "2026-10-13",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S04-4",
+    "order_date": "2026-11-11",
+    "items": [
+     {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "qty": 70,
+      "final_rate": 920
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-11-18",
+     "actual_delivery": null,
+     "revised_promised_date": null,
+     "expected_status": "pending"
+    }
+   }
+  ],
+  "owner_payment_promises": [
+   {
+    "made_on": "2026-11-02",
+    "promised_date": "2026-11-08",
+    "amount": 60000,
+    "quote": "8 tarikh ko 60000 NEFT kar dunga",
+    "direction": "owner_to_supplier",
+    "expected_status": "partial"
+   }
+  ]
+ },
+ "Panipat Garments Unit": {
+  "purchase_orders": [
+   {
+    "po_id": "PO-S05-1",
+    "order_date": "2026-07-26",
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 171,
+      "final_rate": 330
+     },
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 423,
+      "final_rate": 185
+     },
+     {
+      "sku": "P10",
+      "name": "Track Pants",
+      "qty": 173,
+      "final_rate": 235
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-07-31",
+     "actual_delivery": "2026-07-31",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S05-2",
+    "order_date": "2026-09-05",
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 114,
+      "final_rate": 330
+     },
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 282,
+      "final_rate": 185
+     },
+     {
+      "sku": "P10",
+      "name": "Track Pants",
+      "qty": 116,
+      "final_rate": 235
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-09-10",
+     "actual_delivery": "2026-09-10",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S05-3",
+    "order_date": "2026-10-09",
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 95,
+      "final_rate": 330
+     },
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 235,
+      "final_rate": 185
+     },
+     {
+      "sku": "P10",
+      "name": "Track Pants",
+      "qty": 96,
+      "final_rate": 235
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-10-14",
+     "actual_delivery": "2026-10-16",
+     "revised_promised_date": null,
+     "expected_status": "late"
+    }
+   },
+   {
+    "po_id": "PO-S05-4",
+    "order_date": "2026-11-09",
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 180,
+      "final_rate": 330
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-11-16",
+     "actual_delivery": null,
+     "revised_promised_date": null,
+     "expected_status": "pending"
+    }
+   }
+  ],
+  "owner_payment_promises": [
+   {
+    "made_on": "2026-11-03",
+    "promised_date": "2026-11-09",
+    "amount": 50000,
+    "quote": "Monday tak 50000 ka payment ho jayega",
+    "direction": "owner_to_supplier",
+    "expected_status": "kept"
+   }
+  ]
+ },
+ "Delhi Lining and Trims": {
+  "purchase_orders": [
+   {
+    "po_id": "PO-S06-1",
+    "order_date": "2026-07-27",
+    "items": [
+     {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "qty": 1948,
+      "final_rate": 38
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-08-01",
+     "actual_delivery": "2026-08-01",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S06-2",
+    "order_date": "2026-09-06",
+    "items": [
+     {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "qty": 1299,
+      "final_rate": 38
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-09-11",
+     "actual_delivery": "2026-09-11",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S06-3",
+    "order_date": "2026-10-10",
+    "items": [
+     {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "qty": 1083,
+      "final_rate": 38
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-10-15",
+     "actual_delivery": "2026-10-15",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   }
+  ],
+  "owner_payment_promises": []
+ },
+ "Ahmedabad Linen Co": {
+  "purchase_orders": [
+   {
+    "po_id": "PO-S07-1",
+    "order_date": "2026-07-28",
+    "items": [
+     {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "qty": 248,
+      "final_rate": 290
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-08-02",
+     "actual_delivery": "2026-08-02",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S07-2",
+    "order_date": "2026-09-07",
+    "items": [
+     {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "qty": 165,
+      "final_rate": 290
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-09-12",
+     "actual_delivery": "2026-09-12",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   },
+   {
+    "po_id": "PO-S07-3",
+    "order_date": "2026-10-11",
+    "items": [
+     {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "qty": 137,
+      "final_rate": 290
+     }
+    ],
+    "delivery_promise": {
+     "promised_date": "2026-10-16",
+     "actual_delivery": "2026-10-16",
+     "revised_promised_date": null,
+     "expected_status": "on_time"
+    }
+   }
+  ],
+  "owner_payment_promises": [
+   {
+    "made_on": "2026-10-28",
+    "promised_date": "2026-11-04",
+    "amount": 30000,
+    "quote": "Wednesday pakka 30000 bhej dunga",
+    "direction": "owner_to_supplier",
+    "expected_status": "partial"
+   }
+  ]
+ }
+}

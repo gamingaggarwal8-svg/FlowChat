@@ -1,0 +1,71 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-104",
+      "chat_date": "2026-08-19",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P06",
+          "name": "School Uniform Shirt",
+          "qty": 300,
+          "rate": 247
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-112",
+      "chat_date": "2026-09-17",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P06",
+          "name": "School Uniform Shirt",
+          "qty": 250,
+          "rate": 247
+        },
+        {
+          "sku": "P10",
+          "name": "Track Pants",
+          "qty": 100,
+          "rate": 314
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-125",
+      "chat_date": "2026-10-21",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P06",
+          "name": "School Uniform Shirt",
+          "qty": 200,
+          "rate": 247
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-10-30",
+      "promised_date": "2026-11-04",
+      "amount": 30000,
+      "quote": "4 tarikh ko 30000 UPI kar dunga",
+      "via_voice": false,
+      "expected_status": "partial"
+    },
+    {
+      "made_on": "2026-11-10",
+      "promised_date": "2026-11-13",
+      "amount": 30000,
+      "quote": "Friday tak 30000 ka payment ho jayega",
+      "via_voice": false,
+      "expected_status": "missed"
+    }
+  ],
+  "open_quotes": []
+}

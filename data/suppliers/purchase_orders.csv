@@ -1,0 +1,26 @@
+po_id,supplier,order_date,promised_delivery,actual_delivery,status
+PO-S01-1,Surat Weave Mills,2026-07-22,2026-07-27,2026-07-27,received
+PO-S01-2,Surat Weave Mills,2026-09-01,2026-09-06,2026-09-09,received
+PO-S01-3,Surat Weave Mills,2026-10-05,2026-10-10,2026-10-10,received
+PO-S01-4,Surat Weave Mills,2026-11-05,2026-11-12,,delayed
+PO-S02-1,Ludhiana Denim Works,2026-07-23,2026-07-28,2026-07-28,received
+PO-S02-2,Ludhiana Denim Works,2026-09-02,2026-09-07,2026-09-07,received
+PO-S02-3,Ludhiana Denim Works,2026-10-06,2026-10-11,2026-10-11,received
+PO-S03-1,Jaipur Print House,2026-07-24,2026-07-29,2026-07-29,received
+PO-S03-2,Jaipur Print House,2026-09-03,2026-09-08,2026-09-09,received
+PO-S03-3,Jaipur Print House,2026-10-07,2026-10-12,2026-10-12,received
+PO-S03-4,Jaipur Print House,2026-11-10,2026-11-17,,open
+PO-S04-1,Silk Route Sarees,2026-07-25,2026-07-30,2026-07-30,received
+PO-S04-2,Silk Route Sarees,2026-09-04,2026-09-09,2026-09-09,received
+PO-S04-3,Silk Route Sarees,2026-10-08,2026-10-13,2026-10-13,received
+PO-S04-4,Silk Route Sarees,2026-11-11,2026-11-18,,open
+PO-S05-1,Panipat Garments Unit,2026-07-26,2026-07-31,2026-07-31,received
+PO-S05-2,Panipat Garments Unit,2026-09-05,2026-09-10,2026-09-10,received
+PO-S05-3,Panipat Garments Unit,2026-10-09,2026-10-14,2026-10-16,received
+PO-S05-4,Panipat Garments Unit,2026-11-09,2026-11-16,,open
+PO-S06-1,Delhi Lining and Trims,2026-07-27,2026-08-01,2026-08-01,received
+PO-S06-2,Delhi Lining and Trims,2026-09-06,2026-09-11,2026-09-11,received
+PO-S06-3,Delhi Lining and Trims,2026-10-10,2026-10-15,2026-10-15,received
+PO-S07-1,Ahmedabad Linen Co,2026-07-28,2026-08-02,2026-08-02,received
+PO-S07-2,Ahmedabad Linen Co,2026-09-07,2026-09-12,2026-09-12,received
+PO-S07-3,Ahmedabad Linen Co,2026-10-11,2026-10-16,2026-10-16,received

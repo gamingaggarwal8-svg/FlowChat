@@ -1,0 +1,86 @@
+{
+  "purchase_orders": [
+    {
+      "po_id": "PO-S04-1",
+      "order_date": "2026-07-25",
+      "items": [
+        {
+          "sku": "P07",
+          "name": "Silk Blend Saree",
+          "qty": 56,
+          "final_rate": 920
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-07-30",
+        "actual_delivery": "2026-07-30",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S04-2",
+      "order_date": "2026-09-04",
+      "items": [
+        {
+          "sku": "P07",
+          "name": "Silk Blend Saree",
+          "qty": 38,
+          "final_rate": 920
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-09-09",
+        "actual_delivery": "2026-09-09",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S04-3",
+      "order_date": "2026-10-08",
+      "items": [
+        {
+          "sku": "P07",
+          "name": "Silk Blend Saree",
+          "qty": 31,
+          "final_rate": 920
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-10-13",
+        "actual_delivery": "2026-10-13",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S04-4",
+      "order_date": "2026-11-11",
+      "items": [
+        {
+          "sku": "P07",
+          "name": "Silk Blend Saree",
+          "qty": 70,
+          "final_rate": 920
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-11-18",
+        "actual_delivery": null,
+        "revised_promised_date": null,
+        "expected_status": "pending"
+      }
+    }
+  ],
+  "owner_payment_promises": [
+    {
+      "made_on": "2026-11-02",
+      "promised_date": "2026-11-08",
+      "amount": 60000,
+      "quote": "8 tarikh ko 60000 NEFT kar dunga",
+      "direction": "owner_to_supplier",
+      "expected_status": "partial"
+    }
+  ]
+}

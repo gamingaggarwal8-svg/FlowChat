@@ -1,0 +1,77 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-101",
+      "chat_date": "2026-08-04",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 400,
+          "rate": 207
+        },
+        {
+          "sku": "P02",
+          "name": "White Poplin",
+          "qty": 300,
+          "rate": 169
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-106",
+      "chat_date": "2026-09-01",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P04",
+          "name": "Denim Fabric 12oz",
+          "qty": 250,
+          "rate": 291
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-115",
+      "chat_date": "2026-09-29",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P05",
+          "name": "Rayon Printed Fabric",
+          "qty": 500,
+          "rate": 132
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-128",
+      "chat_date": "2026-10-26",
+      "status": "confirmed",
+      "ambiguous": true,
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 300,
+          "rate": 207
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-11-08",
+      "promised_date": "2026-11-13",
+      "amount": 20000,
+      "quote": "13 tarikh ko 20000 UPI kar dunga",
+      "via_voice": false,
+      "expected_status": "kept"
+    }
+  ],
+  "open_quotes": []
+}

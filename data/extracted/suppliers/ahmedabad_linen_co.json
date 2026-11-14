@@ -1,0 +1,68 @@
+{
+  "purchase_orders": [
+    {
+      "po_id": "PO-S07-1",
+      "order_date": "2026-07-28",
+      "items": [
+        {
+          "sku": "P09",
+          "name": "Linen Blend Fabric",
+          "qty": 248,
+          "final_rate": 290
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-08-02",
+        "actual_delivery": "2026-08-02",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S07-2",
+      "order_date": "2026-09-07",
+      "items": [
+        {
+          "sku": "P09",
+          "name": "Linen Blend Fabric",
+          "qty": 165,
+          "final_rate": 290
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-09-12",
+        "actual_delivery": "2026-09-12",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S07-3",
+      "order_date": "2026-10-11",
+      "items": [
+        {
+          "sku": "P09",
+          "name": "Linen Blend Fabric",
+          "qty": 137,
+          "final_rate": 290
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-10-16",
+        "actual_delivery": "2026-10-16",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    }
+  ],
+  "owner_payment_promises": [
+    {
+      "made_on": "2026-10-28",
+      "promised_date": "2026-11-04",
+      "amount": 30000,
+      "quote": "Wednesday pakka 30000 bhej dunga",
+      "direction": "owner_to_supplier",
+      "expected_status": "partial"
+    }
+  ]
+}

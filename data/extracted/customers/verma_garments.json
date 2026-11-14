@@ -1,0 +1,71 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-107",
+      "chat_date": "2026-09-01",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 50,
+          "rate": 418
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-116",
+      "chat_date": "2026-09-30",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P06",
+          "name": "School Uniform Shirt",
+          "qty": 120,
+          "rate": 247
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-124",
+      "chat_date": "2026-10-19",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P10",
+          "name": "Track Pants",
+          "qty": 80,
+          "rate": 314
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-135",
+      "chat_date": "2026-11-06",
+      "status": "confirmed",
+      "ambiguous": true,
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 60,
+          "rate": 418
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-11-05",
+      "promised_date": "2026-11-10",
+      "amount": 26334,
+      "quote": "Tuesday pakka 26334 bhej dunga",
+      "via_voice": false,
+      "expected_status": "kept"
+    }
+  ],
+  "open_quotes": []
+}

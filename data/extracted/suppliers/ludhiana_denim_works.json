@@ -1,0 +1,68 @@
+{
+  "purchase_orders": [
+    {
+      "po_id": "PO-S02-1",
+      "order_date": "2026-07-23",
+      "items": [
+        {
+          "sku": "P04",
+          "name": "Denim Fabric 12oz",
+          "qty": 239,
+          "final_rate": 235
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-07-28",
+        "actual_delivery": "2026-07-28",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S02-2",
+      "order_date": "2026-09-02",
+      "items": [
+        {
+          "sku": "P04",
+          "name": "Denim Fabric 12oz",
+          "qty": 136,
+          "final_rate": 235
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-09-07",
+        "actual_delivery": "2026-09-07",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S02-3",
+      "order_date": "2026-10-06",
+      "items": [
+        {
+          "sku": "P04",
+          "name": "Denim Fabric 12oz",
+          "qty": 80,
+          "final_rate": 235
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-10-11",
+        "actual_delivery": "2026-10-11",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    }
+  ],
+  "owner_payment_promises": [
+    {
+      "made_on": "2026-11-12",
+      "promised_date": "2026-11-16",
+      "amount": 19740,
+      "quote": "Monday pakka 19740 bhej dunga",
+      "direction": "owner_to_supplier",
+      "expected_status": "pending"
+    }
+  ]
+}

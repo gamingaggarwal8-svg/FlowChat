@@ -1,0 +1,11 @@
+sku,name,chat_alias,unit,list_price,floor_price,gst_rate
+P01,Blue Cotton Shirting,blue shirting,mtr,220,190,5
+P02,White Poplin,white poplin,mtr,180,155,5
+P03,Cotton Kurta Set,kurta set,pc,440,390,5
+P04,Denim Fabric 12oz,denim,mtr,310,275,5
+P05,Rayon Printed Fabric,rayon print,mtr,140,120,5
+P06,School Uniform Shirt,uniform shirt,pc,260,225,5
+P07,Silk Blend Saree,silk saree,pc,1250,1100,5
+P08,Polyester Lining,lining,mtr,60,50,5
+P09,Linen Blend Fabric,linen,mtr,380,335,5
+P10,Track Pants,track pant,pc,330,290,5

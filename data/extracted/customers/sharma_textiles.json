@@ -1,0 +1,91 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-103",
+      "chat_date": "2026-08-11",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 150,
+          "rate": 211
+        },
+        {
+          "sku": "P02",
+          "name": "White Poplin",
+          "qty": 100,
+          "rate": 173
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-109",
+      "chat_date": "2026-09-09",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P04",
+          "name": "Denim Fabric 12oz",
+          "qty": 120,
+          "rate": 298
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-118",
+      "chat_date": "2026-10-04",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 200,
+          "rate": 211
+        },
+        {
+          "sku": "P09",
+          "name": "Linen Blend Fabric",
+          "qty": 60,
+          "rate": 365
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-129",
+      "chat_date": "2026-10-27",
+      "status": "confirmed",
+      "ambiguous": true,
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 40,
+          "rate": 422
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-10-20",
+      "promised_date": "2026-10-26",
+      "amount": 20000,
+      "quote": "26 tarikh ko 20000 UPI kar dunga",
+      "via_voice": false,
+      "expected_status": "partial"
+    },
+    {
+      "made_on": "2026-11-02",
+      "promised_date": "2026-11-09",
+      "amount": 15000,
+      "quote": "9 tarikh ko 15000 UPI kar dunga",
+      "via_voice": false,
+      "expected_status": "missed"
+    }
+  ],
+  "open_quotes": []
+}

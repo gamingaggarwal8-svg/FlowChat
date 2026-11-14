@@ -1,0 +1,33 @@
+customer,sku,date,list_price,floor_price,customer_asked,final_rate,asked_below_floor,deal_closed
+Sharma Textiles,P01,2026-08-11,220,190,190,211,False,yes
+Sharma Textiles,P04,2026-09-09,310,275,275,298,False,yes
+Sharma Textiles,P01,2026-10-04,220,190,200,211,False,yes
+Gupta Fabrics,P02,2026-08-07,180,155,165,175,False,yes
+Gupta Fabrics,P05,2026-09-14,140,120,120,136,False,yes
+Gupta Fabrics,P02,2026-10-07,180,155,165,175,False,yes
+Verma Garments,P03,2026-09-01,440,390,375,418,True,yes
+Verma Garments,P06,2026-09-30,260,225,230,247,False,yes
+Verma Garments,P10,2026-10-19,330,290,285,314,True,yes
+Khanna Traders,P04,2026-10-09,310,275,275,304,False,yes
+Khanna Traders,P01,2026-11-01,220,190,195,216,False,yes
+Agarwal Cloth House,P01,2026-08-04,220,190,195,207,False,yes
+Agarwal Cloth House,P04,2026-09-01,310,275,270,291,True,yes
+Agarwal Cloth House,P05,2026-09-29,140,120,120,132,False,yes
+Jain Sarees,P07,2026-09-11,1250,1100,1100,1225,False,yes
+Jain Sarees,P07,2026-10-13,1250,1100,1100,1225,False,yes
+Jain Sarees,P07,2026-11-03,1250,1100,1140,1225,False,yes
+Mehta Fashion,P03,2026-10-01,440,390,395,427,False,yes
+Mehta Fashion,P10,2026-10-24,330,290,305,320,False,yes
+Mehta Fashion,P06,2026-11-08,260,225,240,252,False,yes
+Singh Uniforms,P06,2026-08-19,260,225,235,247,False,yes
+Singh Uniforms,P06,2026-09-17,260,225,235,247,False,yes
+Singh Uniforms,P06,2026-10-21,260,225,235,247,False,yes
+Reddy Garments,P03,2026-09-04,440,390,390,422,False,yes
+Reddy Garments,P03,2026-10-11,440,390,390,422,False,yes
+Patel Fabrics,P09,2026-09-24,380,335,350,369,False,yes
+Patel Fabrics,P09,2026-10-29,380,335,330,369,True,yes
+Bansal Clothing,P08,2026-10-14,60,50,55,59,False,yes
+Bansal Clothing,P05,2026-11-05,140,120,125,137,False,yes
+Kapoor Tailors Supply,P08,2026-08-27,60,50,55,57,False,yes
+Kapoor Tailors Supply,P08,2026-09-28,60,50,50,57,False,yes
+Kapoor Tailors Supply,P05,2026-10-25,140,120,125,133,False,yes

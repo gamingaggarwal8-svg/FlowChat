@@ -1,0 +1,49 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-120",
+      "chat_date": "2026-10-09",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P04",
+          "name": "Denim Fabric 12oz",
+          "qty": 100,
+          "rate": 304
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-131",
+      "chat_date": "2026-11-01",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 80,
+          "rate": 216
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-11-12",
+      "promised_date": "2026-11-16",
+      "amount": 31920,
+      "quote": "Monday pakka 31920 bhej dunga",
+      "via_voice": false,
+      "expected_status": "pending"
+    }
+  ],
+  "open_quotes": [
+    {
+      "quote_id": "Q-01",
+      "date": "2026-11-12",
+      "taxable_value": 38000
+    }
+  ]
+}

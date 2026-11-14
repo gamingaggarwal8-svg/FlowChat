@@ -1,0 +1,776 @@
+{
+ "Sharma Textiles": {
+  "orders": [
+   {
+    "invoice_id": "INV-103",
+    "chat_date": "2026-08-11",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 150,
+      "rate": 211
+     },
+     {
+      "sku": "P02",
+      "name": "White Poplin",
+      "qty": 100,
+      "rate": 173
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-109",
+    "chat_date": "2026-09-09",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "qty": 120,
+      "rate": 298
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-118",
+    "chat_date": "2026-10-04",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 200,
+      "rate": 211
+     },
+     {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "qty": 60,
+      "rate": 365
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-129",
+    "chat_date": "2026-10-27",
+    "status": "confirmed",
+    "ambiguous": true,
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 40,
+      "rate": 422
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-10-20",
+    "promised_date": "2026-10-26",
+    "amount": 20000,
+    "quote": "26 tarikh ko 20000 UPI kar dunga",
+    "via_voice": false,
+    "expected_status": "partial"
+   },
+   {
+    "made_on": "2026-11-02",
+    "promised_date": "2026-11-09",
+    "amount": 15000,
+    "quote": "9 tarikh ko 15000 UPI kar dunga",
+    "via_voice": false,
+    "expected_status": "missed"
+   }
+  ],
+  "open_quotes": []
+ },
+ "Gupta Fabrics": {
+  "orders": [
+   {
+    "invoice_id": "INV-102",
+    "chat_date": "2026-08-07",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P02",
+      "name": "White Poplin",
+      "qty": 200,
+      "rate": 175
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-111",
+    "chat_date": "2026-09-14",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 300,
+      "rate": 136
+     },
+     {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "qty": 400,
+      "rate": 58
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-119",
+    "chat_date": "2026-10-07",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P02",
+      "name": "White Poplin",
+      "qty": 150,
+      "rate": 175
+     },
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 100,
+      "rate": 213
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-132",
+    "chat_date": "2026-11-02",
+    "status": "confirmed",
+    "ambiguous": true,
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 200,
+      "rate": 136
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-05",
+    "promised_date": "2026-11-06",
+    "amount": 15000,
+    "quote": "kal tak 15000 pakka bhej deta hoon",
+    "via_voice": false,
+    "expected_status": "missed"
+   },
+   {
+    "made_on": "2026-11-11",
+    "promised_date": "2026-11-12",
+    "amount": 15000,
+    "quote": "kal tak 15000 pakka bhej deta hoon",
+    "via_voice": true,
+    "expected_status": "missed"
+   }
+  ],
+  "open_quotes": []
+ },
+ "Verma Garments": {
+  "orders": [
+   {
+    "invoice_id": "INV-107",
+    "chat_date": "2026-09-01",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 50,
+      "rate": 418
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-116",
+    "chat_date": "2026-09-30",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 120,
+      "rate": 247
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-124",
+    "chat_date": "2026-10-19",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P10",
+      "name": "Track Pants",
+      "qty": 80,
+      "rate": 314
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-135",
+    "chat_date": "2026-11-06",
+    "status": "confirmed",
+    "ambiguous": true,
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 60,
+      "rate": 418
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-05",
+    "promised_date": "2026-11-10",
+    "amount": 26334,
+    "quote": "Tuesday pakka 26334 bhej dunga",
+    "via_voice": false,
+    "expected_status": "kept"
+   }
+  ],
+  "open_quotes": []
+ },
+ "Khanna Traders": {
+  "orders": [
+   {
+    "invoice_id": "INV-120",
+    "chat_date": "2026-10-09",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "qty": 100,
+      "rate": 304
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-131",
+    "chat_date": "2026-11-01",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 80,
+      "rate": 216
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-12",
+    "promised_date": "2026-11-16",
+    "amount": 31920,
+    "quote": "Monday pakka 31920 bhej dunga",
+    "via_voice": false,
+    "expected_status": "pending"
+   }
+  ],
+  "open_quotes": [
+   {
+    "quote_id": "Q-01",
+    "date": "2026-11-12",
+    "taxable_value": 38000
+   }
+  ]
+ },
+ "Agarwal Cloth House": {
+  "orders": [
+   {
+    "invoice_id": "INV-101",
+    "chat_date": "2026-08-04",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 400,
+      "rate": 207
+     },
+     {
+      "sku": "P02",
+      "name": "White Poplin",
+      "qty": 300,
+      "rate": 169
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-106",
+    "chat_date": "2026-09-01",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P04",
+      "name": "Denim Fabric 12oz",
+      "qty": 250,
+      "rate": 291
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-115",
+    "chat_date": "2026-09-29",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 500,
+      "rate": 132
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-128",
+    "chat_date": "2026-10-26",
+    "status": "confirmed",
+    "ambiguous": true,
+    "items": [
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 300,
+      "rate": 207
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-08",
+    "promised_date": "2026-11-13",
+    "amount": 20000,
+    "quote": "13 tarikh ko 20000 UPI kar dunga",
+    "via_voice": false,
+    "expected_status": "kept"
+   }
+  ],
+  "open_quotes": []
+ },
+ "Jain Sarees": {
+  "orders": [
+   {
+    "invoice_id": "INV-110",
+    "chat_date": "2026-09-11",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "qty": 40,
+      "rate": 1225
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-122",
+    "chat_date": "2026-10-13",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "qty": 60,
+      "rate": 1225
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-133",
+    "chat_date": "2026-11-03",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P07",
+      "name": "Silk Blend Saree",
+      "qty": 30,
+      "rate": 1225
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-06",
+    "promised_date": "2026-11-10",
+    "amount": 50000,
+    "quote": "Tuesday pakka 50000 bhej dunga",
+    "via_voice": false,
+    "expected_status": "partial"
+   }
+  ],
+  "open_quotes": []
+ },
+ "Mehta Fashion": {
+  "orders": [
+   {
+    "invoice_id": "INV-117",
+    "chat_date": "2026-10-01",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 60,
+      "rate": 427
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-126",
+    "chat_date": "2026-10-24",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P10",
+      "name": "Track Pants",
+      "qty": 100,
+      "rate": 320
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-136",
+    "chat_date": "2026-11-08",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 80,
+      "rate": 252
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-10",
+    "promised_date": "2026-11-14",
+    "amount": 21168,
+    "quote": "Saturday pakka 21168 bhej dunga",
+    "via_voice": true,
+    "expected_status": "pending"
+   }
+  ],
+  "open_quotes": [
+   {
+    "quote_id": "Q-02",
+    "date": "2026-11-13",
+    "taxable_value": 25000
+   }
+  ]
+ },
+ "Singh Uniforms": {
+  "orders": [
+   {
+    "invoice_id": "INV-104",
+    "chat_date": "2026-08-19",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 300,
+      "rate": 247
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-112",
+    "chat_date": "2026-09-17",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 250,
+      "rate": 247
+     },
+     {
+      "sku": "P10",
+      "name": "Track Pants",
+      "qty": 100,
+      "rate": 314
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-125",
+    "chat_date": "2026-10-21",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P06",
+      "name": "School Uniform Shirt",
+      "qty": 200,
+      "rate": 247
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-10-30",
+    "promised_date": "2026-11-04",
+    "amount": 30000,
+    "quote": "4 tarikh ko 30000 UPI kar dunga",
+    "via_voice": false,
+    "expected_status": "partial"
+   },
+   {
+    "made_on": "2026-11-10",
+    "promised_date": "2026-11-13",
+    "amount": 30000,
+    "quote": "Friday tak 30000 ka payment ho jayega",
+    "via_voice": false,
+    "expected_status": "missed"
+   }
+  ],
+  "open_quotes": []
+ },
+ "Reddy Garments": {
+  "orders": [
+   {
+    "invoice_id": "INV-108",
+    "chat_date": "2026-09-04",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 100,
+      "rate": 422
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-121",
+    "chat_date": "2026-10-11",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P03",
+      "name": "Cotton Kurta Set",
+      "qty": 80,
+      "rate": 422
+     },
+     {
+      "sku": "P10",
+      "name": "Track Pants",
+      "qty": 60,
+      "rate": 317
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-09",
+    "promised_date": "2026-11-12",
+    "amount": 40000,
+    "quote": "Thursday tak 40000 ka payment ho jayega",
+    "via_voice": false,
+    "expected_status": "kept"
+   }
+  ],
+  "open_quotes": [
+   {
+    "quote_id": "Q-03",
+    "date": "2026-11-12",
+    "taxable_value": 66000
+   }
+  ]
+ },
+ "Patel Fabrics": {
+  "orders": [
+   {
+    "invoice_id": "INV-113",
+    "chat_date": "2026-09-24",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "qty": 80,
+      "rate": 369
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-130",
+    "chat_date": "2026-10-29",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P09",
+      "name": "Linen Blend Fabric",
+      "qty": 100,
+      "rate": 369
+     },
+     {
+      "sku": "P01",
+      "name": "Blue Cotton Shirting",
+      "qty": 120,
+      "rate": 213
+     }
+    ]
+   }
+  ],
+  "promises": [],
+  "open_quotes": [
+   {
+    "quote_id": "Q-04",
+    "date": "2026-11-11",
+    "taxable_value": 62000
+   }
+  ]
+ },
+ "Bansal Clothing": {
+  "orders": [
+   {
+    "invoice_id": "INV-123",
+    "chat_date": "2026-10-14",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "qty": 600,
+      "rate": 59
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-134",
+    "chat_date": "2026-11-05",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 300,
+      "rate": 137
+     }
+    ]
+   }
+  ],
+  "promises": [
+   {
+    "made_on": "2026-11-12",
+    "promised_date": "2026-11-16",
+    "amount": 43155,
+    "quote": "16 tarikh ko 43155 UPI kar dunga",
+    "via_voice": false,
+    "expected_status": "pending"
+   }
+  ],
+  "open_quotes": []
+ },
+ "Kapoor Tailors Supply": {
+  "orders": [
+   {
+    "invoice_id": "INV-105",
+    "chat_date": "2026-08-27",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "qty": 800,
+      "rate": 57
+     },
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 400,
+      "rate": 133
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-114",
+    "chat_date": "2026-09-28",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P08",
+      "name": "Polyester Lining",
+      "qty": 500,
+      "rate": 57
+     }
+    ]
+   },
+   {
+    "invoice_id": "INV-127",
+    "chat_date": "2026-10-25",
+    "status": "confirmed",
+    "ambiguous": false,
+    "items": [
+     {
+      "sku": "P05",
+      "name": "Rayon Printed Fabric",
+      "qty": 350,
+      "rate": 133
+     }
+    ]
+   }
+  ],
+  "promises": [],
+  "open_quotes": [
+   {
+    "quote_id": "Q-05",
+    "date": "2026-11-10",
+    "taxable_value": 84000
+   }
+  ]
+ }
+}

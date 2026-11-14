@@ -1,0 +1,46 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-113",
+      "chat_date": "2026-09-24",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P09",
+          "name": "Linen Blend Fabric",
+          "qty": 80,
+          "rate": 369
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-130",
+      "chat_date": "2026-10-29",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P09",
+          "name": "Linen Blend Fabric",
+          "qty": 100,
+          "rate": 369
+        },
+        {
+          "sku": "P01",
+          "name": "Blue Cotton Shirting",
+          "qty": 120,
+          "rate": 213
+        }
+      ]
+    }
+  ],
+  "promises": [],
+  "open_quotes": [
+    {
+      "quote_id": "Q-04",
+      "date": "2026-11-11",
+      "taxable_value": 62000
+    }
+  ]
+}

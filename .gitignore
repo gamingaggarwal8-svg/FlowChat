@@ -1,0 +1,12 @@
+node_modules/
+.next/
+dist/
+.vercel/
+.openai/
+.env*
+!.env.example
+*.tsbuildinfo
+coverage/
+work/
+.DS_Store
+*.log

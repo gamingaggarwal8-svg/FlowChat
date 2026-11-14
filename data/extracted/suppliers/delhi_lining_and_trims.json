@@ -1,0 +1,59 @@
+{
+  "purchase_orders": [
+    {
+      "po_id": "PO-S06-1",
+      "order_date": "2026-07-27",
+      "items": [
+        {
+          "sku": "P08",
+          "name": "Polyester Lining",
+          "qty": 1948,
+          "final_rate": 38
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-08-01",
+        "actual_delivery": "2026-08-01",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S06-2",
+      "order_date": "2026-09-06",
+      "items": [
+        {
+          "sku": "P08",
+          "name": "Polyester Lining",
+          "qty": 1299,
+          "final_rate": 38
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-09-11",
+        "actual_delivery": "2026-09-11",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    },
+    {
+      "po_id": "PO-S06-3",
+      "order_date": "2026-10-10",
+      "items": [
+        {
+          "sku": "P08",
+          "name": "Polyester Lining",
+          "qty": 1083,
+          "final_rate": 38
+        }
+      ],
+      "delivery_promise": {
+        "promised_date": "2026-10-15",
+        "actual_delivery": "2026-10-15",
+        "revised_promised_date": null,
+        "expected_status": "on_time"
+      }
+    }
+  ],
+  "owner_payment_promises": []
+}

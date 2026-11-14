@@ -1,0 +1,55 @@
+{
+  "orders": [
+    {
+      "invoice_id": "INV-108",
+      "chat_date": "2026-09-04",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 100,
+          "rate": 422
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-121",
+      "chat_date": "2026-10-11",
+      "status": "confirmed",
+      "ambiguous": false,
+      "items": [
+        {
+          "sku": "P03",
+          "name": "Cotton Kurta Set",
+          "qty": 80,
+          "rate": 422
+        },
+        {
+          "sku": "P10",
+          "name": "Track Pants",
+          "qty": 60,
+          "rate": 317
+        }
+      ]
+    }
+  ],
+  "promises": [
+    {
+      "made_on": "2026-11-09",
+      "promised_date": "2026-11-12",
+      "amount": 40000,
+      "quote": "Thursday tak 40000 ka payment ho jayega",
+      "via_voice": false,
+      "expected_status": "kept"
+    }
+  ],
+  "open_quotes": [
+    {
+      "quote_id": "Q-03",
+      "date": "2026-11-12",
+      "taxable_value": 66000
+    }
+  ]
+}

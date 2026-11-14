@@ -1,0 +1,26 @@
+supplier,sku,date,supplier_quoted,owner_asked,final_rate
+Surat Weave Mills,P01,2026-07-22,159,142,150
+Surat Weave Mills,P01,2026-09-01,159,142,150
+Surat Weave Mills,P01,2026-10-05,159,142,150
+Surat Weave Mills,P01,2026-11-05,159,142,150
+Ludhiana Denim Works,P04,2026-07-23,249,223,235
+Ludhiana Denim Works,P04,2026-09-02,249,223,235
+Ludhiana Denim Works,P04,2026-10-06,249,223,235
+Jaipur Print House,P05,2026-07-24,106,95,100
+Jaipur Print House,P05,2026-09-03,106,95,100
+Jaipur Print House,P05,2026-10-07,106,95,100
+Jaipur Print House,P05,2026-11-10,106,95,100
+Silk Route Sarees,P07,2026-07-25,975,874,920
+Silk Route Sarees,P07,2026-09-04,975,874,920
+Silk Route Sarees,P07,2026-10-08,975,874,920
+Silk Route Sarees,P07,2026-11-11,975,874,920
+Panipat Garments Unit,P03,2026-07-26,350,313,330
+Panipat Garments Unit,P03,2026-09-05,350,313,330
+Panipat Garments Unit,P03,2026-10-09,350,313,330
+Panipat Garments Unit,P03,2026-11-09,350,313,330
+Delhi Lining and Trims,P08,2026-07-27,40,36,38
+Delhi Lining and Trims,P08,2026-09-06,40,36,38
+Delhi Lining and Trims,P08,2026-10-10,40,36,38
+Ahmedabad Linen Co,P09,2026-07-28,307,275,290
+Ahmedabad Linen Co,P09,2026-09-07,307,275,290
+Ahmedabad Linen Co,P09,2026-10-11,307,275,290
