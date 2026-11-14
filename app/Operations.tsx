@@ -23,6 +23,7 @@ import {
 
 export type OperationsData = AnalyticsData & {
   supplierChats?: { supplier: string; text: string }[];
+  workspaceId?: string;
 };
 type Props = {
   data: OperationsData;
@@ -616,7 +617,11 @@ export function InventoryGrowth({ data, onDraft }: Props) {
     [catalogReady, setCatalogReady] = useState(false);
   useEffect(() => {
     try {
-      const raw = localStorage.getItem("flowchat-catalog-v1");
+      const raw = localStorage.getItem(
+        data.workspaceId
+          ? `flowchat-catalog-v1:${data.workspaceId}`
+          : "flowchat-catalog-v1",
+      );
       if (raw) setAttributes(z.array(attributeSchema).parse(JSON.parse(raw)));
     } catch {
       /* Use the supplied catalog if local edits are invalid. */
@@ -626,7 +631,12 @@ export function InventoryGrowth({ data, onDraft }: Props) {
   useEffect(() => {
     if (catalogReady)
       try {
-        localStorage.setItem("flowchat-catalog-v1", JSON.stringify(attributes));
+        localStorage.setItem(
+          data.workspaceId
+            ? `flowchat-catalog-v1:${data.workspaceId}`
+            : "flowchat-catalog-v1",
+          JSON.stringify(attributes),
+        );
       } catch {
         /* Session remains usable when browser storage is unavailable. */
       }

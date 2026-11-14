@@ -2,6 +2,11 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import seed from "../demo/seed.json";
 import VoiceNotes from "./VoiceNotes";
+import FeatureWorkspace, {
+  isFeaturePage,
+  type FeaturePage,
+} from "./FeatureWorkspace";
+import { useWorkspace } from "./useWorkspace";
 import { AppIcon as Icon } from "./ui";
 import operationsSeed from "../demo/operations.json";
 import { CustomerVisuals, OverviewVisuals, PromiseVisuals } from "./Charts";
@@ -23,7 +28,8 @@ import {
   type Analysis,
 } from "../lib/business";
 
-type Page =
+export type Page =
+  | FeaturePage
   | "Voice transcripts"
   | "Suppliers"
   | "Inventory & growth"
@@ -94,12 +100,48 @@ function DataTable({
 }
 export default function Demo({
   initialOperations,
-}: { initialOperations?: OperationsData } = {}) {
-  const [data, setData] = useState<Dataset>(seed as Dataset);
-  const [queue, setQueue] = useState<Draft[]>([]);
+  initialPage = "Overview",
+}: { initialOperations?: OperationsData; initialPage?: Page } = {}) {
+  const [demoData, setData] = useState<Dataset>(seed as Dataset);
+  const workspace = useWorkspace(
+    demoData,
+    initialOperations || (operationsSeed as OperationsData),
+  );
+  const data = workspace.dataset || demoData;
+  const queueScope = workspace.businessId
+    ? `${QUEUE_KEY}:${workspace.businessId}`
+    : QUEUE_KEY;
+  const [queueMap, setQueueMap] = useState<Record<string, Draft[]>>({});
+  const queue = queueMap[queueScope] || [];
+  const setQueue = (value: Draft[] | ((previous: Draft[]) => Draft[])) =>
+    setQueueMap((previous) => ({
+      ...previous,
+      [queueScope]:
+        typeof value === "function" ? value(previous[queueScope] || []) : value,
+    }));
   const [loaded, setLoaded] = useState(false);
-  const [page, setPage] = useState<Page>("Overview");
+  const [page, setPage] = useState<Page>(initialPage);
   const [navOpen, setNavOpen] = useState(false);
+  useEffect(() => {
+    const back = (event: PopStateEvent) => {
+      const paths: Record<string, Page> = {
+        "/import-chats": "Import Chats",
+        "/accounting": "Accounting & Documents",
+        "/sync": "Excel Sync",
+        "/pricing": "Plans & Billing",
+        "/copilot": "AI Copilot",
+        "/settings": "Workspace Settings",
+      };
+      setPage(
+        event.state?.flowchatPage ||
+          paths[window.location.pathname.replace(/\/$/, "")] ||
+          "Overview",
+      );
+      setNavOpen(false);
+    };
+    window.addEventListener("popstate", back);
+    return () => window.removeEventListener("popstate", back);
+  }, []);
   const [isMobile, setIsMobile] = useState(false);
   const sidebarRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLButtonElement>(null);
@@ -127,7 +169,10 @@ export default function Demo({
   const m = useMemo(() => metrics(data), [data]);
   const operations = useMemo<OperationsData>(
     () => ({
-      ...(initialOperations || (operationsSeed as OperationsData)),
+      ...(workspace.analytics ||
+        initialOperations ||
+        (operationsSeed as OperationsData)),
+      workspaceId: workspace.businessId,
       customerInvoices: data.invoices.map((i) => ({
         id: i.invoice_id,
         party: i.customer,
@@ -153,7 +198,7 @@ export default function Demo({
         source: { file: "quotes.csv", id: q.quote_id },
       })),
     }),
-    [data, initialOperations],
+    [data, initialOperations, workspace.analytics, workspace.businessId],
   );
   const cash = useMemo(() => cashAnalytics(operations), [operations]);
   const stock = useMemo(() => inventoryAnalytics(operations), [operations]);
@@ -167,8 +212,22 @@ export default function Demo({
   }
 
   const pendingCount = queue.filter((q) => q.status === "Pending").length;
-  const subtitle =
-    page === "Voice transcripts"
+  const subtitle = isFeaturePage(page)
+    ? {
+        "Import Chats":
+          "Turn exported conversations into reviewable orders, commitments and evidence.",
+        "Accounting & Documents":
+          "Keep source PDFs, checked invoice fields and CA summaries together.",
+        "Excel Sync":
+          "Update your records with stable IDs and a complete revision history.",
+        "Plans & Billing":
+          "Compare provisional plans and manage your workspace subscription.",
+        "AI Copilot":
+          "Understand conversations and explain calculated business facts.",
+        "Workspace Settings":
+          "Manage access, your business workspace and connected services.",
+      }[page]
+    : page === "Voice transcripts"
       ? "Review voice transcripts, capture speech and keep the original evidence."
       : page === "Suppliers"
         ? "Your purchase partners, open orders, delivery commitments and payables."
@@ -201,23 +260,32 @@ export default function Demo({
         )
           setData(parsed);
       }
-      const savedQueue = localStorage.getItem(QUEUE_KEY);
-      if (savedQueue && Array.isArray(JSON.parse(savedQueue)))
-        setQueue(JSON.parse(savedQueue));
     } catch {
       setToast("Saved demo could not be loaded. Using sample data.");
     }
     setLoaded(true);
   }, []);
   useEffect(() => {
+    try {
+      const saved = localStorage.getItem(queueScope);
+      setQueueMap((previous) => ({
+        ...previous,
+        [queueScope]: saved ? JSON.parse(saved) : [],
+      }));
+    } catch {
+      setToast("Saved approval drafts could not be loaded.");
+    }
+  }, [queueScope]);
+  useEffect(() => {
     if (loaded)
       try {
-        localStorage.setItem(DATA_KEY, JSON.stringify(data));
-        localStorage.setItem(QUEUE_KEY, JSON.stringify(queue));
+        localStorage.setItem(DATA_KEY, JSON.stringify(demoData));
+        for (const [key, value] of Object.entries(queueMap))
+          localStorage.setItem(key, JSON.stringify(value));
       } catch {
         setToast("Browser storage unavailable; changes last for this session.");
       }
-  }, [data, queue, loaded]);
+  }, [demoData, queueMap, loaded]);
   useEffect(() => {
     if (!toast) return;
     const id = setTimeout(() => setToast(""), 4500);
@@ -272,6 +340,19 @@ export default function Demo({
     };
   }, [isMobile, navOpen]);
   function navigate(p: Page) {
+    const routes: Partial<Record<Page, string>> = {
+      "Import Chats": "/import-chats",
+      "Accounting & Documents": "/accounting",
+      "Excel Sync": "/sync",
+      "Plans & Billing": "/pricing",
+      "AI Copilot": "/copilot",
+      "Workspace Settings": "/settings",
+    };
+    window.history.pushState(
+      { ...window.history.state, flowchatPage: p },
+      "",
+      routes[p] || "/",
+    );
     setPage(p);
     setSearch("");
     setAnswer(null);
@@ -434,6 +515,12 @@ export default function Demo({
     "Voice transcripts": "Voice transcripts",
     "Approval queue": "Approval queue",
     Bargaining: "Bargaining desk",
+    "Import Chats": "Import Chats",
+    "Accounting & Documents": "Accounting & Documents",
+    "Excel Sync": "Excel Sync",
+    "Plans & Billing": "Plans & Billing",
+    "AI Copilot": "AI Copilot",
+    "Workspace Settings": "Workspace Settings",
   };
   const navGroups = [
     {
@@ -447,11 +534,24 @@ export default function Demo({
     },
     {
       name: "Conversations",
-      items: ["Payment promises", "Chat review", "Voice transcripts"] as Page[],
+      items: [
+        "Payment promises",
+        "Chat review",
+        "Voice transcripts",
+        "Import Chats",
+        "AI Copilot",
+      ] as Page[],
     },
     {
       name: "Owner controls",
-      items: ["Approval queue", "Bargaining"] as Page[],
+      items: [
+        "Approval queue",
+        "Bargaining",
+        "Accounting & Documents",
+        "Excel Sync",
+        "Plans & Billing",
+        "Workspace Settings",
+      ] as Page[],
     },
   ];
   return (
@@ -582,11 +682,15 @@ export default function Demo({
           </div>
           <div className="header-right">
             <span className="sample-label">
-              <span className="demo-dot" /> Synthetic demo
+              <span className="demo-dot" /> {workspace.label}
             </span>
             <span className="header-date">14 Nov 2026</span>
             <button
               onClick={() => {
+                if (workspace.businessId) {
+                  navigate("Excel Sync");
+                  return;
+                }
                 setImportError("");
                 setImportLog([]);
                 setModal({ type: "import" });
@@ -640,6 +744,23 @@ export default function Demo({
                 </button>
               </div>
             </div>
+          )}
+          {workspace.error && (
+            <p className="integration-error" role="alert">
+              Connected workspace unavailable: {workspace.error} Showing the
+              synthetic fallback, not live balances.
+            </p>
+          )}
+          {isFeaturePage(page) && (
+            <FeatureWorkspace
+              key={workspace.businessId || "demo"}
+              page={page}
+              demoData={data}
+              onReminder={(name, text) => {
+                setDraftText(text);
+                setModal({ type: "draft", name, text, kind: "Reminder" });
+              }}
+            />
           )}
           {page === "Overview" && (
             <>
@@ -742,7 +863,8 @@ export default function Demo({
                   ))}
                 </div>
                 <div className="demo-note">
-                  Predefined analysis functions · live AI is not connected
+                  Predefined analysis functions · use AI Copilot for connected
+                  Gemini answers
                 </div>
                 {answer && (
                   <div className="answer">
@@ -876,29 +998,47 @@ export default function Demo({
                       </div>
                     ))}
                 </div>
-                <div className="panel hint-card">
-                  <div className="hint-orbit">
-                    <Icon name="check" size={21} />
+                {workspace.businessId ? (
+                  <div className="panel hint-card">
+                    <h3>Your connected ledger</h3>
+                    <p>
+                      Import saved Excel records to update balances and stock.
+                      Conversation extractions remain review material until
+                      recorded in the ledger.
+                    </p>
+                    <button
+                      className="text-btn"
+                      onClick={() => navigate("Excel Sync")}
+                    >
+                      Open Excel Sync <Icon name="arrow" size={15} />
+                    </button>
                   </div>
-                  <h3>A balance cleared.</h3>
-                  <p>
-                    Open Verma Garments’ ledger to check the invoices and
-                    payments behind the current balance.
-                  </p>
-                  <button
-                    className="text-btn"
-                    onClick={() =>
-                      setModal({ type: "customer", name: "Verma Garments" })
-                    }
-                  >
-                    View Verma’s ledger <Icon name="arrow" size={15} />
-                  </button>
-                </div>
+                ) : (
+                  <div className="panel hint-card">
+                    <div className="hint-orbit">
+                      <Icon name="check" size={21} />
+                    </div>
+                    <h3>A balance cleared.</h3>
+                    <p>
+                      Open Verma Garments’ ledger to check the invoices and
+                      payments behind the current balance.
+                    </p>
+                    <button
+                      className="text-btn"
+                      onClick={() =>
+                        setModal({ type: "customer", name: "Verma Garments" })
+                      }
+                    >
+                      View Verma’s ledger <Icon name="arrow" size={15} />
+                    </button>
+                  </div>
+                )}
               </div>
             </>
           )}
           {page === "Voice transcripts" && (
             <VoiceNotes
+              key={workspace.businessId || "demo"}
               data={operations}
               chats={data.chats}
               onOpenChat={(customer) => {
@@ -908,10 +1048,18 @@ export default function Demo({
             />
           )}
           {page === "Suppliers" && (
-            <SupplierSheet data={operations} onDraft={operationsDraft} />
+            <SupplierSheet
+              key={workspace.businessId || "demo"}
+              data={operations}
+              onDraft={operationsDraft}
+            />
           )}
           {page === "Inventory & growth" && (
-            <InventoryGrowth data={operations} onDraft={operationsDraft} />
+            <InventoryGrowth
+              key={workspace.businessId || "demo"}
+              data={operations}
+              onDraft={operationsDraft}
+            />
           )}
           {page === "Customers" && (
             <>
@@ -1194,7 +1342,8 @@ export default function Demo({
                 </div>
                 <button
                   className="text-btn"
-                  onClick={() => reminder(m.ledger[0].customer)}
+                  disabled={!m.ledger.length}
+                  onClick={() => m.ledger[0] && reminder(m.ledger[0].customer)}
                 >
                   + Draft reminder
                 </button>
@@ -1304,7 +1453,14 @@ export default function Demo({
               )}
             </div>
           )}
-          {page === "Bargaining" && (
+          {page === "Bargaining" && !data.products.length && (
+            <p className="empty">
+              This connected workbook has no verified list and floor prices.
+              Switch to the synthetic demo to explore bargaining; no price will
+              be guessed.
+            </p>
+          )}
+          {page === "Bargaining" && data.products.length > 0 && (
             <div className="bargain-grid">
               <div className="panel">
                 <div className="section-head">
@@ -1458,10 +1614,11 @@ export default function Demo({
           <div className="data-notice">
             <Icon name="file" size={13} />
             <span>
-              Demo data (synthetic) · v2 · 12 customers ·{" "}
+              {workspace.label} · {data.customers.length} customers ·{" "}
               {operations.suppliers.length} suppliers ·{" "}
               {operations.inventory.length} products · as of {TODAY}. Prepared
-              annotations, not live AI extraction.
+              annotations in the synthetic demo; connected chat extraction is
+              available in Import Chats.
             </span>
           </div>
         </section>
@@ -1469,7 +1626,7 @@ export default function Demo({
           <span>
             <i /> Numbers are calculated, not generated.
           </span>
-          <span>Demo data (synthetic) · Chat se cash tak.</span>
+          <span>{workspace.label} · Chat se cash tak.</span>
         </footer>
       </main>
       <dialog

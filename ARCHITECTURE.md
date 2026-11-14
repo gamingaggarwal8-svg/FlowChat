@@ -1,6 +1,6 @@
 # FlowChat: production integration plan
 
-This is a proposed extension, not a claim that the live demo already connects to WhatsApp, Excel or Supabase. The current app reads synthetic files, with browser-local imports and prepared chat annotations.
+This document records the original production design. The server paths are now implemented; [INTEGRATIONS.md](INTEGRATIONS.md) is the authoritative setup and operating guide. Live connections require your credentials and Supabase migration. The static demo retains synthetic/local workflows. The current Excel integration polls saved file eTags rather than installing Graph notifications; outgoing WhatsApp and automatic audio transcription remain future work.
 
 ## Owner workflow
 

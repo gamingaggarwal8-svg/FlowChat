@@ -5,6 +5,7 @@ import { mkdir, writeFile, copyFile, cp } from 'node:fs/promises';
 await mkdir('dist', { recursive:true });
 await build({entryPoints:['demo/entry.tsx'],bundle:true,outdir:'dist',entryNames:'app',minify:true,jsx:'automatic',define:{'process.env.NODE_ENV':'"production"'},target:['es2020'],external:['/fonts/*'],legalComments:'none'});
 await writeFile('dist/index.html','<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#172a46"><meta name="description" content="FlowChat: connected customers, suppliers, stock and evidence-backed growth planning."><title>FlowChat · Your trading day, in view</title><link rel="stylesheet" href="/app.css"></head><body><div id="root"></div><script type="module" src="/app.js"></script></body></html>');
+for(const route of ['import-chats','accounting','sync','pricing','copilot','settings']){await mkdir(`dist/${route}`,{recursive:true});await copyFile('dist/index.html',`dist/${route}/index.html`);}
 await copyFile('public/flowchat-sample-data.zip','dist/flowchat-sample-data.zip');
 await cp('public/fonts','dist/fonts',{recursive:true});
 console.log('Built static demo from the same Next.js React component.');

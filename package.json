@@ -10,20 +10,26 @@
     "test": "vitest run",
     "build:demo": "node scripts/build-demo.mjs",
     "test:legacy": "tsx --test tests/business.test.ts tests/evaluate.test.ts tests/extract.test.ts tests/route.test.ts",
-    "lint": "eslint lib/analytics.ts lib/data.ts lib/csv.ts scripts/seed-cache.ts scripts/check-analytics.ts tests/analytics.test.ts vitest.config.mts app/Operations.tsx app/Charts.tsx app/Demo.tsx app/page.tsx scripts/prepare-operations.ts lib/catalog.ts lib/voice.ts app/CatalogControls.tsx app/VoiceNotes.tsx tests/inventory-voice.test.ts app/ui.tsx",
+    "lint": "eslint lib/analytics.ts lib/data.ts lib/csv.ts scripts/seed-cache.ts scripts/check-analytics.ts tests/analytics.test.ts vitest.config.mts app/Operations.tsx app/Charts.tsx app/Demo.tsx app/page.tsx scripts/prepare-operations.ts lib/catalog.ts lib/voice.ts app/CatalogControls.tsx app/VoiceNotes.tsx tests/inventory-voice.test.ts app/ui.tsx app/FeatureWorkspace.tsx app/IntegrationAccount.tsx app/useWorkspace.ts lib/integrations lib/server app/api/account app/api/ai app/api/billing app/api/chats app/api/documents app/api/excel app/api/integrations app/api/sync app/api/whatsapp tests/integrations.test.ts tests/database.test.ts tests/integration-api.test.ts tests/gemini.test.ts",
     "seed:cache": "tsx scripts/seed-cache.ts",
     "prepare:operations": "tsx scripts/prepare-operations.ts",
     "start": "next start"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.0",
+    "@google/genai": "^3.3.0",
+    "@supabase/supabase-js": "^2.119.0",
+    "exceljs": "^4.4.0",
+    "fflate": "^0.8.3",
     "next": "^16.0.0",
+    "pdf-lib": "^1.17.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "recharts": "^3.10.1",
     "zod": "^4.0.0"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
     "@eslint/js": "^10.0.1",
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
@@ -34,5 +40,10 @@
     "typescript": "^5.9.0",
     "typescript-eslint": "^8.72.2",
     "vitest": "^5.1.0"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "^11.1.1"
+    }
   }
 }

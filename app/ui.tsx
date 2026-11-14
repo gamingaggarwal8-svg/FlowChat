@@ -1,4 +1,11 @@
 const paths: Record<string, string> = {
+  "Import Chats": "M12 15V3 M7 8l5-5 5 5 M3 15v6h18v-6",
+  "Accounting & Documents": "M14 2H5v20h14V7z M14 2v5h5 M8 12h8 M8 16h8",
+  "Excel Sync": "M4 4h16v16H4z M4 10h16 M10 4v16 M15 13l2 2-2 2",
+  "Plans & Billing": "M3 5h18v14H3z M3 10h18 M7 15h4",
+  "AI Copilot": "M12 3l3 6 6 3-6 3-3 6-3-6-6-3 6-3z",
+  "Workspace Settings":
+    "M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8 M12 2v3 M12 19v3 M2 12h3 M19 12h3 M5 5l2 2 M17 17l2 2 M5 19l2-2 M17 7l2-2",
   Overview: "M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z",
   Customers:
     "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2 M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8 M20 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75",

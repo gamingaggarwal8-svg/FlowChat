@@ -289,3 +289,7 @@ All icons are inline (24 × 24) SVG paths with (1.7px) strokes, round caps and j
 - **Don't** describe current screenshots, contrast, keyboard flows or microphone operation as verified without rendered evidence.
 
 Not canonized or repaired: no material defect was reported by the source review. Local caption sizes, uppercase priority/roadmap metadata and one-off tint literals are recorded only as existing component details, not global rules. Rendered accessibility and layout remain pending; documentation does not turn absent evidence into approval.
+
+## Integration workspaces
+
+The new Import Chats, Accounting & Documents, Excel Sync, Plans & Billing, AI Copilot and Workspace Settings pages reuse the existing navy rail, Public Sans, white sheets, border system and semantic palette. Forms use labelled inputs and inline status/error messages; accounting uses a library table plus a two-column PDF/field review. Provisional plans use four comparable plan columns with Pro in the existing navy; they collapse to two and then one column. No new identity or colour token replaces the established dashboard. Rendered desktop/mobile and interaction approval remain pending where permitted browser tooling is unavailable.

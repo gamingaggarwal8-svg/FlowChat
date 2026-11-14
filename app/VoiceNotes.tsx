@@ -84,7 +84,9 @@ export default function VoiceNotes({
   const selected = entries.find((e) => e.id === selectedId);
   useEffect(() => {
     try {
-      const raw = localStorage.getItem(KEY);
+      const raw = localStorage.getItem(
+        data.workspaceId ? `${KEY}:${data.workspaceId}` : KEY,
+      );
       if (raw) setNotes(z.array(noteSchema).parse(JSON.parse(raw)));
     } catch {
       setMessage("Saved transcripts could not be loaded.");
@@ -95,7 +97,10 @@ export default function VoiceNotes({
   useEffect(() => {
     if (ready)
       try {
-        localStorage.setItem(KEY, JSON.stringify(notes));
+        localStorage.setItem(
+          data.workspaceId ? `${KEY}:${data.workspaceId}` : KEY,
+          JSON.stringify(notes),
+        );
       } catch {
         setMessage(
           "Browser storage is full; copy your transcript before leaving.",
